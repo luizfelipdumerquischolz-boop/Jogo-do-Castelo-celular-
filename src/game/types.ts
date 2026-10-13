@@ -25,6 +25,8 @@ export interface TrainJob {
   /** Segundos restantes para a próxima unidade sair do quartel. */
   remaining: number;
   perUnit: number;
+  /** Unidades deste lote já prontas. */
+  done: number;
 }
 
 /** Um castelo "completo" (jogador ou senhor rival) com economia própria. */

@@ -15,8 +15,9 @@ function step(state: GameState, dt: number): void {
     const res = tickCastle(f.castle, dt);
     if (f.id === PLAYER_ID) {
       for (const b of res.built) pushEvent(state, `${BUILDINGS[b.building].name} chegou ao nível ${b.level}.`, 'good');
-      for (const t of res.trained) {
-        pushEvent(state, `${t.count} ${t.count > 1 ? UNITS[t.unit].plural : UNITS[t.unit].name} pronto(s) para a batalha.`, 'good');
+      for (const t of res.finishedBatches) {
+        const text = t.count > 1 ? `${t.count} ${UNITS[t.unit].plural} prontos` : `1 ${UNITS[t.unit].name} pronto`;
+        pushEvent(state, `Treino concluído: ${text} para a batalha.`, 'good');
       }
     } else if (f.faction === 'lord') {
       tickLord(state, f, dt);

@@ -127,7 +127,7 @@ export function startTraining(c: Castle, unit: UnitId, count: number, away = 0):
   const perUnit = unitTrainTime(unit, c.buildings.barracks);
   const last = c.trainQueue[c.trainQueue.length - 1];
   if (last && last.unit === unit) last.count += count;
-  else c.trainQueue.push({ unit, count, remaining: perUnit, perUnit });
+  else c.trainQueue.push({ unit, count, remaining: perUnit, perUnit, done: 0 });
   return { ok: true };
 }
 
@@ -143,12 +143,15 @@ export function maxAffordable(c: Castle, unit: UnitId): number {
 
 export interface CastleTickResult {
   built: { building: BuildingId; level: number }[];
+  /** Unidades que ficaram prontas neste passo. */
   trained: { unit: UnitId; count: number }[];
+  /** Lotes de treino concluídos neste passo. */
+  finishedBatches: { unit: UnitId; count: number }[];
 }
 
 /** Avança a economia de um castelo por `dt` segundos. */
 export function tickCastle(c: Castle, dt: number): CastleTickResult {
-  const result: CastleTickResult = { built: [], trained: [] };
+  const result: CastleTickResult = { built: [], trained: [], finishedBatches: [] };
   const rates = productionRates(c);
   const gained = emptyResources();
   for (const r of RESOURCE_IDS) gained[r] = rates[r] * dt;
@@ -172,10 +175,14 @@ export function tickCastle(c: Castle, dt: number): CastleTickResult {
     if (job.remaining <= 1e-9) {
       c.troops[job.unit] += 1;
       job.count -= 1;
+      job.done += 1;
       const prev = result.trained.find((t) => t.unit === job.unit);
       if (prev) prev.count += 1;
       else result.trained.push({ unit: job.unit, count: 1 });
-      if (job.count <= 0) c.trainQueue.shift();
+      if (job.count <= 0) {
+        result.finishedBatches.push({ unit: job.unit, count: job.done });
+        c.trainQueue.shift();
+      }
       else job.remaining = job.perUnit;
     }
   }

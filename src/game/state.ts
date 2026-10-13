@@ -1,4 +1,4 @@
-import { INVADER_FIRST_WAVE, emptyArmy, emptyResources } from './config';
+import { BUILDING_IDS, INVADER_FIRST_WAVE, emptyArmy, emptyResources } from './config';
 import type { Army, Castle, Faction, Fortress, GameState, LordPersonality, Resources } from './types';
 
 export const SAVE_VERSION = 1;
@@ -87,6 +87,7 @@ export function createInitialState(seed = 12345, playerName = 'Seu Castelo'): Ga
     { title: 'o Saqueador', guard: 0.15, margin: 1.05, buildBias: { barracks: -0.5, wall: 0.8 }, trainBatch: 6 },
   ];
   lords.forEach((l, i) => {
+    l.level = 1 + Math.floor(BUILDING_IDS.reduce((n, b) => n + l.castle!.buildings[b], 0) / 4);
     l.thinkIn = 2 + i * 3;
     l.personality = personalities[i];
   });

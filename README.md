@@ -63,6 +63,9 @@ Na primeira execução do Playwright fora deste ambiente, instale o navegador co
 
 ## Como instalar no celular
 
+O endereço do jogo publicado é **https://luizfelipdumerquischolz-boop.github.io/Jogo-do-Castelo-celular-/**.
+Ele é atualizado automaticamente pelo workflow `.github/workflows/pages.yml` a cada push no `main`.
+
 O jogo precisa ser aberto uma vez a partir de um endereço **HTTPS** (ou `localhost`) para que o navegador permita
 a instalação e o modo offline. Qualquer hospedagem de arquivos estáticos serve: publique o conteúdo de `dist/`
 (por exemplo no GitHub Pages, Netlify ou Cloudflare Pages). Como o build usa caminhos relativos, ele também

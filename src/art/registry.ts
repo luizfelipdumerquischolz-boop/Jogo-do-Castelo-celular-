@@ -252,7 +252,7 @@ for (const [k, d] of Object.entries({ grama: 'Grama dentro do assentamento', ter
 for (const [k, d] of Object.entries({ arvore: 'Árvore', arbusto: 'Arbusto', pedras: 'Pedras' })) {
   add({ key: `decoracao-${k}`, group: 'chao', name: d, description: `${d} decorativa do lado de fora da muralha.`, w: 128, h: 128, iso: true, draw: (c, w) => drawDecoration(c, k, w) });
 }
-const WALL_NAMES: Record<string, string> = { 'reta-a': 'Muralha reta (direção ↘)', 'reta-b': 'Muralha reta (direção ↙)', canto: 'Canto da muralha', torre: 'Torre da muralha', portao: 'Portão', fosso: 'Fosso com água' };
+const WALL_NAMES: Record<string, string> = { 'reta-a': 'Muralha reta (direção ↘, de cima-esquerda para baixo-direita)', 'reta-b': 'Muralha reta (direção ↙, de cima-direita para baixo-esquerda)', canto: 'Canto da muralha', torre: 'Torre da muralha', portao: 'Portão', fosso: 'Fosso com água' };
 for (const piece of WALL_PIECES) {
   for (let st = 1; st <= (piece === 'fosso' ? 1 : 3); st++) {
     for (const dmg of piece === 'fosso' ? [false] : [false, true]) {
@@ -260,11 +260,11 @@ for (const piece of WALL_PIECES) {
         key: `muralha-${piece}${piece === 'fosso' ? '' : `-${st}`}${dmg ? '-danificada' : ''}`,
         group: 'muralhas',
         name: `${WALL_NAMES[piece]}${piece === 'fosso' ? '' : ` — estágio ${st}`}${dmg ? ' (danificada)' : ''}`,
-        description: `${WALL_NAMES[piece]}. Ocupa uma casa do contorno.${dmg ? ' Versão com rachaduras e pedras caídas.' : ''}`,
+        description: `${WALL_NAMES[piece]}. Ocupa uma casa do contorno.${piece.startsWith('reta') || piece === 'portao' ? ' O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua.' : ''}${piece === 'portao' ? ' Mesma direção da muralha reta ↘, com o portão de madeira na face da frente.' : ''}${piece === 'fosso' ? '' : [' Estágio 1: paliçada de troncos de madeira.', ' Estágio 2: muro de pedra simples com ameias.', ' Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.'][st - 1]}${dmg ? ' Versão com rachaduras e pedras caídas.' : ''}`,
         w: TILE_W,
         h: TILE_H + 90,
         iso: true,
-        draw: (c, w) => drawWallPiece(c, piece, w, st, dmg),
+        draw: (c, w, h) => drawWallPiece(c, piece, w, st, dmg, h),
       });
     }
   }

@@ -301,7 +301,9 @@ export class CityView {
         for (let x = bnd.x0 - 2; x <= bnd.x1 + 1; x++) {
           for (const y of [bnd.y0 - 2, bnd.y1 + 1]) {
             const p = this.toScreen(x, y);
-            c.drawImage(art('muralha-fosso'), p.x - tw / 2, p.y, tw, th);
+            const img = art('muralha-fosso');
+            const h = (img.height as number) * sc;
+            c.drawImage(img, p.x - tw / 2, p.y + th - h, tw, h);
           }
         }
       }

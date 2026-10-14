@@ -566,66 +566,66 @@ Ladrilhos isométricos de 128 × 64 px que se repetem sem emenda.
 
 Peças isométricas que se encaixam em volta do terreno do assentamento. 3 estágios e versão danificada.
 
-1. **Muralha reta (direção ↘) — estágio 1** — `muralha-reta-a-1.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno.
-2. **Muralha reta (direção ↘) — estágio 1 (danificada)** — `muralha-reta-a-1-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
-3. **Muralha reta (direção ↘) — estágio 2** — `muralha-reta-a-2.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno.
-4. **Muralha reta (direção ↘) — estágio 2 (danificada)** — `muralha-reta-a-2-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
-5. **Muralha reta (direção ↘) — estágio 3** — `muralha-reta-a-3.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno.
-6. **Muralha reta (direção ↘) — estágio 3 (danificada)** — `muralha-reta-a-3-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
-7. **Muralha reta (direção ↙) — estágio 1** — `muralha-reta-b-1.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno.
-8. **Muralha reta (direção ↙) — estágio 1 (danificada)** — `muralha-reta-b-1-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
-9. **Muralha reta (direção ↙) — estágio 2** — `muralha-reta-b-2.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno.
-10. **Muralha reta (direção ↙) — estágio 2 (danificada)** — `muralha-reta-b-2-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
-11. **Muralha reta (direção ↙) — estágio 3** — `muralha-reta-b-3.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno.
-12. **Muralha reta (direção ↙) — estágio 3 (danificada)** — `muralha-reta-b-3-danificada.png` · 128 × 154 px · isométrico  
-   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+1. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1** — `muralha-reta-a-1.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
+2. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1 (danificada)** — `muralha-reta-a-1-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+3. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2** — `muralha-reta-a-2.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
+4. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2 (danificada)** — `muralha-reta-a-2-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+5. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3** — `muralha-reta-a-3.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+6. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3 (danificada)** — `muralha-reta-a-3-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+7. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1** — `muralha-reta-b-1.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
+8. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1 (danificada)** — `muralha-reta-b-1-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+9. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2** — `muralha-reta-b-2.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
+10. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2 (danificada)** — `muralha-reta-b-2-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+11. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3** — `muralha-reta-b-3.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+12. **Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3 (danificada)** — `muralha-reta-b-3-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
 13. **Canto da muralha — estágio 1** — `muralha-canto-1.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
 14. **Canto da muralha — estágio 1 (danificada)** — `muralha-canto-1-danificada.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
 15. **Canto da muralha — estágio 2** — `muralha-canto-2.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
 16. **Canto da muralha — estágio 2 (danificada)** — `muralha-canto-2-danificada.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
 17. **Canto da muralha — estágio 3** — `muralha-canto-3.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
 18. **Canto da muralha — estágio 3 (danificada)** — `muralha-canto-3-danificada.png` · 128 × 154 px · isométrico  
-   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
 19. **Torre da muralha — estágio 1** — `muralha-torre-1.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
 20. **Torre da muralha — estágio 1 (danificada)** — `muralha-torre-1-danificada.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
 21. **Torre da muralha — estágio 2** — `muralha-torre-2.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
 22. **Torre da muralha — estágio 2 (danificada)** — `muralha-torre-2-danificada.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
 23. **Torre da muralha — estágio 3** — `muralha-torre-3.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
 24. **Torre da muralha — estágio 3 (danificada)** — `muralha-torre-3-danificada.png` · 128 × 154 px · isométrico  
-   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
 25. **Portão — estágio 1** — `muralha-portao-1.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira.
 26. **Portão — estágio 1 (danificada)** — `muralha-portao-1-danificada.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
 27. **Portão — estágio 2** — `muralha-portao-2.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias.
 28. **Portão — estágio 2 (danificada)** — `muralha-portao-2-danificada.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
 29. **Portão — estágio 3** — `muralha-portao-3.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
 30. **Portão — estágio 3 (danificada)** — `muralha-portao-3-danificada.png` · 128 × 154 px · isométrico  
-   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+   Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
 31. **Fosso com água** — `muralha-fosso.png` · 128 × 154 px · isométrico  
    Fosso com água. Ocupa uma casa do contorno.
 

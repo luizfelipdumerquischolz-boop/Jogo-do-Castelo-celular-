@@ -82,6 +82,8 @@ export class Core {
           this.post({ type: 'result', id: m.id, result });
           this.dirty = true;
           this.snapshot(true);
+          // Toda ordem do jogador é salva logo (o celular pode fechar o app a qualquer momento).
+          if (result.ok) this.lastSave = Math.min(this.lastSave, performance.now() - SAVE_MS + 500);
           break;
         }
         case 'save':

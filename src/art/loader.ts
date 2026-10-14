@@ -20,6 +20,33 @@ export async function initArt(changed: () => void): Promise<void> {
   } catch {
     provided = new Set();
   }
+  applyInterfaceArt();
+}
+
+/** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */
+const UI_RULES: [string, (url: string) => string][] = [
+  ['ui-botao', (u) => `.btn.primary{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
+  ['ui-botao-perigo', (u) => `.btn.danger{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
+  ['ui-botao-neutro', (u) => `.btn.neutral{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
+  ['ui-botao-desativado', (u) => `.btn:disabled{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
+  ['ui-barra-topo', (u) => `#top{background:url(${u}) left center/auto 100% repeat-x}`],
+  ['ui-barra-inferior', (u) => `#nav{background:url(${u}) left center/auto 100% repeat-x}`],
+  ['ui-painel', (u) => `#sheet{background:url(${u}) center/100% 100%}`],
+  ['ui-fundo', (u) => `#screen{background:url(${u}) repeat}`],
+  ['ui-carta', (u) => `.letter-paper{background:url(${u}) center/100% 100% no-repeat}`],
+  ['ui-moldura-retrato', (u) => `.portrait{position:relative}.portrait::after{content:'';position:absolute;inset:0;background:url(${u}) center/100% 100% no-repeat;pointer-events:none}`],
+];
+
+function applyInterfaceArt(): void {
+  if (typeof document === 'undefined') return;
+  const css = UI_RULES.filter(([k]) => isProvided(k))
+    .map(([k, rule]) => rule(`./arte/${artFileName(k)}`))
+    .join('\n');
+  if (!css) return;
+  const el = document.createElement('style');
+  el.id = 'arte-interface';
+  el.textContent = css;
+  document.head.appendChild(el);
 }
 
 export function isProvided(key: string): boolean {
@@ -30,6 +57,7 @@ function renderDefault(key: string): HTMLCanvasElement {
   const spec = ART_BY_KEY.get(key);
   const c = document.createElement('canvas');
   if (!spec) {
+    console.warn('Arte desconhecida: ' + key);
     c.width = c.height = 4;
     return c;
   }

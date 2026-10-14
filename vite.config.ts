@@ -40,8 +40,27 @@ function offlineServiceWorker(): Plugin {
   };
 }
 
+/**
+ * Gera public/arte/manifest.json com a lista das artes fornecidas pelo jogador.
+ * O jogo só tenta carregar o que está na lista (nada de pedidos para arquivos que não existem).
+ */
+function artManifest(): Plugin {
+  const write = () => {
+    const dir = 'public/arte';
+    let files: string[] = [];
+    try {
+      files = readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.png')).sort();
+    } catch {
+      files = [];
+    }
+    writeFileSync(join(dir, 'manifest.json'), JSON.stringify(files, null, 0) + '\n');
+  };
+  return { name: 'art-manifest', buildStart: write, configureServer: () => write() };
+}
+
 export default defineConfig({
   base: './',
   build: { target: 'es2020', assetsInlineLimit: 0 },
-  plugins: [offlineServiceWorker()],
+  worker: { format: 'es' },
+  plugins: [artManifest(), offlineServiceWorker()],
 });

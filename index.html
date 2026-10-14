@@ -2,9 +2,9 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
     <meta name="theme-color" content="#3b2a1a" />
-    <meta name="description" content="Coroa de Pedra: construa seu castelo, treine tropas e defenda o reino. Jogo de estratégia medieval offline." />
+    <meta name="description" content="Coroa de Pedra: estratégia medieval offline. Construa, alimente o povo, expanda e una o Continente X." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -14,11 +14,19 @@
     <link rel="apple-touch-icon" href="./icon-192.png" />
     <title>Coroa de Pedra</title>
   </head>
-  <body>
-    <header id="header"></header>
-    <main id="main"><p class="loading">Erguendo as muralhas…</p></main>
+  <body data-screen="city">
+    <header id="top"></header>
+    <main id="stage">
+      <canvas id="city"></canvas>
+      <canvas id="map"></canvas>
+      <div id="citybar"></div>
+      <div id="mapbar"></div>
+      <div id="screen"></div>
+    </main>
+    <div id="sheet"></div>
     <div id="toasts" aria-live="polite"></div>
     <nav id="nav"></nav>
+    <div id="modal"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

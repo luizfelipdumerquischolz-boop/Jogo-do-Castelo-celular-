@@ -565,6 +565,11 @@ body:not([data-screen='map']):not([data-screen='city']) #screen {
   opacity: 0.6;
 }
 
+.pframe {
+  flex: none;
+  display: inline-flex;
+}
+
 .portrait {
   width: 64px;
   height: 64px;

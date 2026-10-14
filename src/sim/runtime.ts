@@ -23,23 +23,43 @@ export interface Runtime {
 
 const cache = new WeakMap<GameState, Runtime>();
 
+class RuntimeImpl implements Runtime {
+  ctx: MoveContext;
+  territoryDirty = true;
+  settlements = new Map<number, Settlement>();
+  armies = new Map<number, Army>();
+  nations = new Map<number, Nation>();
+  heroes = new Map<number, Hero>();
+  landOwned = new Map<number, number>();
+  roadsVersion = 0;
+  private _owner?: Int16Array;
+  private _claim?: Int32Array;
+  private _explored?: Uint8Array;
+  private _visible?: Uint8Array;
+  constructor(private state: GameState) {
+    this.ctx = { roads: new Set(state.roads), bridges: new Set(state.bridges), forestCut: new Set(state.forestCut) };
+  }
+  get owner(): Int16Array {
+    return (this._owner ??= new Int16Array(MAP_SIZE * MAP_SIZE).fill(-1));
+  }
+  get claim(): Int32Array {
+    return (this._claim ??= new Int32Array(MAP_SIZE * MAP_SIZE).fill(-1));
+  }
+  get explored(): Uint8Array {
+    return (this._explored ??= decodeBits(this.state.explored));
+  }
+  set explored(v: Uint8Array) {
+    this._explored = v;
+  }
+  get visible(): Uint8Array {
+    return (this._visible ??= new Uint8Array(MAP_SIZE * MAP_SIZE));
+  }
+}
+
 export function rt(state: GameState): Runtime {
   let r = cache.get(state);
   if (!r) {
-    r = {
-      ctx: { roads: new Set(state.roads), bridges: new Set(state.bridges), forestCut: new Set(state.forestCut) },
-      owner: new Int16Array(MAP_SIZE * MAP_SIZE).fill(-1),
-      claim: new Int32Array(MAP_SIZE * MAP_SIZE).fill(-1),
-      territoryDirty: true,
-      explored: decodeBits(state.explored),
-      visible: new Uint8Array(MAP_SIZE * MAP_SIZE),
-      settlements: new Map(),
-      armies: new Map(),
-      nations: new Map(),
-      heroes: new Map(),
-      landOwned: new Map(),
-      roadsVersion: 0,
-    };
+    r = new RuntimeImpl(state);
     cache.set(state, r);
     reindex(state);
   }

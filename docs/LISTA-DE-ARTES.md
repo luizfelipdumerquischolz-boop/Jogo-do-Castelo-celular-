@@ -37,496 +37,850 @@ Total: **386 imagens** em 16 grupos. Esta lista é gerada pelo próprio jogo (`n
 
 Peças da tela. Botões e painéis são esticados pelo jogo: deixe as bordas decoradas e o miolo liso.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `ui-botao.png` | Botão principal | 192 × 72 | plano | Botão verde de ação (Construir, Melhorar, Recrutar). Esticado na largura: bordas arredondadas com moldura, miolo liso. |
-| `ui-botao-perigo.png` | Botão de perigo | 192 × 72 | plano | Botão vermelho (Atacar, Demolir). |
-| `ui-botao-neutro.png` | Botão neutro | 192 × 72 | plano | Botão marrom para ações secundárias (Cancelar, Voltar). |
-| `ui-botao-desativado.png` | Botão desativado | 192 × 72 | plano | Botão acinzentado quando a ação não está disponível. |
-| `ui-barra-topo.png` | Barra superior | 512 × 96 | plano | Faixa de madeira escura atrás dos recursos no topo da tela. Repete na horizontal. |
-| `ui-barra-inferior.png` | Barra de navegação | 512 × 128 | plano | Faixa de madeira atrás das abas na parte de baixo. Repete na horizontal. |
-| `ui-painel.png` | Painel de pergaminho | 512 × 512 | plano | Fundo dos painéis que sobem de baixo (informações de construções, exércitos). Textura de pergaminho que se repete, com borda escura de 16 px. |
-| `ui-fundo.png` | Fundo das telas de menu | 512 × 512 | plano | Couro ou madeira escura atrás das listas (cartas, pesquisa, diplomacia). Repete sem emenda. |
-| `ui-moldura-retrato.png` | Moldura de retrato | 256 × 256 | plano | Moldura dourada redonda para retratos de heróis e soldados. Miolo transparente. |
-| `ui-selo.png` | Selo de cera | 96 × 96 | plano | Selo vermelho das cartas não lidas. |
-| `ui-carta.png` | Papel de carta | 512 × 640 | plano | Folha de pergaminho para ler cartas. Bordas levemente queimadas. |
-| `ui-icone-app.png` | Ícone do aplicativo | 1024 × 1024 | plano | Ícone que aparece na tela inicial do celular. Castelo ou coroa de pedra, sem texto, fundo escuro. |
+1. **Botão principal** — `ui-botao.png` · 192 × 72 px · plano  
+   Botão verde de ação (Construir, Melhorar, Recrutar). Esticado na largura: bordas arredondadas com moldura, miolo liso.
+2. **Botão de perigo** — `ui-botao-perigo.png` · 192 × 72 px · plano  
+   Botão vermelho (Atacar, Demolir).
+3. **Botão neutro** — `ui-botao-neutro.png` · 192 × 72 px · plano  
+   Botão marrom para ações secundárias (Cancelar, Voltar).
+4. **Botão desativado** — `ui-botao-desativado.png` · 192 × 72 px · plano  
+   Botão acinzentado quando a ação não está disponível.
+5. **Barra superior** — `ui-barra-topo.png` · 512 × 96 px · plano  
+   Faixa de madeira escura atrás dos recursos no topo da tela. Repete na horizontal.
+6. **Barra de navegação** — `ui-barra-inferior.png` · 512 × 128 px · plano  
+   Faixa de madeira atrás das abas na parte de baixo. Repete na horizontal.
+7. **Painel de pergaminho** — `ui-painel.png` · 512 × 512 px · plano  
+   Fundo dos painéis que sobem de baixo (informações de construções, exércitos). Textura de pergaminho que se repete, com borda escura de 16 px.
+8. **Fundo das telas de menu** — `ui-fundo.png` · 512 × 512 px · plano  
+   Couro ou madeira escura atrás das listas (cartas, pesquisa, diplomacia). Repete sem emenda.
+9. **Moldura de retrato** — `ui-moldura-retrato.png` · 256 × 256 px · plano  
+   Moldura dourada redonda para retratos de heróis e soldados. Miolo transparente.
+10. **Selo de cera** — `ui-selo.png` · 96 × 96 px · plano  
+   Selo vermelho das cartas não lidas.
+11. **Papel de carta** — `ui-carta.png` · 512 × 640 px · plano  
+   Folha de pergaminho para ler cartas. Bordas levemente queimadas.
+12. **Ícone do aplicativo** — `ui-icone-app.png` · 1024 × 1024 px · plano  
+   Ícone que aparece na tela inicial do celular. Castelo ou coroa de pedra, sem texto, fundo escuro.
 
 ## Ícones dos botões e abas (31)
 
 Ícones planos, sem perspectiva, legíveis em 24 px. Fundo transparente.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `icone-ui-reino.png` | Aba Reino (mapa) | 96 × 96 | plano | Ícone do botão "Aba Reino (mapa)". |
-| `icone-ui-cidade.png` | Aba Cidade | 96 × 96 | plano | Ícone do botão "Aba Cidade". |
-| `icone-ui-exercitos.png` | Aba Exércitos | 96 × 96 | plano | Ícone do botão "Aba Exércitos". |
-| `icone-ui-cartas.png` | Aba Cartas | 96 × 96 | plano | Ícone do botão "Aba Cartas". |
-| `icone-ui-mais.png` | Aba Mais | 96 × 96 | plano | Ícone do botão "Aba Mais". |
-| `icone-ui-construir.png` | Construir | 96 × 96 | plano | Ícone do botão "Construir". |
-| `icone-ui-melhorar.png` | Melhorar | 96 × 96 | plano | Ícone do botão "Melhorar". |
-| `icone-ui-mover.png` | Mover construção | 96 × 96 | plano | Ícone do botão "Mover construção". |
-| `icone-ui-demolir.png` | Demolir | 96 × 96 | plano | Ícone do botão "Demolir". |
-| `icone-ui-atacar.png` | Atacar / conquistar | 96 × 96 | plano | Ícone do botão "Atacar / conquistar". |
-| `icone-ui-saquear.png` | Saquear | 96 × 96 | plano | Ícone do botão "Saquear". |
-| `icone-ui-espionar.png` | Espionar | 96 × 96 | plano | Ícone do botão "Espionar". |
-| `icone-ui-defender.png` | Defender | 96 × 96 | plano | Ícone do botão "Defender". |
-| `icone-ui-voltar.png` | Voltar para casa | 96 × 96 | plano | Ícone do botão "Voltar para casa". |
-| `icone-ui-fechar.png` | Fechar painel | 96 × 96 | plano | Ícone do botão "Fechar painel". |
-| `icone-ui-pesquisa.png` | Pesquisa | 96 × 96 | plano | Ícone do botão "Pesquisa". |
-| `icone-ui-diplomacia.png` | Diplomacia | 96 × 96 | plano | Ícone do botão "Diplomacia". |
-| `icone-ui-taverna.png` | Taverna | 96 × 96 | plano | Ícone do botão "Taverna". |
-| `icone-ui-herois.png` | Heróis | 96 × 96 | plano | Ícone do botão "Heróis". |
-| `icone-ui-missoes.png` | Missões | 96 × 96 | plano | Ícone do botão "Missões". |
-| `icone-ui-mercado.png` | Mercado | 96 × 96 | plano | Ícone do botão "Mercado". |
-| `icone-ui-rotas.png` | Rotas e carroças | 96 × 96 | plano | Ícone do botão "Rotas e carroças". |
-| `icone-ui-colonos.png` | Colonos | 96 × 96 | plano | Ícone do botão "Colonos". |
-| `icone-ui-relatorios.png` | Relatórios de batalha | 96 × 96 | plano | Ícone do botão "Relatórios de batalha". |
-| `icone-ui-cronica.png` | Crônica do reino | 96 × 96 | plano | Ícone do botão "Crônica do reino". |
-| `icone-ui-artes.png` | Lista de artes | 96 × 96 | plano | Ícone do botão "Lista de artes". |
-| `icone-ui-ajuda.png` | Ajuda | 96 × 96 | plano | Ícone do botão "Ajuda". |
-| `icone-ui-novo.png` | Novo jogo | 96 × 96 | plano | Ícone do botão "Novo jogo". |
-| `icone-ui-zoom.png` | Zoom do mapa | 96 × 96 | plano | Ícone do botão "Zoom do mapa". |
-| `icone-ui-fundar.png` | Fundar assentamento | 96 × 96 | plano | Ícone do botão "Fundar assentamento". |
-| `icone-ui-recrutar.png` | Recrutar | 96 × 96 | plano | Ícone do botão "Recrutar". |
+1. **Aba Reino (mapa)** — `icone-ui-reino.png` · 96 × 96 px · plano  
+   Ícone do botão "Aba Reino (mapa)".
+2. **Aba Cidade** — `icone-ui-cidade.png` · 96 × 96 px · plano  
+   Ícone do botão "Aba Cidade".
+3. **Aba Exércitos** — `icone-ui-exercitos.png` · 96 × 96 px · plano  
+   Ícone do botão "Aba Exércitos".
+4. **Aba Cartas** — `icone-ui-cartas.png` · 96 × 96 px · plano  
+   Ícone do botão "Aba Cartas".
+5. **Aba Mais** — `icone-ui-mais.png` · 96 × 96 px · plano  
+   Ícone do botão "Aba Mais".
+6. **Construir** — `icone-ui-construir.png` · 96 × 96 px · plano  
+   Ícone do botão "Construir".
+7. **Melhorar** — `icone-ui-melhorar.png` · 96 × 96 px · plano  
+   Ícone do botão "Melhorar".
+8. **Mover construção** — `icone-ui-mover.png` · 96 × 96 px · plano  
+   Ícone do botão "Mover construção".
+9. **Demolir** — `icone-ui-demolir.png` · 96 × 96 px · plano  
+   Ícone do botão "Demolir".
+10. **Atacar / conquistar** — `icone-ui-atacar.png` · 96 × 96 px · plano  
+   Ícone do botão "Atacar / conquistar".
+11. **Saquear** — `icone-ui-saquear.png` · 96 × 96 px · plano  
+   Ícone do botão "Saquear".
+12. **Espionar** — `icone-ui-espionar.png` · 96 × 96 px · plano  
+   Ícone do botão "Espionar".
+13. **Defender** — `icone-ui-defender.png` · 96 × 96 px · plano  
+   Ícone do botão "Defender".
+14. **Voltar para casa** — `icone-ui-voltar.png` · 96 × 96 px · plano  
+   Ícone do botão "Voltar para casa".
+15. **Fechar painel** — `icone-ui-fechar.png` · 96 × 96 px · plano  
+   Ícone do botão "Fechar painel".
+16. **Pesquisa** — `icone-ui-pesquisa.png` · 96 × 96 px · plano  
+   Ícone do botão "Pesquisa".
+17. **Diplomacia** — `icone-ui-diplomacia.png` · 96 × 96 px · plano  
+   Ícone do botão "Diplomacia".
+18. **Taverna** — `icone-ui-taverna.png` · 96 × 96 px · plano  
+   Ícone do botão "Taverna".
+19. **Heróis** — `icone-ui-herois.png` · 96 × 96 px · plano  
+   Ícone do botão "Heróis".
+20. **Missões** — `icone-ui-missoes.png` · 96 × 96 px · plano  
+   Ícone do botão "Missões".
+21. **Mercado** — `icone-ui-mercado.png` · 96 × 96 px · plano  
+   Ícone do botão "Mercado".
+22. **Rotas e carroças** — `icone-ui-rotas.png` · 96 × 96 px · plano  
+   Ícone do botão "Rotas e carroças".
+23. **Colonos** — `icone-ui-colonos.png` · 96 × 96 px · plano  
+   Ícone do botão "Colonos".
+24. **Relatórios de batalha** — `icone-ui-relatorios.png` · 96 × 96 px · plano  
+   Ícone do botão "Relatórios de batalha".
+25. **Crônica do reino** — `icone-ui-cronica.png` · 96 × 96 px · plano  
+   Ícone do botão "Crônica do reino".
+26. **Lista de artes** — `icone-ui-artes.png` · 96 × 96 px · plano  
+   Ícone do botão "Lista de artes".
+27. **Ajuda** — `icone-ui-ajuda.png` · 96 × 96 px · plano  
+   Ícone do botão "Ajuda".
+28. **Novo jogo** — `icone-ui-novo.png` · 96 × 96 px · plano  
+   Ícone do botão "Novo jogo".
+29. **Zoom do mapa** — `icone-ui-zoom.png` · 96 × 96 px · plano  
+   Ícone do botão "Zoom do mapa".
+30. **Fundar assentamento** — `icone-ui-fundar.png` · 96 × 96 px · plano  
+   Ícone do botão "Fundar assentamento".
+31. **Recrutar** — `icone-ui-recrutar.png` · 96 × 96 px · plano  
+   Ícone do botão "Recrutar".
 
 ## Ícones de recursos, alimentos e itens (39)
 
 Ícones planos de 128 × 128 px, sem perspectiva, bem legíveis em tamanho pequeno.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `icone-wood.png` | Madeira | 128 × 128 | plano | Ícone de madeira. |
-| `icone-stone.png` | Pedra | 128 × 128 | plano | Ícone de pedra. |
-| `icone-iron.png` | Ferro | 128 × 128 | plano | Ícone de ferro. |
-| `icone-diamond.png` | Diamante | 128 × 128 | plano | Ícone de diamante. |
-| `icone-wheat.png` | Trigo | 128 × 128 | plano | Ícone de trigo. |
-| `icone-oats.png` | Aveia | 128 × 128 | plano | Ícone de aveia. |
-| `icone-barley.png` | Cevada | 128 × 128 | plano | Ícone de cevada. |
-| `icone-grapes.png` | Uva | 128 × 128 | plano | Ícone de uva. |
-| `icone-cattle.png` | Gado | 128 × 128 | plano | Ícone de gado. |
-| `icone-milk.png` | Leite | 128 × 128 | plano | Ícone de leite. |
-| `icone-wool.png` | Lã | 128 × 128 | plano | Ícone de lã. |
-| `icone-wax.png` | Cera | 128 × 128 | plano | Ícone de cera. |
-| `icone-flour.png` | Farinha | 128 × 128 | plano | Ícone de farinha. |
-| `icone-charcoal.png` | Carvão | 128 × 128 | plano | Ícone de carvão. |
-| `icone-steel.png` | Aço | 128 × 128 | plano | Ícone de aço. |
-| `icone-leather.png` | Couro | 128 × 128 | plano | Ícone de couro. |
-| `icone-cloth.png` | Tecido | 128 × 128 | plano | Ícone de tecido. |
-| `icone-jewels.png` | Joias | 128 × 128 | plano | Ícone de joias. |
-| `icone-bread.png` | Pão | 128 × 128 | plano | Ícone de pão. |
-| `icone-porridge.png` | Mingau | 128 × 128 | plano | Ícone de mingau. |
-| `icone-meat.png` | Carne | 128 × 128 | plano | Ícone de carne. |
-| `icone-fish.png` | Peixe | 128 × 128 | plano | Ícone de peixe. |
-| `icone-eggs.png` | Ovos | 128 × 128 | plano | Ícone de ovos. |
-| `icone-cheese.png` | Queijo | 128 × 128 | plano | Ícone de queijo. |
-| `icone-vegetables.png` | Legumes | 128 × 128 | plano | Ícone de legumes. |
-| `icone-fruit.png` | Frutas | 128 × 128 | plano | Ícone de frutas. |
-| `icone-beer.png` | Cerveja | 128 × 128 | plano | Ícone de cerveja. |
-| `icone-wine.png` | Vinho | 128 × 128 | plano | Ícone de vinho. |
-| `icone-honey.png` | Mel | 128 × 128 | plano | Ícone de mel. |
-| `icone-weapon.png` | Arma | 128 × 128 | plano | Ícone de arma. |
-| `icone-armor.png` | Armadura | 128 × 128 | plano | Ícone de armadura. |
-| `icone-shield.png` | Escudo | 128 × 128 | plano | Ícone de escudo. |
-| `icone-crossbow.png` | Besta | 128 × 128 | plano | Ícone de besta. |
-| `icone-steelWeapon.png` | Arma de aço | 128 × 128 | plano | Ícone de arma de aço. |
-| `icone-steelArmor.png` | Armadura de aço | 128 × 128 | plano | Ícone de armadura de aço. |
-| `icone-bow.png` | Arco | 128 × 128 | plano | Ícone de arco. |
-| `icone-horse.png` | Cavalo | 128 × 128 | plano | Ícone de cavalo. |
-| `icone-banner.png` | Estandarte | 128 × 128 | plano | Ícone de estandarte. |
-| `icone-gold.png` | Ouro | 128 × 128 | plano | Pilha de moedas de ouro (tesouro do reino). |
+1. **Madeira** — `icone-wood.png` · 128 × 128 px · plano  
+   Ícone de madeira.
+2. **Pedra** — `icone-stone.png` · 128 × 128 px · plano  
+   Ícone de pedra.
+3. **Ferro** — `icone-iron.png` · 128 × 128 px · plano  
+   Ícone de ferro.
+4. **Diamante** — `icone-diamond.png` · 128 × 128 px · plano  
+   Ícone de diamante.
+5. **Trigo** — `icone-wheat.png` · 128 × 128 px · plano  
+   Ícone de trigo.
+6. **Aveia** — `icone-oats.png` · 128 × 128 px · plano  
+   Ícone de aveia.
+7. **Cevada** — `icone-barley.png` · 128 × 128 px · plano  
+   Ícone de cevada.
+8. **Uva** — `icone-grapes.png` · 128 × 128 px · plano  
+   Ícone de uva.
+9. **Gado** — `icone-cattle.png` · 128 × 128 px · plano  
+   Ícone de gado.
+10. **Leite** — `icone-milk.png` · 128 × 128 px · plano  
+   Ícone de leite.
+11. **Lã** — `icone-wool.png` · 128 × 128 px · plano  
+   Ícone de lã.
+12. **Cera** — `icone-wax.png` · 128 × 128 px · plano  
+   Ícone de cera.
+13. **Farinha** — `icone-flour.png` · 128 × 128 px · plano  
+   Ícone de farinha.
+14. **Carvão** — `icone-charcoal.png` · 128 × 128 px · plano  
+   Ícone de carvão.
+15. **Aço** — `icone-steel.png` · 128 × 128 px · plano  
+   Ícone de aço.
+16. **Couro** — `icone-leather.png` · 128 × 128 px · plano  
+   Ícone de couro.
+17. **Tecido** — `icone-cloth.png` · 128 × 128 px · plano  
+   Ícone de tecido.
+18. **Joias** — `icone-jewels.png` · 128 × 128 px · plano  
+   Ícone de joias.
+19. **Pão** — `icone-bread.png` · 128 × 128 px · plano  
+   Ícone de pão.
+20. **Mingau** — `icone-porridge.png` · 128 × 128 px · plano  
+   Ícone de mingau.
+21. **Carne** — `icone-meat.png` · 128 × 128 px · plano  
+   Ícone de carne.
+22. **Peixe** — `icone-fish.png` · 128 × 128 px · plano  
+   Ícone de peixe.
+23. **Ovos** — `icone-eggs.png` · 128 × 128 px · plano  
+   Ícone de ovos.
+24. **Queijo** — `icone-cheese.png` · 128 × 128 px · plano  
+   Ícone de queijo.
+25. **Legumes** — `icone-vegetables.png` · 128 × 128 px · plano  
+   Ícone de legumes.
+26. **Frutas** — `icone-fruit.png` · 128 × 128 px · plano  
+   Ícone de frutas.
+27. **Cerveja** — `icone-beer.png` · 128 × 128 px · plano  
+   Ícone de cerveja.
+28. **Vinho** — `icone-wine.png` · 128 × 128 px · plano  
+   Ícone de vinho.
+29. **Mel** — `icone-honey.png` · 128 × 128 px · plano  
+   Ícone de mel.
+30. **Arma** — `icone-weapon.png` · 128 × 128 px · plano  
+   Ícone de arma.
+31. **Armadura** — `icone-armor.png` · 128 × 128 px · plano  
+   Ícone de armadura.
+32. **Escudo** — `icone-shield.png` · 128 × 128 px · plano  
+   Ícone de escudo.
+33. **Besta** — `icone-crossbow.png` · 128 × 128 px · plano  
+   Ícone de besta.
+34. **Arma de aço** — `icone-steelWeapon.png` · 128 × 128 px · plano  
+   Ícone de arma de aço.
+35. **Armadura de aço** — `icone-steelArmor.png` · 128 × 128 px · plano  
+   Ícone de armadura de aço.
+36. **Arco** — `icone-bow.png` · 128 × 128 px · plano  
+   Ícone de arco.
+37. **Cavalo** — `icone-horse.png` · 128 × 128 px · plano  
+   Ícone de cavalo.
+38. **Estandarte** — `icone-banner.png` · 128 × 128 px · plano  
+   Ícone de estandarte.
+39. **Ouro** — `icone-gold.png` · 128 × 128 px · plano  
+   Pilha de moedas de ouro (tesouro do reino).
 
 ## Ícones de status (8)
 
 Ícones planos de 128 × 128 px usados nos painéis (população, felicidade etc.).
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `icone-population.png` | População | 128 × 128 | plano | Ícone de população. |
-| `icone-happiness.png` | Felicidade | 128 × 128 | plano | Ícone de felicidade. |
-| `icone-health.png` | Saúde | 128 × 128 | plano | Ícone de saúde. |
-| `icone-morale.png` | Moral | 128 × 128 | plano | Ícone de moral. |
-| `icone-loyalty.png` | Lealdade | 128 × 128 | plano | Ícone de lealdade. |
-| `icone-culture.png` | Cultura | 128 × 128 | plano | Ícone de cultura. |
-| `icone-research.png` | Pesquisa | 128 × 128 | plano | Ícone de pesquisa. |
-| `icone-time.png` | Tempo / estação | 128 × 128 | plano | Ícone de tempo / estação. |
+1. **População** — `icone-population.png` · 128 × 128 px · plano  
+   Ícone de população.
+2. **Felicidade** — `icone-happiness.png` · 128 × 128 px · plano  
+   Ícone de felicidade.
+3. **Saúde** — `icone-health.png` · 128 × 128 px · plano  
+   Ícone de saúde.
+4. **Moral** — `icone-morale.png` · 128 × 128 px · plano  
+   Ícone de moral.
+5. **Lealdade** — `icone-loyalty.png` · 128 × 128 px · plano  
+   Ícone de lealdade.
+6. **Cultura** — `icone-culture.png` · 128 × 128 px · plano  
+   Ícone de cultura.
+7. **Pesquisa** — `icone-research.png` · 128 × 128 px · plano  
+   Ícone de pesquisa.
+8. **Tempo / estação** — `icone-time.png` · 128 × 128 px · plano  
+   Ícone de tempo / estação.
 
 ## Construções (3 estágios cada) (147)
 
 Isométricas 2:1, luz de cima e da esquerda. Estágio 1 = níveis 1–2 (madeira, simples), 2 = níveis 3–4 (pedra), 3 = nível 5 (imponente, bandeiras). A base do prédio encosta embaixo da imagem.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `construcao-keep-1.png` | Torre de Menagem — estágio 1 | 384 × 452 | isométrico | Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-keep-2.png` | Torre de Menagem — estágio 2 | 384 × 452 | isométrico | Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-keep-3.png` | Torre de Menagem — estágio 3 | 384 × 452 | isométrico | Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-governor_hall-1.png` | Salão do governador — estágio 1 | 256 × 298 | isométrico | Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-governor_hall-2.png` | Salão do governador — estágio 2 | 256 × 298 | isométrico | Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-governor_hall-3.png` | Salão do governador — estágio 3 | 256 × 298 | isométrico | Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-house-1.png` | Casa — estágio 1 | 128 × 204 | isométrico | Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-house-2.png` | Casa — estágio 2 | 128 × 204 | isométrico | Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-house-3.png` | Casa — estágio 3 | 128 × 204 | isométrico | Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-wheat_farm-1.png` | Fazenda de trigo — estágio 1 | 256 × 298 | isométrico | Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-wheat_farm-2.png` | Fazenda de trigo — estágio 2 | 256 × 298 | isométrico | Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-wheat_farm-3.png` | Fazenda de trigo — estágio 3 | 256 × 298 | isométrico | Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-oat_farm-1.png` | Fazenda de aveia — estágio 1 | 256 × 298 | isométrico | Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-oat_farm-2.png` | Fazenda de aveia — estágio 2 | 256 × 298 | isométrico | Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-oat_farm-3.png` | Fazenda de aveia — estágio 3 | 256 × 298 | isométrico | Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-barley_farm-1.png` | Fazenda de cevada — estágio 1 | 256 × 298 | isométrico | Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-barley_farm-2.png` | Fazenda de cevada — estágio 2 | 256 × 298 | isométrico | Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-barley_farm-3.png` | Fazenda de cevada — estágio 3 | 256 × 298 | isométrico | Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-vegetable_garden-1.png` | Horta — estágio 1 | 128 × 204 | isométrico | Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-vegetable_garden-2.png` | Horta — estágio 2 | 128 × 204 | isométrico | Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-vegetable_garden-3.png` | Horta — estágio 3 | 128 × 204 | isométrico | Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-orchard-1.png` | Pomar — estágio 1 | 256 × 298 | isométrico | Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-orchard-2.png` | Pomar — estágio 2 | 256 × 298 | isométrico | Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-orchard-3.png` | Pomar — estágio 3 | 256 × 298 | isométrico | Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-vineyard-1.png` | Vinhedo — estágio 1 | 256 × 298 | isométrico | Uvas para o lagar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-vineyard-2.png` | Vinhedo — estágio 2 | 256 × 298 | isométrico | Uvas para o lagar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-vineyard-3.png` | Vinhedo — estágio 3 | 256 × 298 | isométrico | Uvas para o lagar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-pasture-1.png` | Pasto — estágio 1 | 256 × 298 | isométrico | Cria gado e dá leite. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-pasture-2.png` | Pasto — estágio 2 | 256 × 298 | isométrico | Cria gado e dá leite. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-pasture-3.png` | Pasto — estágio 3 | 256 × 298 | isométrico | Cria gado e dá leite. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-sheep_pasture-1.png` | Pasto de ovelhas — estágio 1 | 256 × 298 | isométrico | Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-sheep_pasture-2.png` | Pasto de ovelhas — estágio 2 | 256 × 298 | isométrico | Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-sheep_pasture-3.png` | Pasto de ovelhas — estágio 3 | 256 × 298 | isométrico | Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-henhouse-1.png` | Galinheiro — estágio 1 | 128 × 204 | isométrico | Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-henhouse-2.png` | Galinheiro — estágio 2 | 128 × 204 | isométrico | Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-henhouse-3.png` | Galinheiro — estágio 3 | 128 × 204 | isométrico | Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-fisher-1.png` | Pescador — estágio 1 | 128 × 204 | isométrico | Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-fisher-2.png` | Pescador — estágio 2 | 128 × 204 | isométrico | Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-fisher-3.png` | Pescador — estágio 3 | 128 × 204 | isométrico | Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-apiary-1.png` | Apiário — estágio 1 | 128 × 204 | isométrico | Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-apiary-2.png` | Apiário — estágio 2 | 128 × 204 | isométrico | Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-apiary-3.png` | Apiário — estágio 3 | 128 × 204 | isométrico | Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-mill-1.png` | Moinho — estágio 1 | 256 × 298 | isométrico | Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-mill-2.png` | Moinho — estágio 2 | 256 × 298 | isométrico | Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-mill-3.png` | Moinho — estágio 3 | 256 × 298 | isométrico | Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-bakery-1.png` | Padaria — estágio 1 | 128 × 204 | isométrico | Transforma farinha em pão. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-bakery-2.png` | Padaria — estágio 2 | 128 × 204 | isométrico | Transforma farinha em pão. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-bakery-3.png` | Padaria — estágio 3 | 128 × 204 | isométrico | Transforma farinha em pão. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-kitchen-1.png` | Cozinha comunitária — estágio 1 | 128 × 204 | isométrico | Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-kitchen-2.png` | Cozinha comunitária — estágio 2 | 128 × 204 | isométrico | Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-kitchen-3.png` | Cozinha comunitária — estágio 3 | 128 × 204 | isométrico | Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-butcher-1.png` | Açougue — estágio 1 | 128 × 204 | isométrico | Gado vira carne. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-butcher-2.png` | Açougue — estágio 2 | 128 × 204 | isométrico | Gado vira carne. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-butcher-3.png` | Açougue — estágio 3 | 128 × 204 | isométrico | Gado vira carne. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-dairy-1.png` | Queijaria — estágio 1 | 128 × 204 | isométrico | Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-dairy-2.png` | Queijaria — estágio 2 | 128 × 204 | isométrico | Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-dairy-3.png` | Queijaria — estágio 3 | 128 × 204 | isométrico | Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-brewery-1.png` | Cervejaria — estágio 1 | 256 × 298 | isométrico | Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-brewery-2.png` | Cervejaria — estágio 2 | 256 × 298 | isométrico | Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-brewery-3.png` | Cervejaria — estágio 3 | 256 × 298 | isométrico | Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-winepress-1.png` | Lagar — estágio 1 | 128 × 204 | isométrico | Uva vira vinho. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-winepress-2.png` | Lagar — estágio 2 | 128 × 204 | isométrico | Uva vira vinho. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-winepress-3.png` | Lagar — estágio 3 | 128 × 204 | isométrico | Uva vira vinho. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-sawmill-1.png` | Serraria — estágio 1 | 256 × 298 | isométrico | Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-sawmill-2.png` | Serraria — estágio 2 | 256 × 298 | isométrico | Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-sawmill-3.png` | Serraria — estágio 3 | 256 × 298 | isométrico | Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-quarry-1.png` | Pedreira — estágio 1 | 256 × 298 | isométrico | Corta blocos de pedra. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-quarry-2.png` | Pedreira — estágio 2 | 256 × 298 | isométrico | Corta blocos de pedra. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-quarry-3.png` | Pedreira — estágio 3 | 256 × 298 | isométrico | Corta blocos de pedra. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-iron_mine-1.png` | Mina de ferro — estágio 1 | 256 × 298 | isométrico | Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-iron_mine-2.png` | Mina de ferro — estágio 2 | 256 × 298 | isométrico | Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-iron_mine-3.png` | Mina de ferro — estágio 3 | 256 × 298 | isométrico | Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-gold_mine-1.png` | Mina de ouro — estágio 1 | 256 × 298 | isométrico | Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-gold_mine-2.png` | Mina de ouro — estágio 2 | 256 × 298 | isométrico | Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-gold_mine-3.png` | Mina de ouro — estágio 3 | 256 × 298 | isométrico | Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-diamond_mine-1.png` | Mina de diamante — estágio 1 | 256 × 298 | isométrico | Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-diamond_mine-2.png` | Mina de diamante — estágio 2 | 256 × 298 | isométrico | Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-diamond_mine-3.png` | Mina de diamante — estágio 3 | 256 × 298 | isométrico | Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-charcoal_kiln-1.png` | Carvoaria — estágio 1 | 128 × 204 | isométrico | Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-charcoal_kiln-2.png` | Carvoaria — estágio 2 | 128 × 204 | isométrico | Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-charcoal_kiln-3.png` | Carvoaria — estágio 3 | 128 × 204 | isométrico | Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-foundry-1.png` | Fundição — estágio 1 | 256 × 298 | isométrico | Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-foundry-2.png` | Fundição — estágio 2 | 256 × 298 | isométrico | Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-foundry-3.png` | Fundição — estágio 3 | 256 × 298 | isométrico | Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-tannery-1.png` | Curtume — estágio 1 | 128 × 204 | isométrico | Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-tannery-2.png` | Curtume — estágio 2 | 128 × 204 | isométrico | Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-tannery-3.png` | Curtume — estágio 3 | 128 × 204 | isométrico | Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-weaver-1.png` | Tecelagem — estágio 1 | 256 × 298 | isométrico | Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-weaver-2.png` | Tecelagem — estágio 2 | 256 × 298 | isométrico | Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-weaver-3.png` | Tecelagem — estágio 3 | 256 × 298 | isométrico | Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-jeweler-1.png` | Joalheiro — estágio 1 | 128 × 204 | isométrico | Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-jeweler-2.png` | Joalheiro — estágio 2 | 128 × 204 | isométrico | Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-jeweler-3.png` | Joalheiro — estágio 3 | 128 × 204 | isométrico | Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-storehouse-1.png` | Armazém — estágio 1 | 256 × 298 | isométrico | Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-storehouse-2.png` | Armazém — estágio 2 | 256 × 298 | isométrico | Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-storehouse-3.png` | Armazém — estágio 3 | 256 × 298 | isométrico | Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-blacksmith-1.png` | Ferreiro — estágio 1 | 256 × 298 | isométrico | Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-blacksmith-2.png` | Ferreiro — estágio 2 | 256 × 298 | isométrico | Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-blacksmith-3.png` | Ferreiro — estágio 3 | 256 × 298 | isométrico | Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-fletcher-1.png` | Flecheiro — estágio 1 | 128 × 204 | isométrico | Faz arcos com madeira. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-fletcher-2.png` | Flecheiro — estágio 2 | 128 × 204 | isométrico | Faz arcos com madeira. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-fletcher-3.png` | Flecheiro — estágio 3 | 128 × 204 | isométrico | Faz arcos com madeira. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-stable-1.png` | Estábulo — estágio 1 | 256 × 298 | isométrico | Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-stable-2.png` | Estábulo — estágio 2 | 256 × 298 | isométrico | Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-stable-3.png` | Estábulo — estágio 3 | 256 × 298 | isométrico | Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-barracks-1.png` | Quartel — estágio 1 | 256 × 298 | isométrico | Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-barracks-2.png` | Quartel — estágio 2 | 256 × 298 | isométrico | Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-barracks-3.png` | Quartel — estágio 3 | 256 × 298 | isométrico | Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-training_ground-1.png` | Campo de treino — estágio 1 | 256 × 298 | isométrico | A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-training_ground-2.png` | Campo de treino — estágio 2 | 256 × 298 | isométrico | A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-training_ground-3.png` | Campo de treino — estágio 3 | 256 × 298 | isométrico | A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-siege_workshop-1.png` | Oficina de cerco — estágio 1 | 384 × 392 | isométrico | Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-siege_workshop-2.png` | Oficina de cerco — estágio 2 | 384 × 392 | isométrico | Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-siege_workshop-3.png` | Oficina de cerco — estágio 3 | 384 × 392 | isométrico | Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-infirmary-1.png` | Enfermaria — estágio 1 | 256 × 298 | isométrico | Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-infirmary-2.png` | Enfermaria — estágio 2 | 256 × 298 | isométrico | Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-infirmary-3.png` | Enfermaria — estágio 3 | 256 × 298 | isométrico | Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-watchtower-1.png` | Torre de vigia — estágio 1 | 128 × 234 | isométrico | Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-watchtower-2.png` | Torre de vigia — estágio 2 | 128 × 234 | isométrico | Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-watchtower-3.png` | Torre de vigia — estágio 3 | 128 × 234 | isométrico | Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-dungeon-1.png` | Masmorra — estágio 1 | 256 × 298 | isométrico | Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-dungeon-2.png` | Masmorra — estágio 2 | 256 × 298 | isométrico | Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-dungeon-3.png` | Masmorra — estágio 3 | 256 × 298 | isométrico | Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-market-1.png` | Mercado — estágio 1 | 256 × 298 | isométrico | Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-market-2.png` | Mercado — estágio 2 | 256 × 298 | isométrico | Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-market-3.png` | Mercado — estágio 3 | 256 × 298 | isométrico | Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-tavern-1.png` | Taverna — estágio 1 | 256 × 298 | isométrico | Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-tavern-2.png` | Taverna — estágio 2 | 256 × 298 | isométrico | Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-tavern-3.png` | Taverna — estágio 3 | 256 × 298 | isométrico | Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-chapel-1.png` | Capela — estágio 1 | 256 × 298 | isométrico | Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-chapel-2.png` | Capela — estágio 2 | 256 × 298 | isométrico | Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-chapel-3.png` | Capela — estágio 3 | 256 × 298 | isométrico | Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-library-1.png` | Biblioteca — estágio 1 | 256 × 298 | isométrico | Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-library-2.png` | Biblioteca — estágio 2 | 256 × 298 | isométrico | Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-library-3.png` | Biblioteca — estágio 3 | 256 × 298 | isométrico | Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-well-1.png` | Poço — estágio 1 | 128 × 204 | isométrico | Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-well-2.png` | Poço — estágio 2 | 128 × 204 | isométrico | Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-well-3.png` | Poço — estágio 3 | 128 × 204 | isométrico | Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-port-1.png` | Porto — estágio 1 | 384 × 392 | isométrico | Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-port-2.png` | Porto — estágio 2 | 384 × 392 | isométrico | Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-port-3.png` | Porto — estágio 3 | 384 × 392 | isométrico | Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-statue-1.png` | Estátua — estágio 1 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-statue-2.png` | Estátua — estágio 2 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-statue-3.png` | Estátua — estágio 3 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
-| `construcao-garden-1.png` | Jardim — estágio 1 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. |
-| `construcao-garden-2.png` | Jardim — estágio 2 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta. |
-| `construcao-garden-3.png` | Jardim — estágio 3 | 128 × 204 | isométrico | Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras. |
+1. **Torre de Menagem — estágio 1** — `construcao-keep-1.png` · 384 × 452 px · isométrico  
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+2. **Torre de Menagem — estágio 2** — `construcao-keep-2.png` · 384 × 452 px · isométrico  
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+3. **Torre de Menagem — estágio 3** — `construcao-keep-3.png` · 384 × 452 px · isométrico  
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+4. **Salão do governador — estágio 1** — `construcao-governor_hall-1.png` · 256 × 298 px · isométrico  
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+5. **Salão do governador — estágio 2** — `construcao-governor_hall-2.png` · 256 × 298 px · isométrico  
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+6. **Salão do governador — estágio 3** — `construcao-governor_hall-3.png` · 256 × 298 px · isométrico  
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+7. **Casa — estágio 1** — `construcao-house-1.png` · 128 × 204 px · isométrico  
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+8. **Casa — estágio 2** — `construcao-house-2.png` · 128 × 204 px · isométrico  
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+9. **Casa — estágio 3** — `construcao-house-3.png` · 128 × 204 px · isométrico  
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+10. **Fazenda de trigo — estágio 1** — `construcao-wheat_farm-1.png` · 256 × 298 px · isométrico  
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+11. **Fazenda de trigo — estágio 2** — `construcao-wheat_farm-2.png` · 256 × 298 px · isométrico  
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+12. **Fazenda de trigo — estágio 3** — `construcao-wheat_farm-3.png` · 256 × 298 px · isométrico  
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+13. **Fazenda de aveia — estágio 1** — `construcao-oat_farm-1.png` · 256 × 298 px · isométrico  
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+14. **Fazenda de aveia — estágio 2** — `construcao-oat_farm-2.png` · 256 × 298 px · isométrico  
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+15. **Fazenda de aveia — estágio 3** — `construcao-oat_farm-3.png` · 256 × 298 px · isométrico  
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+16. **Fazenda de cevada — estágio 1** — `construcao-barley_farm-1.png` · 256 × 298 px · isométrico  
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+17. **Fazenda de cevada — estágio 2** — `construcao-barley_farm-2.png` · 256 × 298 px · isométrico  
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+18. **Fazenda de cevada — estágio 3** — `construcao-barley_farm-3.png` · 256 × 298 px · isométrico  
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+19. **Horta — estágio 1** — `construcao-vegetable_garden-1.png` · 128 × 204 px · isométrico  
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+20. **Horta — estágio 2** — `construcao-vegetable_garden-2.png` · 128 × 204 px · isométrico  
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+21. **Horta — estágio 3** — `construcao-vegetable_garden-3.png` · 128 × 204 px · isométrico  
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+22. **Pomar — estágio 1** — `construcao-orchard-1.png` · 256 × 298 px · isométrico  
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+23. **Pomar — estágio 2** — `construcao-orchard-2.png` · 256 × 298 px · isométrico  
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+24. **Pomar — estágio 3** — `construcao-orchard-3.png` · 256 × 298 px · isométrico  
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+25. **Vinhedo — estágio 1** — `construcao-vineyard-1.png` · 256 × 298 px · isométrico  
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+26. **Vinhedo — estágio 2** — `construcao-vineyard-2.png` · 256 × 298 px · isométrico  
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+27. **Vinhedo — estágio 3** — `construcao-vineyard-3.png` · 256 × 298 px · isométrico  
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+28. **Pasto — estágio 1** — `construcao-pasture-1.png` · 256 × 298 px · isométrico  
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+29. **Pasto — estágio 2** — `construcao-pasture-2.png` · 256 × 298 px · isométrico  
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+30. **Pasto — estágio 3** — `construcao-pasture-3.png` · 256 × 298 px · isométrico  
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+31. **Pasto de ovelhas — estágio 1** — `construcao-sheep_pasture-1.png` · 256 × 298 px · isométrico  
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+32. **Pasto de ovelhas — estágio 2** — `construcao-sheep_pasture-2.png` · 256 × 298 px · isométrico  
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+33. **Pasto de ovelhas — estágio 3** — `construcao-sheep_pasture-3.png` · 256 × 298 px · isométrico  
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+34. **Galinheiro — estágio 1** — `construcao-henhouse-1.png` · 128 × 204 px · isométrico  
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+35. **Galinheiro — estágio 2** — `construcao-henhouse-2.png` · 128 × 204 px · isométrico  
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+36. **Galinheiro — estágio 3** — `construcao-henhouse-3.png` · 128 × 204 px · isométrico  
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+37. **Pescador — estágio 1** — `construcao-fisher-1.png` · 128 × 204 px · isométrico  
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+38. **Pescador — estágio 2** — `construcao-fisher-2.png` · 128 × 204 px · isométrico  
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+39. **Pescador — estágio 3** — `construcao-fisher-3.png` · 128 × 204 px · isométrico  
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+40. **Apiário — estágio 1** — `construcao-apiary-1.png` · 128 × 204 px · isométrico  
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+41. **Apiário — estágio 2** — `construcao-apiary-2.png` · 128 × 204 px · isométrico  
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+42. **Apiário — estágio 3** — `construcao-apiary-3.png` · 128 × 204 px · isométrico  
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+43. **Moinho — estágio 1** — `construcao-mill-1.png` · 256 × 298 px · isométrico  
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+44. **Moinho — estágio 2** — `construcao-mill-2.png` · 256 × 298 px · isométrico  
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+45. **Moinho — estágio 3** — `construcao-mill-3.png` · 256 × 298 px · isométrico  
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+46. **Padaria — estágio 1** — `construcao-bakery-1.png` · 128 × 204 px · isométrico  
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+47. **Padaria — estágio 2** — `construcao-bakery-2.png` · 128 × 204 px · isométrico  
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+48. **Padaria — estágio 3** — `construcao-bakery-3.png` · 128 × 204 px · isométrico  
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+49. **Cozinha comunitária — estágio 1** — `construcao-kitchen-1.png` · 128 × 204 px · isométrico  
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+50. **Cozinha comunitária — estágio 2** — `construcao-kitchen-2.png` · 128 × 204 px · isométrico  
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+51. **Cozinha comunitária — estágio 3** — `construcao-kitchen-3.png` · 128 × 204 px · isométrico  
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+52. **Açougue — estágio 1** — `construcao-butcher-1.png` · 128 × 204 px · isométrico  
+   Gado vira carne. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+53. **Açougue — estágio 2** — `construcao-butcher-2.png` · 128 × 204 px · isométrico  
+   Gado vira carne. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+54. **Açougue — estágio 3** — `construcao-butcher-3.png` · 128 × 204 px · isométrico  
+   Gado vira carne. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+55. **Queijaria — estágio 1** — `construcao-dairy-1.png` · 128 × 204 px · isométrico  
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+56. **Queijaria — estágio 2** — `construcao-dairy-2.png` · 128 × 204 px · isométrico  
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+57. **Queijaria — estágio 3** — `construcao-dairy-3.png` · 128 × 204 px · isométrico  
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+58. **Cervejaria — estágio 1** — `construcao-brewery-1.png` · 256 × 298 px · isométrico  
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+59. **Cervejaria — estágio 2** — `construcao-brewery-2.png` · 256 × 298 px · isométrico  
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+60. **Cervejaria — estágio 3** — `construcao-brewery-3.png` · 256 × 298 px · isométrico  
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+61. **Lagar — estágio 1** — `construcao-winepress-1.png` · 128 × 204 px · isométrico  
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+62. **Lagar — estágio 2** — `construcao-winepress-2.png` · 128 × 204 px · isométrico  
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+63. **Lagar — estágio 3** — `construcao-winepress-3.png` · 128 × 204 px · isométrico  
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+64. **Serraria — estágio 1** — `construcao-sawmill-1.png` · 256 × 298 px · isométrico  
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+65. **Serraria — estágio 2** — `construcao-sawmill-2.png` · 256 × 298 px · isométrico  
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+66. **Serraria — estágio 3** — `construcao-sawmill-3.png` · 256 × 298 px · isométrico  
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+67. **Pedreira — estágio 1** — `construcao-quarry-1.png` · 256 × 298 px · isométrico  
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+68. **Pedreira — estágio 2** — `construcao-quarry-2.png` · 256 × 298 px · isométrico  
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+69. **Pedreira — estágio 3** — `construcao-quarry-3.png` · 256 × 298 px · isométrico  
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+70. **Mina de ferro — estágio 1** — `construcao-iron_mine-1.png` · 256 × 298 px · isométrico  
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+71. **Mina de ferro — estágio 2** — `construcao-iron_mine-2.png` · 256 × 298 px · isométrico  
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+72. **Mina de ferro — estágio 3** — `construcao-iron_mine-3.png` · 256 × 298 px · isométrico  
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+73. **Mina de ouro — estágio 1** — `construcao-gold_mine-1.png` · 256 × 298 px · isométrico  
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+74. **Mina de ouro — estágio 2** — `construcao-gold_mine-2.png` · 256 × 298 px · isométrico  
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+75. **Mina de ouro — estágio 3** — `construcao-gold_mine-3.png` · 256 × 298 px · isométrico  
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+76. **Mina de diamante — estágio 1** — `construcao-diamond_mine-1.png` · 256 × 298 px · isométrico  
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+77. **Mina de diamante — estágio 2** — `construcao-diamond_mine-2.png` · 256 × 298 px · isométrico  
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+78. **Mina de diamante — estágio 3** — `construcao-diamond_mine-3.png` · 256 × 298 px · isométrico  
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+79. **Carvoaria — estágio 1** — `construcao-charcoal_kiln-1.png` · 128 × 204 px · isométrico  
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+80. **Carvoaria — estágio 2** — `construcao-charcoal_kiln-2.png` · 128 × 204 px · isométrico  
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+81. **Carvoaria — estágio 3** — `construcao-charcoal_kiln-3.png` · 128 × 204 px · isométrico  
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+82. **Fundição — estágio 1** — `construcao-foundry-1.png` · 256 × 298 px · isométrico  
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+83. **Fundição — estágio 2** — `construcao-foundry-2.png` · 256 × 298 px · isométrico  
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+84. **Fundição — estágio 3** — `construcao-foundry-3.png` · 256 × 298 px · isométrico  
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+85. **Curtume — estágio 1** — `construcao-tannery-1.png` · 128 × 204 px · isométrico  
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+86. **Curtume — estágio 2** — `construcao-tannery-2.png` · 128 × 204 px · isométrico  
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+87. **Curtume — estágio 3** — `construcao-tannery-3.png` · 128 × 204 px · isométrico  
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+88. **Tecelagem — estágio 1** — `construcao-weaver-1.png` · 256 × 298 px · isométrico  
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+89. **Tecelagem — estágio 2** — `construcao-weaver-2.png` · 256 × 298 px · isométrico  
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+90. **Tecelagem — estágio 3** — `construcao-weaver-3.png` · 256 × 298 px · isométrico  
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+91. **Joalheiro — estágio 1** — `construcao-jeweler-1.png` · 128 × 204 px · isométrico  
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+92. **Joalheiro — estágio 2** — `construcao-jeweler-2.png` · 128 × 204 px · isométrico  
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+93. **Joalheiro — estágio 3** — `construcao-jeweler-3.png` · 128 × 204 px · isométrico  
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+94. **Armazém — estágio 1** — `construcao-storehouse-1.png` · 256 × 298 px · isométrico  
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+95. **Armazém — estágio 2** — `construcao-storehouse-2.png` · 256 × 298 px · isométrico  
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+96. **Armazém — estágio 3** — `construcao-storehouse-3.png` · 256 × 298 px · isométrico  
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+97. **Ferreiro — estágio 1** — `construcao-blacksmith-1.png` · 256 × 298 px · isométrico  
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+98. **Ferreiro — estágio 2** — `construcao-blacksmith-2.png` · 256 × 298 px · isométrico  
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+99. **Ferreiro — estágio 3** — `construcao-blacksmith-3.png` · 256 × 298 px · isométrico  
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+100. **Flecheiro — estágio 1** — `construcao-fletcher-1.png` · 128 × 204 px · isométrico  
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+101. **Flecheiro — estágio 2** — `construcao-fletcher-2.png` · 128 × 204 px · isométrico  
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+102. **Flecheiro — estágio 3** — `construcao-fletcher-3.png` · 128 × 204 px · isométrico  
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+103. **Estábulo — estágio 1** — `construcao-stable-1.png` · 256 × 298 px · isométrico  
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+104. **Estábulo — estágio 2** — `construcao-stable-2.png` · 256 × 298 px · isométrico  
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+105. **Estábulo — estágio 3** — `construcao-stable-3.png` · 256 × 298 px · isométrico  
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+106. **Quartel — estágio 1** — `construcao-barracks-1.png` · 256 × 298 px · isométrico  
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+107. **Quartel — estágio 2** — `construcao-barracks-2.png` · 256 × 298 px · isométrico  
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+108. **Quartel — estágio 3** — `construcao-barracks-3.png` · 256 × 298 px · isométrico  
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+109. **Campo de treino — estágio 1** — `construcao-training_ground-1.png` · 256 × 298 px · isométrico  
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+110. **Campo de treino — estágio 2** — `construcao-training_ground-2.png` · 256 × 298 px · isométrico  
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+111. **Campo de treino — estágio 3** — `construcao-training_ground-3.png` · 256 × 298 px · isométrico  
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+112. **Oficina de cerco — estágio 1** — `construcao-siege_workshop-1.png` · 384 × 392 px · isométrico  
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+113. **Oficina de cerco — estágio 2** — `construcao-siege_workshop-2.png` · 384 × 392 px · isométrico  
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+114. **Oficina de cerco — estágio 3** — `construcao-siege_workshop-3.png` · 384 × 392 px · isométrico  
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+115. **Enfermaria — estágio 1** — `construcao-infirmary-1.png` · 256 × 298 px · isométrico  
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+116. **Enfermaria — estágio 2** — `construcao-infirmary-2.png` · 256 × 298 px · isométrico  
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+117. **Enfermaria — estágio 3** — `construcao-infirmary-3.png` · 256 × 298 px · isométrico  
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+118. **Torre de vigia — estágio 1** — `construcao-watchtower-1.png` · 128 × 234 px · isométrico  
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+119. **Torre de vigia — estágio 2** — `construcao-watchtower-2.png` · 128 × 234 px · isométrico  
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+120. **Torre de vigia — estágio 3** — `construcao-watchtower-3.png` · 128 × 234 px · isométrico  
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+121. **Masmorra — estágio 1** — `construcao-dungeon-1.png` · 256 × 298 px · isométrico  
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+122. **Masmorra — estágio 2** — `construcao-dungeon-2.png` · 256 × 298 px · isométrico  
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+123. **Masmorra — estágio 3** — `construcao-dungeon-3.png` · 256 × 298 px · isométrico  
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+124. **Mercado — estágio 1** — `construcao-market-1.png` · 256 × 298 px · isométrico  
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+125. **Mercado — estágio 2** — `construcao-market-2.png` · 256 × 298 px · isométrico  
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+126. **Mercado — estágio 3** — `construcao-market-3.png` · 256 × 298 px · isométrico  
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+127. **Taverna — estágio 1** — `construcao-tavern-1.png` · 256 × 298 px · isométrico  
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+128. **Taverna — estágio 2** — `construcao-tavern-2.png` · 256 × 298 px · isométrico  
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+129. **Taverna — estágio 3** — `construcao-tavern-3.png` · 256 × 298 px · isométrico  
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+130. **Capela — estágio 1** — `construcao-chapel-1.png` · 256 × 298 px · isométrico  
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+131. **Capela — estágio 2** — `construcao-chapel-2.png` · 256 × 298 px · isométrico  
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+132. **Capela — estágio 3** — `construcao-chapel-3.png` · 256 × 298 px · isométrico  
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+133. **Biblioteca — estágio 1** — `construcao-library-1.png` · 256 × 298 px · isométrico  
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+134. **Biblioteca — estágio 2** — `construcao-library-2.png` · 256 × 298 px · isométrico  
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+135. **Biblioteca — estágio 3** — `construcao-library-3.png` · 256 × 298 px · isométrico  
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+136. **Poço — estágio 1** — `construcao-well-1.png` · 128 × 204 px · isométrico  
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+137. **Poço — estágio 2** — `construcao-well-2.png` · 128 × 204 px · isométrico  
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+138. **Poço — estágio 3** — `construcao-well-3.png` · 128 × 204 px · isométrico  
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+139. **Porto — estágio 1** — `construcao-port-1.png` · 384 × 392 px · isométrico  
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+140. **Porto — estágio 2** — `construcao-port-2.png` · 384 × 392 px · isométrico  
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+141. **Porto — estágio 3** — `construcao-port-3.png` · 384 × 392 px · isométrico  
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+142. **Estátua — estágio 1** — `construcao-statue-1.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+143. **Estátua — estágio 2** — `construcao-statue-2.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+144. **Estátua — estágio 3** — `construcao-statue-3.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+145. **Jardim — estágio 1** — `construcao-garden-1.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+146. **Jardim — estágio 2** — `construcao-garden-2.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+147. **Jardim — estágio 3** — `construcao-garden-3.png` · 128 × 204 px · isométrico  
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
 
 ## Andaimes de obra (3)
 
 Aparecem enquanto uma construção é erguida ou melhorada.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `andaime-1.png` | Andaime 1×1 | 128 × 174 | isométrico | Andaime de madeira com blocos de pedra no chão, para construções de 1×1 casas em obra. |
-| `andaime-2.png` | Andaime 2×2 | 256 × 238 | isométrico | Andaime de madeira com blocos de pedra no chão, para construções de 2×2 casas em obra. |
-| `andaime-3.png` | Andaime 3×3 | 384 × 302 | isométrico | Andaime de madeira com blocos de pedra no chão, para construções de 3×3 casas em obra. |
+1. **Andaime 1×1** — `andaime-1.png` · 128 × 174 px · isométrico  
+   Andaime de madeira com blocos de pedra no chão, para construções de 1×1 casas em obra.
+2. **Andaime 2×2** — `andaime-2.png` · 256 × 238 px · isométrico  
+   Andaime de madeira com blocos de pedra no chão, para construções de 2×2 casas em obra.
+3. **Andaime 3×3** — `andaime-3.png` · 384 × 302 px · isométrico  
+   Andaime de madeira com blocos de pedra no chão, para construções de 3×3 casas em obra.
 
 ## Chão e decoração do assentamento (7)
 
 Ladrilhos isométricos de 128 × 64 px que se repetem sem emenda.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `chao-grama.png` | Grama dentro do assentamento | 128 × 64 | isométrico | Grama dentro do assentamento. Losango que se repete sem emenda. |
-| `chao-terra.png` | Terra batida (caminhos) | 128 × 64 | isométrico | Terra batida (caminhos). Losango que se repete sem emenda. |
-| `chao-pavimento.png` | Pavimento de pedra (perto da Torre) | 128 × 64 | isométrico | Pavimento de pedra (perto da Torre). Losango que se repete sem emenda. |
-| `chao-bairro.png` | Chão dos bairros especializados da capital | 128 × 64 | isométrico | Chão dos bairros especializados da capital. Losango que se repete sem emenda. |
-| `decoracao-arvore.png` | Árvore | 128 × 128 | isométrico | Árvore decorativa do lado de fora da muralha. |
-| `decoracao-arbusto.png` | Arbusto | 128 × 128 | isométrico | Arbusto decorativa do lado de fora da muralha. |
-| `decoracao-pedras.png` | Pedras | 128 × 128 | isométrico | Pedras decorativa do lado de fora da muralha. |
+1. **Grama dentro do assentamento** — `chao-grama.png` · 128 × 64 px · isométrico  
+   Grama dentro do assentamento. Losango que se repete sem emenda.
+2. **Terra batida (caminhos)** — `chao-terra.png` · 128 × 64 px · isométrico  
+   Terra batida (caminhos). Losango que se repete sem emenda.
+3. **Pavimento de pedra (perto da Torre)** — `chao-pavimento.png` · 128 × 64 px · isométrico  
+   Pavimento de pedra (perto da Torre). Losango que se repete sem emenda.
+4. **Chão dos bairros especializados da capital** — `chao-bairro.png` · 128 × 64 px · isométrico  
+   Chão dos bairros especializados da capital. Losango que se repete sem emenda.
+5. **Árvore** — `decoracao-arvore.png` · 128 × 128 px · isométrico  
+   Árvore decorativa do lado de fora da muralha.
+6. **Arbusto** — `decoracao-arbusto.png` · 128 × 128 px · isométrico  
+   Arbusto decorativa do lado de fora da muralha.
+7. **Pedras** — `decoracao-pedras.png` · 128 × 128 px · isométrico  
+   Pedras decorativa do lado de fora da muralha.
 
 ## Muralha, portão e fosso (31)
 
 Peças isométricas que se encaixam em volta do terreno do assentamento. 3 estágios e versão danificada.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `muralha-reta-a-1.png` | Muralha reta (direção ↘) — estágio 1 | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. |
-| `muralha-reta-a-1-danificada.png` | Muralha reta (direção ↘) — estágio 1 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-reta-a-2.png` | Muralha reta (direção ↘) — estágio 2 | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. |
-| `muralha-reta-a-2-danificada.png` | Muralha reta (direção ↘) — estágio 2 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-reta-a-3.png` | Muralha reta (direção ↘) — estágio 3 | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. |
-| `muralha-reta-a-3-danificada.png` | Muralha reta (direção ↘) — estágio 3 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-reta-b-1.png` | Muralha reta (direção ↙) — estágio 1 | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. |
-| `muralha-reta-b-1-danificada.png` | Muralha reta (direção ↙) — estágio 1 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-reta-b-2.png` | Muralha reta (direção ↙) — estágio 2 | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. |
-| `muralha-reta-b-2-danificada.png` | Muralha reta (direção ↙) — estágio 2 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-reta-b-3.png` | Muralha reta (direção ↙) — estágio 3 | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. |
-| `muralha-reta-b-3-danificada.png` | Muralha reta (direção ↙) — estágio 3 (danificada) | 128 × 154 | isométrico | Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-canto-1.png` | Canto da muralha — estágio 1 | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. |
-| `muralha-canto-1-danificada.png` | Canto da muralha — estágio 1 (danificada) | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-canto-2.png` | Canto da muralha — estágio 2 | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. |
-| `muralha-canto-2-danificada.png` | Canto da muralha — estágio 2 (danificada) | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-canto-3.png` | Canto da muralha — estágio 3 | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. |
-| `muralha-canto-3-danificada.png` | Canto da muralha — estágio 3 (danificada) | 128 × 154 | isométrico | Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-torre-1.png` | Torre da muralha — estágio 1 | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. |
-| `muralha-torre-1-danificada.png` | Torre da muralha — estágio 1 (danificada) | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-torre-2.png` | Torre da muralha — estágio 2 | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. |
-| `muralha-torre-2-danificada.png` | Torre da muralha — estágio 2 (danificada) | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-torre-3.png` | Torre da muralha — estágio 3 | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. |
-| `muralha-torre-3-danificada.png` | Torre da muralha — estágio 3 (danificada) | 128 × 154 | isométrico | Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-portao-1.png` | Portão — estágio 1 | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. |
-| `muralha-portao-1-danificada.png` | Portão — estágio 1 (danificada) | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-portao-2.png` | Portão — estágio 2 | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. |
-| `muralha-portao-2-danificada.png` | Portão — estágio 2 (danificada) | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-portao-3.png` | Portão — estágio 3 | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. |
-| `muralha-portao-3-danificada.png` | Portão — estágio 3 (danificada) | 128 × 154 | isométrico | Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas. |
-| `muralha-fosso.png` | Fosso com água | 128 × 154 | isométrico | Fosso com água. Ocupa uma casa do contorno. |
+1. **Muralha reta (direção ↘) — estágio 1** — `muralha-reta-a-1.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno.
+2. **Muralha reta (direção ↘) — estágio 1 (danificada)** — `muralha-reta-a-1-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+3. **Muralha reta (direção ↘) — estágio 2** — `muralha-reta-a-2.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno.
+4. **Muralha reta (direção ↘) — estágio 2 (danificada)** — `muralha-reta-a-2-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+5. **Muralha reta (direção ↘) — estágio 3** — `muralha-reta-a-3.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno.
+6. **Muralha reta (direção ↘) — estágio 3 (danificada)** — `muralha-reta-a-3-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↘). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+7. **Muralha reta (direção ↙) — estágio 1** — `muralha-reta-b-1.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno.
+8. **Muralha reta (direção ↙) — estágio 1 (danificada)** — `muralha-reta-b-1-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+9. **Muralha reta (direção ↙) — estágio 2** — `muralha-reta-b-2.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno.
+10. **Muralha reta (direção ↙) — estágio 2 (danificada)** — `muralha-reta-b-2-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+11. **Muralha reta (direção ↙) — estágio 3** — `muralha-reta-b-3.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno.
+12. **Muralha reta (direção ↙) — estágio 3 (danificada)** — `muralha-reta-b-3-danificada.png` · 128 × 154 px · isométrico  
+   Muralha reta (direção ↙). Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+13. **Canto da muralha — estágio 1** — `muralha-canto-1.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno.
+14. **Canto da muralha — estágio 1 (danificada)** — `muralha-canto-1-danificada.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+15. **Canto da muralha — estágio 2** — `muralha-canto-2.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno.
+16. **Canto da muralha — estágio 2 (danificada)** — `muralha-canto-2-danificada.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+17. **Canto da muralha — estágio 3** — `muralha-canto-3.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno.
+18. **Canto da muralha — estágio 3 (danificada)** — `muralha-canto-3-danificada.png` · 128 × 154 px · isométrico  
+   Canto da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+19. **Torre da muralha — estágio 1** — `muralha-torre-1.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno.
+20. **Torre da muralha — estágio 1 (danificada)** — `muralha-torre-1-danificada.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+21. **Torre da muralha — estágio 2** — `muralha-torre-2.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno.
+22. **Torre da muralha — estágio 2 (danificada)** — `muralha-torre-2-danificada.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+23. **Torre da muralha — estágio 3** — `muralha-torre-3.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno.
+24. **Torre da muralha — estágio 3 (danificada)** — `muralha-torre-3-danificada.png` · 128 × 154 px · isométrico  
+   Torre da muralha. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+25. **Portão — estágio 1** — `muralha-portao-1.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno.
+26. **Portão — estágio 1 (danificada)** — `muralha-portao-1-danificada.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+27. **Portão — estágio 2** — `muralha-portao-2.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno.
+28. **Portão — estágio 2 (danificada)** — `muralha-portao-2-danificada.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+29. **Portão — estágio 3** — `muralha-portao-3.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno.
+30. **Portão — estágio 3 (danificada)** — `muralha-portao-3-danificada.png` · 128 × 154 px · isométrico  
+   Portão. Ocupa uma casa do contorno. Versão com rachaduras e pedras caídas.
+31. **Fosso com água** — `muralha-fosso.png` · 128 × 154 px · isométrico  
+   Fosso com água. Ocupa uma casa do contorno.
 
 ## Terreno do mapa-múndi (15)
 
 Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, com a base embaixo).
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `terreno-mar.png` | Mar | 128 × 64 | isométrico | Mar. Casa do mapa-múndi. |
-| `terreno-grama.png` | Campo de grama | 128 × 64 | isométrico | Campo de grama. Casa do mapa-múndi. |
-| `terreno-terra.png` | Terra | 128 × 64 | isométrico | Terra. Casa do mapa-múndi. |
-| `terreno-areia.png` | Areia da praia | 128 × 64 | isométrico | Areia da praia. Casa do mapa-múndi. |
-| `terreno-neve.png` | Neve | 128 × 64 | isométrico | Neve. Casa do mapa-múndi. |
-| `terreno-colina.png` | Colina | 128 × 144 | isométrico | Colina. Casa do mapa-múndi. |
-| `terreno-montanha.png` | Montanha (intransponível) | 128 × 144 | isométrico | Montanha (intransponível). Casa do mapa-múndi. |
-| `terreno-rio.png` | Rio | 128 × 64 | isométrico | Rio. Casa do mapa-múndi. |
-| `terreno-vau.png` | Vau (travessia rasa do rio) | 128 × 64 | isométrico | Vau (travessia rasa do rio). Casa do mapa-múndi. |
-| `terreno-floresta.png` | Floresta densa | 128 × 144 | isométrico | Floresta densa. Casa do mapa-múndi. |
-| `terreno-bosque.png` | Bosque | 128 × 144 | isométrico | Bosque. Casa do mapa-múndi. |
-| `terreno-pantano.png` | Pântano | 128 × 64 | isométrico | Pântano. Casa do mapa-múndi. |
-| `terreno-estrada.png` | Estrada | 128 × 64 | isométrico | Estrada. Casa do mapa-múndi. |
-| `terreno-ponte.png` | Ponte sobre o rio | 128 × 64 | isométrico | Ponte sobre o rio. Casa do mapa-múndi. |
-| `terreno-costa.png` | Transição areia → mar | 128 × 64 | isométrico | Transição areia → mar. Casa do mapa-múndi. |
+1. **Mar** — `terreno-mar.png` · 128 × 64 px · isométrico  
+   Mar. Casa do mapa-múndi.
+2. **Campo de grama** — `terreno-grama.png` · 128 × 64 px · isométrico  
+   Campo de grama. Casa do mapa-múndi.
+3. **Terra** — `terreno-terra.png` · 128 × 64 px · isométrico  
+   Terra. Casa do mapa-múndi.
+4. **Areia da praia** — `terreno-areia.png` · 128 × 64 px · isométrico  
+   Areia da praia. Casa do mapa-múndi.
+5. **Neve** — `terreno-neve.png` · 128 × 64 px · isométrico  
+   Neve. Casa do mapa-múndi.
+6. **Colina** — `terreno-colina.png` · 128 × 144 px · isométrico  
+   Colina. Casa do mapa-múndi.
+7. **Montanha (intransponível)** — `terreno-montanha.png` · 128 × 144 px · isométrico  
+   Montanha (intransponível). Casa do mapa-múndi.
+8. **Rio** — `terreno-rio.png` · 128 × 64 px · isométrico  
+   Rio. Casa do mapa-múndi.
+9. **Vau (travessia rasa do rio)** — `terreno-vau.png` · 128 × 64 px · isométrico  
+   Vau (travessia rasa do rio). Casa do mapa-múndi.
+10. **Floresta densa** — `terreno-floresta.png` · 128 × 144 px · isométrico  
+   Floresta densa. Casa do mapa-múndi.
+11. **Bosque** — `terreno-bosque.png` · 128 × 144 px · isométrico  
+   Bosque. Casa do mapa-múndi.
+12. **Pântano** — `terreno-pantano.png` · 128 × 64 px · isométrico  
+   Pântano. Casa do mapa-múndi.
+13. **Estrada** — `terreno-estrada.png` · 128 × 64 px · isométrico  
+   Estrada. Casa do mapa-múndi.
+14. **Ponte sobre o rio** — `terreno-ponte.png` · 128 × 64 px · isométrico  
+   Ponte sobre o rio. Casa do mapa-múndi.
+15. **Transição areia → mar** — `terreno-costa.png` · 128 × 64 px · isométrico  
+   Transição areia → mar. Casa do mapa-múndi.
 
 ## Depósitos de recursos no mapa (12)
 
 Ícones de 128 × 128 px vistos levemente de cima, com versão esgotada.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `deposito-iron.png` | Ferro | 128 × 128 | isométrico | Depósito de ferro no mapa. |
-| `deposito-iron-esgotado.png` | Ferro (esgotado) | 128 × 128 | isométrico | Depósito de ferro no mapa, já esgotado. |
-| `deposito-stone.png` | Pedra | 128 × 128 | isométrico | Depósito de pedra no mapa. |
-| `deposito-stone-esgotado.png` | Pedra (esgotado) | 128 × 128 | isométrico | Depósito de pedra no mapa, já esgotado. |
-| `deposito-gold.png` | Ouro | 128 × 128 | isométrico | Depósito de ouro no mapa. |
-| `deposito-gold-esgotado.png` | Ouro (esgotado) | 128 × 128 | isométrico | Depósito de ouro no mapa, já esgotado. |
-| `deposito-diamond.png` | Diamante | 128 × 128 | isométrico | Depósito de diamante no mapa. |
-| `deposito-diamond-esgotado.png` | Diamante (esgotado) | 128 × 128 | isométrico | Depósito de diamante no mapa, já esgotado. |
-| `deposito-fertile.png` | Solo fértil | 128 × 128 | isométrico | Depósito de solo fértil no mapa. |
-| `deposito-fertile-esgotado.png` | Solo fértil (esgotado) | 128 × 128 | isométrico | Depósito de solo fértil no mapa, já esgotado. |
-| `deposito-fish.png` | Cardume (pesca) | 128 × 128 | isométrico | Depósito de cardume (pesca) no mapa. |
-| `deposito-fish-esgotado.png` | Cardume (pesca) (esgotado) | 128 × 128 | isométrico | Depósito de cardume (pesca) no mapa, já esgotado. |
+1. **Ferro** — `deposito-iron.png` · 128 × 128 px · isométrico  
+   Depósito de ferro no mapa.
+2. **Ferro (esgotado)** — `deposito-iron-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de ferro no mapa, já esgotado.
+3. **Pedra** — `deposito-stone.png` · 128 × 128 px · isométrico  
+   Depósito de pedra no mapa.
+4. **Pedra (esgotado)** — `deposito-stone-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de pedra no mapa, já esgotado.
+5. **Ouro** — `deposito-gold.png` · 128 × 128 px · isométrico  
+   Depósito de ouro no mapa.
+6. **Ouro (esgotado)** — `deposito-gold-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de ouro no mapa, já esgotado.
+7. **Diamante** — `deposito-diamond.png` · 128 × 128 px · isométrico  
+   Depósito de diamante no mapa.
+8. **Diamante (esgotado)** — `deposito-diamond-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de diamante no mapa, já esgotado.
+9. **Solo fértil** — `deposito-fertile.png` · 128 × 128 px · isométrico  
+   Depósito de solo fértil no mapa.
+10. **Solo fértil (esgotado)** — `deposito-fertile-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de solo fértil no mapa, já esgotado.
+11. **Cardume (pesca)** — `deposito-fish.png` · 128 × 128 px · isométrico  
+   Depósito de cardume (pesca) no mapa.
+12. **Cardume (pesca) (esgotado)** — `deposito-fish-esgotado.png` · 128 × 128 px · isométrico  
+   Depósito de cardume (pesca) no mapa, já esgotado.
 
 ## Assentamentos e acampamentos no mapa (12)
 
 Ícones de 128 × 128 px. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `mapa-capital.png` | Capital | 128 × 128 | isométrico | Capital visto no mapa-múndi. |
-| `mapa-city.png` | Cidade | 128 × 128 | isométrico | Cidade visto no mapa-múndi. |
-| `mapa-village.png` | Aldeia | 128 × 128 | isométrico | Aldeia visto no mapa-múndi. |
-| `mapa-castle.png` | Castelo | 128 × 128 | isométrico | Castelo visto no mapa-múndi. |
-| `mapa-outpost.png` | Entreposto | 128 × 128 | isométrico | Entreposto visto no mapa-múndi. |
-| `mapa-camp.png` | Acampamento de bandidos | 128 × 128 | isométrico | Acampamento de bandidos visto no mapa-múndi. |
-| `mapa-camp-ruin.png` | Acampamento de bandidos em ruínas | 128 × 128 | isométrico | Acampamento de bandidos em ruínas visto no mapa-múndi. |
-| `mapa-tribe1.png` | Acampamento tribal (nível 1) | 128 × 128 | isométrico | Acampamento tribal (nível 1) visto no mapa-múndi. |
-| `mapa-tribe2.png` | Aldeia tribal (nível 2) | 128 × 128 | isométrico | Aldeia tribal (nível 2) visto no mapa-múndi. |
-| `mapa-tribe3.png` | Fortaleza tribal (nível 3) | 128 × 128 | isométrico | Fortaleza tribal (nível 3) visto no mapa-múndi. |
-| `mapa-tribe4.png` | Confederação tribal (nível 4) | 128 × 128 | isométrico | Confederação tribal (nível 4) visto no mapa-múndi. |
-| `mapa-batalha.png` | Batalha em andamento | 128 × 128 | plano | Marca de batalha (espadas cruzadas, poeira) sobre o local do combate. |
+1. **Capital** — `mapa-capital.png` · 128 × 128 px · isométrico  
+   Capital visto no mapa-múndi.
+2. **Cidade** — `mapa-city.png` · 128 × 128 px · isométrico  
+   Cidade visto no mapa-múndi.
+3. **Aldeia** — `mapa-village.png` · 128 × 128 px · isométrico  
+   Aldeia visto no mapa-múndi.
+4. **Castelo** — `mapa-castle.png` · 128 × 128 px · isométrico  
+   Castelo visto no mapa-múndi.
+5. **Entreposto** — `mapa-outpost.png` · 128 × 128 px · isométrico  
+   Entreposto visto no mapa-múndi.
+6. **Acampamento de bandidos** — `mapa-camp.png` · 128 × 128 px · isométrico  
+   Acampamento de bandidos visto no mapa-múndi.
+7. **Acampamento de bandidos em ruínas** — `mapa-camp-ruin.png` · 128 × 128 px · isométrico  
+   Acampamento de bandidos em ruínas visto no mapa-múndi.
+8. **Acampamento tribal (nível 1)** — `mapa-tribe1.png` · 128 × 128 px · isométrico  
+   Acampamento tribal (nível 1) visto no mapa-múndi.
+9. **Aldeia tribal (nível 2)** — `mapa-tribe2.png` · 128 × 128 px · isométrico  
+   Aldeia tribal (nível 2) visto no mapa-múndi.
+10. **Fortaleza tribal (nível 3)** — `mapa-tribe3.png` · 128 × 128 px · isométrico  
+   Fortaleza tribal (nível 3) visto no mapa-múndi.
+11. **Confederação tribal (nível 4)** — `mapa-tribe4.png` · 128 × 128 px · isométrico  
+   Confederação tribal (nível 4) visto no mapa-múndi.
+12. **Batalha em andamento** — `mapa-batalha.png` · 128 × 128 px · plano  
+   Marca de batalha (espadas cruzadas, poeira) sobre o local do combate.
 
 ## Unidades em viagem no mapa (6)
 
 Sprites de 64 × 64 px (carroças, mensageiros, navios...).
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `viajante-wagon.png` | Carroça de recursos | 64 × 64 | isométrico | Carroça de recursos se movendo pelo mapa. |
-| `viajante-caravan.png` | Caravana de comércio | 64 × 64 | isométrico | Caravana de comércio se movendo pelo mapa. |
-| `viajante-messenger.png` | Mensageiro a cavalo | 64 × 64 | isométrico | Mensageiro a cavalo se movendo pelo mapa. |
-| `viajante-colonists.png` | Grupo de colonos | 64 × 64 | isométrico | Grupo de colonos se movendo pelo mapa. |
-| `viajante-spy.png` | Espião encapuzado | 64 × 64 | isométrico | Espião encapuzado se movendo pelo mapa. |
-| `viajante-ship.png` | Navio da horda | 64 × 64 | isométrico | Navio da horda se movendo pelo mapa. |
+1. **Carroça de recursos** — `viajante-wagon.png` · 64 × 64 px · isométrico  
+   Carroça de recursos se movendo pelo mapa.
+2. **Caravana de comércio** — `viajante-caravan.png` · 64 × 64 px · isométrico  
+   Caravana de comércio se movendo pelo mapa.
+3. **Mensageiro a cavalo** — `viajante-messenger.png` · 64 × 64 px · isométrico  
+   Mensageiro a cavalo se movendo pelo mapa.
+4. **Grupo de colonos** — `viajante-colonists.png` · 64 × 64 px · isométrico  
+   Grupo de colonos se movendo pelo mapa.
+5. **Espião encapuzado** — `viajante-spy.png` · 64 × 64 px · isométrico  
+   Espião encapuzado se movendo pelo mapa.
+6. **Navio da horda** — `viajante-ship.png` · 64 × 64 px · isométrico  
+   Navio da horda se movendo pelo mapa.
 
 ## Soldados (retrato e boneco de batalha) (42)
 
 Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `retrato-spearman.png` | Lanceiro (retrato) | 256 × 256 | plano | Infantaria barata com lança longa. Segura a cavalaria. Retrato de corpo inteiro. |
-| `boneco-spearman.png` | Lanceiro (boneco) | 64 × 64 | isométrico | Lanceiro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-archer.png` | Arqueiro (retrato) | 256 × 256 | plano | Atira de longe. Desfaz formações de infantaria. Retrato de corpo inteiro. |
-| `boneco-archer.png` | Arqueiro (boneco) | 64 × 64 | isométrico | Arqueiro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-knight.png` | Cavaleiro (retrato) | 256 × 256 | plano | Carga veloz que esmaga arqueiros. Retrato de corpo inteiro. |
-| `boneco-knight.png` | Cavaleiro (boneco) | 64 × 64 | isométrico | Cavaleiro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-shieldman.png` | Escudeiro (retrato) | 256 × 256 | plano | Parede de escudos: aguenta flechas. Retrato de corpo inteiro. |
-| `boneco-shieldman.png` | Escudeiro (boneco) | 64 × 64 | isométrico | Escudeiro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-crossbowman.png` | Besteiro (retrato) | 256 × 256 | plano | Virotes atravessam armaduras e escudos. Retrato de corpo inteiro. |
-| `boneco-crossbowman.png` | Besteiro (boneco) | 64 × 64 | isométrico | Besteiro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-scout.png` | Batedor (retrato) | 256 × 256 | plano | Explora a névoa, caça carroças e mensageiros. Não luta bem. Retrato de corpo inteiro. |
-| `boneco-scout.png` | Batedor (boneco) | 64 × 64 | isométrico | Batedor pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-horseArcher.png` | Arqueiro montado (retrato) | 256 × 256 | plano | Atira a cavalo e foge antes do contato. Retrato de corpo inteiro. |
-| `boneco-horseArcher.png` | Arqueiro montado (boneco) | 64 × 64 | isométrico | Arqueiro montado pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-heavyKnight.png` | Cavaleiro pesado (retrato) | 256 × 256 | plano | Aço da cabeça aos cascos. Caro e lento, mas quase imparável. Retrato de corpo inteiro. |
-| `boneco-heavyKnight.png` | Cavaleiro pesado (boneco) | 64 × 64 | isométrico | Cavaleiro pesado pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-ram.png` | Aríete (retrato) | 256 × 256 | plano | Derruba portões. Retrato de corpo inteiro. |
-| `boneco-ram.png` | Aríete (boneco) | 64 × 64 | isométrico | Aríete pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-catapult.png` | Catapulta (retrato) | 256 × 256 | plano | Arremessa pedras na muralha e nas construções. Retrato de corpo inteiro. |
-| `boneco-catapult.png` | Catapulta (boneco) | 64 × 64 | isométrico | Catapulta pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-ladder.png` | Escada de cerco (retrato) | 256 × 256 | plano | Cada escada leva até 10 soldados por cima da muralha, enfraquecidos. Retrato de corpo inteiro. |
-| `boneco-ladder.png` | Escada de cerco (boneco) | 64 × 64 | isométrico | Escada de cerco pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-siegeTower.png` | Torre de cerco (retrato) | 256 × 256 | plano | Leva até 25 soldados por cima da muralha sem penalidade. Bloqueada pelo fosso. Retrato de corpo inteiro. |
-| `boneco-siegeTower.png` | Torre de cerco (boneco) | 64 × 64 | isométrico | Torre de cerco pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-axeman.png` | Guerreiro do machado (retrato) | 256 × 256 | plano | Guerreiro tribal que racha escudos. Retrato de corpo inteiro. |
-| `boneco-axeman.png` | Guerreiro do machado (boneco) | 64 × 64 | isométrico | Guerreiro do machado pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-hunter.png` | Arqueiro de caça (retrato) | 256 × 256 | plano | Caçador tribal com arco curto. Retrato de corpo inteiro. |
-| `boneco-hunter.png` | Arqueiro de caça (boneco) | 64 × 64 | isométrico | Arqueiro de caça pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-tribalRider.png` | Cavaleiro bárbaro (retrato) | 256 × 256 | plano | Ginete tribal rápido e sem armadura. Retrato de corpo inteiro. |
-| `boneco-tribalRider.png` | Cavaleiro bárbaro (boneco) | 64 × 64 | isométrico | Cavaleiro bárbaro pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-brigand.png` | Bandido (retrato) | 256 × 256 | plano | Salteador de estrada mal armado. Retrato de corpo inteiro. |
-| `boneco-brigand.png` | Bandido (boneco) | 64 × 64 | isométrico | Bandido pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-northman.png` | Nórdico (retrato) | 256 × 256 | plano | Infantaria pesada das hordas do mar. Retrato de corpo inteiro. |
-| `boneco-northman.png` | Nórdico (boneco) | 64 × 64 | isométrico | Nórdico pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-steppeRider.png` | Cavaleiro das estepes (retrato) | 256 × 256 | plano | Ginete veloz das hordas, mestre das incursões. Retrato de corpo inteiro. |
-| `boneco-steppeRider.png` | Cavaleiro das estepes (boneco) | 64 × 64 | isométrico | Cavaleiro das estepes pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-mercenary.png` | Mercenário (retrato) | 256 × 256 | plano | Soldado de aluguel bem equipado. Retrato de corpo inteiro. |
-| `boneco-mercenary.png` | Mercenário (boneco) | 64 × 64 | isométrico | Mercenário pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-warlord.png` | Chefe da horda (retrato) | 256 × 256 | plano | Comandante temido que vem a cada cinco ondas. Retrato de corpo inteiro. |
-| `boneco-warlord.png` | Chefe da horda (boneco) | 64 × 64 | isométrico | Chefe da horda pequeno para o mapa e as batalhas, virado para a direita. |
-| `retrato-militia.png` | Miliciano (retrato) | 256 × 256 | plano | Cidadão armado às pressas para defender as muralhas. Retrato de corpo inteiro. |
-| `boneco-militia.png` | Miliciano (boneco) | 64 × 64 | isométrico | Miliciano pequeno para o mapa e as batalhas, virado para a direita. |
+1. **Lanceiro (retrato)** — `retrato-spearman.png` · 256 × 256 px · plano  
+   Infantaria barata com lança longa. Segura a cavalaria. Retrato de corpo inteiro.
+2. **Lanceiro (boneco)** — `boneco-spearman.png` · 64 × 64 px · isométrico  
+   Lanceiro pequeno para o mapa e as batalhas, virado para a direita.
+3. **Arqueiro (retrato)** — `retrato-archer.png` · 256 × 256 px · plano  
+   Atira de longe. Desfaz formações de infantaria. Retrato de corpo inteiro.
+4. **Arqueiro (boneco)** — `boneco-archer.png` · 64 × 64 px · isométrico  
+   Arqueiro pequeno para o mapa e as batalhas, virado para a direita.
+5. **Cavaleiro (retrato)** — `retrato-knight.png` · 256 × 256 px · plano  
+   Carga veloz que esmaga arqueiros. Retrato de corpo inteiro.
+6. **Cavaleiro (boneco)** — `boneco-knight.png` · 64 × 64 px · isométrico  
+   Cavaleiro pequeno para o mapa e as batalhas, virado para a direita.
+7. **Escudeiro (retrato)** — `retrato-shieldman.png` · 256 × 256 px · plano  
+   Parede de escudos: aguenta flechas. Retrato de corpo inteiro.
+8. **Escudeiro (boneco)** — `boneco-shieldman.png` · 64 × 64 px · isométrico  
+   Escudeiro pequeno para o mapa e as batalhas, virado para a direita.
+9. **Besteiro (retrato)** — `retrato-crossbowman.png` · 256 × 256 px · plano  
+   Virotes atravessam armaduras e escudos. Retrato de corpo inteiro.
+10. **Besteiro (boneco)** — `boneco-crossbowman.png` · 64 × 64 px · isométrico  
+   Besteiro pequeno para o mapa e as batalhas, virado para a direita.
+11. **Batedor (retrato)** — `retrato-scout.png` · 256 × 256 px · plano  
+   Explora a névoa, caça carroças e mensageiros. Não luta bem. Retrato de corpo inteiro.
+12. **Batedor (boneco)** — `boneco-scout.png` · 64 × 64 px · isométrico  
+   Batedor pequeno para o mapa e as batalhas, virado para a direita.
+13. **Arqueiro montado (retrato)** — `retrato-horseArcher.png` · 256 × 256 px · plano  
+   Atira a cavalo e foge antes do contato. Retrato de corpo inteiro.
+14. **Arqueiro montado (boneco)** — `boneco-horseArcher.png` · 64 × 64 px · isométrico  
+   Arqueiro montado pequeno para o mapa e as batalhas, virado para a direita.
+15. **Cavaleiro pesado (retrato)** — `retrato-heavyKnight.png` · 256 × 256 px · plano  
+   Aço da cabeça aos cascos. Caro e lento, mas quase imparável. Retrato de corpo inteiro.
+16. **Cavaleiro pesado (boneco)** — `boneco-heavyKnight.png` · 64 × 64 px · isométrico  
+   Cavaleiro pesado pequeno para o mapa e as batalhas, virado para a direita.
+17. **Aríete (retrato)** — `retrato-ram.png` · 256 × 256 px · plano  
+   Derruba portões. Retrato de corpo inteiro.
+18. **Aríete (boneco)** — `boneco-ram.png` · 64 × 64 px · isométrico  
+   Aríete pequeno para o mapa e as batalhas, virado para a direita.
+19. **Catapulta (retrato)** — `retrato-catapult.png` · 256 × 256 px · plano  
+   Arremessa pedras na muralha e nas construções. Retrato de corpo inteiro.
+20. **Catapulta (boneco)** — `boneco-catapult.png` · 64 × 64 px · isométrico  
+   Catapulta pequeno para o mapa e as batalhas, virado para a direita.
+21. **Escada de cerco (retrato)** — `retrato-ladder.png` · 256 × 256 px · plano  
+   Cada escada leva até 10 soldados por cima da muralha, enfraquecidos. Retrato de corpo inteiro.
+22. **Escada de cerco (boneco)** — `boneco-ladder.png` · 64 × 64 px · isométrico  
+   Escada de cerco pequeno para o mapa e as batalhas, virado para a direita.
+23. **Torre de cerco (retrato)** — `retrato-siegeTower.png` · 256 × 256 px · plano  
+   Leva até 25 soldados por cima da muralha sem penalidade. Bloqueada pelo fosso. Retrato de corpo inteiro.
+24. **Torre de cerco (boneco)** — `boneco-siegeTower.png` · 64 × 64 px · isométrico  
+   Torre de cerco pequeno para o mapa e as batalhas, virado para a direita.
+25. **Guerreiro do machado (retrato)** — `retrato-axeman.png` · 256 × 256 px · plano  
+   Guerreiro tribal que racha escudos. Retrato de corpo inteiro.
+26. **Guerreiro do machado (boneco)** — `boneco-axeman.png` · 64 × 64 px · isométrico  
+   Guerreiro do machado pequeno para o mapa e as batalhas, virado para a direita.
+27. **Arqueiro de caça (retrato)** — `retrato-hunter.png` · 256 × 256 px · plano  
+   Caçador tribal com arco curto. Retrato de corpo inteiro.
+28. **Arqueiro de caça (boneco)** — `boneco-hunter.png` · 64 × 64 px · isométrico  
+   Arqueiro de caça pequeno para o mapa e as batalhas, virado para a direita.
+29. **Cavaleiro bárbaro (retrato)** — `retrato-tribalRider.png` · 256 × 256 px · plano  
+   Ginete tribal rápido e sem armadura. Retrato de corpo inteiro.
+30. **Cavaleiro bárbaro (boneco)** — `boneco-tribalRider.png` · 64 × 64 px · isométrico  
+   Cavaleiro bárbaro pequeno para o mapa e as batalhas, virado para a direita.
+31. **Bandido (retrato)** — `retrato-brigand.png` · 256 × 256 px · plano  
+   Salteador de estrada mal armado. Retrato de corpo inteiro.
+32. **Bandido (boneco)** — `boneco-brigand.png` · 64 × 64 px · isométrico  
+   Bandido pequeno para o mapa e as batalhas, virado para a direita.
+33. **Nórdico (retrato)** — `retrato-northman.png` · 256 × 256 px · plano  
+   Infantaria pesada das hordas do mar. Retrato de corpo inteiro.
+34. **Nórdico (boneco)** — `boneco-northman.png` · 64 × 64 px · isométrico  
+   Nórdico pequeno para o mapa e as batalhas, virado para a direita.
+35. **Cavaleiro das estepes (retrato)** — `retrato-steppeRider.png` · 256 × 256 px · plano  
+   Ginete veloz das hordas, mestre das incursões. Retrato de corpo inteiro.
+36. **Cavaleiro das estepes (boneco)** — `boneco-steppeRider.png` · 64 × 64 px · isométrico  
+   Cavaleiro das estepes pequeno para o mapa e as batalhas, virado para a direita.
+37. **Mercenário (retrato)** — `retrato-mercenary.png` · 256 × 256 px · plano  
+   Soldado de aluguel bem equipado. Retrato de corpo inteiro.
+38. **Mercenário (boneco)** — `boneco-mercenary.png` · 64 × 64 px · isométrico  
+   Mercenário pequeno para o mapa e as batalhas, virado para a direita.
+39. **Chefe da horda (retrato)** — `retrato-warlord.png` · 256 × 256 px · plano  
+   Comandante temido que vem a cada cinco ondas. Retrato de corpo inteiro.
+40. **Chefe da horda (boneco)** — `boneco-warlord.png` · 64 × 64 px · isométrico  
+   Chefe da horda pequeno para o mapa e as batalhas, virado para a direita.
+41. **Miliciano (retrato)** — `retrato-militia.png` · 256 × 256 px · plano  
+   Cidadão armado às pressas para defender as muralhas. Retrato de corpo inteiro.
+42. **Miliciano (boneco)** — `boneco-militia.png` · 64 × 64 px · isométrico  
+   Miliciano pequeno para o mapa e as batalhas, virado para a direita.
 
 ## Heróis (8)
 
 Retratos de 256 × 256 px do peito para cima.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `heroi-1.png` | Herói 1 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-2.png` | Herói 2 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-3.png` | Herói 3 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-4.png` | Herói 4 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-5.png` | Herói 5 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-6.png` | Herói 6 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-7.png` | Herói 7 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
-| `heroi-8.png` | Herói 8 | 256 × 256 | plano | Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres. |
+1. **Herói 1** — `heroi-1.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+2. **Herói 2** — `heroi-2.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+3. **Herói 3** — `heroi-3.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+4. **Herói 4** — `heroi-4.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+5. **Herói 5** — `heroi-5.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+6. **Herói 6** — `heroi-6.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+7. **Herói 7** — `heroi-7.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+8. **Herói 8** — `heroi-8.png` · 256 × 256 px · plano  
+   Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
 
 ## Efeitos (8)
 
 Sprites de 64 × 64 px para batalhas e eventos.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `efeito-fogo.png` | Fogo | 64 × 64 | plano | Fogo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-fumaca.png` | Fumaça | 64 × 64 | plano | Fumaça. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-poeira.png` | Poeira de marcha | 64 × 64 | plano | Poeira de marcha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-flecha.png` | Flecha | 64 × 64 | plano | Flecha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-impacto.png` | Impacto na muralha | 64 × 64 | plano | Impacto na muralha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-neve.png` | Neve caindo | 64 × 64 | plano | Neve caindo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-chuva.png` | Chuva | 64 × 64 | plano | Chuva. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
-| `efeito-batalha.png` | Choque de batalha | 64 × 64 | plano | Choque de batalha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar. |
+1. **Fogo** — `efeito-fogo.png` · 64 × 64 px · plano  
+   Fogo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+2. **Fumaça** — `efeito-fumaca.png` · 64 × 64 px · plano  
+   Fumaça. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+3. **Poeira de marcha** — `efeito-poeira.png` · 64 × 64 px · plano  
+   Poeira de marcha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+4. **Flecha** — `efeito-flecha.png` · 64 × 64 px · plano  
+   Flecha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+5. **Impacto na muralha** — `efeito-impacto.png` · 64 × 64 px · plano  
+   Impacto na muralha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+6. **Neve caindo** — `efeito-neve.png` · 64 × 64 px · plano  
+   Neve caindo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+7. **Chuva** — `efeito-chuva.png` · 64 × 64 px · plano  
+   Chuva. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+8. **Choque de batalha** — `efeito-batalha.png` · 64 × 64 px · plano  
+   Choque de batalha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
 
 ## Ilustrações (5)
 
 Imagens grandes para telas especiais.
 
-| Arquivo | O que é | Tamanho | Estilo | Descrição |
-|---|---|---|---|---|
-| `ilustracao-titulo.png` | Tela de abertura: o castelo ao amanhecer | 768 × 432 | plano | Tela de abertura: o castelo ao amanhecer. |
-| `ilustracao-vitoria.png` | Vitória numa batalha | 768 × 432 | plano | Vitória numa batalha. |
-| `ilustracao-derrota.png` | Derrota (castelo em chamas, fumaça) | 768 × 432 | plano | Derrota (castelo em chamas, fumaça). |
-| `ilustracao-imperador.png` | Coroação do Imperador do Continente X | 768 × 432 | plano | Coroação do Imperador do Continente X. |
-| `ilustracao-carta-secreta.png` | Mensagem secreta do Continente Y (navio ao luar) | 768 × 432 | plano | Mensagem secreta do Continente Y (navio ao luar). |
+1. **Tela de abertura: o castelo ao amanhecer** — `ilustracao-titulo.png` · 768 × 432 px · plano  
+   Tela de abertura: o castelo ao amanhecer.
+2. **Vitória numa batalha** — `ilustracao-vitoria.png` · 768 × 432 px · plano  
+   Vitória numa batalha.
+3. **Derrota (castelo em chamas, fumaça)** — `ilustracao-derrota.png` · 768 × 432 px · plano  
+   Derrota (castelo em chamas, fumaça).
+4. **Coroação do Imperador do Continente X** — `ilustracao-imperador.png` · 768 × 432 px · plano  
+   Coroação do Imperador do Continente X.
+5. **Mensagem secreta do Continente Y (navio ao luar)** — `ilustracao-carta-secreta.png` · 768 × 432 px · plano  
+   Mensagem secreta do Continente Y (navio ao luar).

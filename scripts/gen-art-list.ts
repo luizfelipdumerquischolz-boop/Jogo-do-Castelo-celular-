@@ -31,11 +31,10 @@ for (const g of GROUPS) {
   lines.push('');
   lines.push(g.intro);
   lines.push('');
-  lines.push('| Arquivo | O que é | Tamanho | Estilo | Descrição |');
-  lines.push('|---|---|---|---|---|');
-  for (const s of list) {
-    lines.push(`| \`${artFileName(s.key)}\` | ${s.name} | ${s.w} × ${s.h} | ${s.iso ? 'isométrico' : 'plano'} | ${s.description.replace(/\|/g, '/')} |`);
-  }
+  list.forEach((s, i) => {
+    lines.push(`${i + 1}. **${s.name}** — \`${artFileName(s.key)}\` · ${s.w} × ${s.h} px · ${s.iso ? 'isométrico' : 'plano'}  `);
+    lines.push(`   ${s.description}`);
+  });
   lines.push('');
 }
 mkdirSync('docs', { recursive: true });

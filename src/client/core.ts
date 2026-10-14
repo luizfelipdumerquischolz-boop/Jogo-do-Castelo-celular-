@@ -2,6 +2,7 @@
 // O mesmo código roda dentro do Web Worker (normal) ou na página (reserva).
 import { applyAction, type Action } from '../sim/actions';
 import { createGame } from '../sim/create';
+import { updateTensions } from '../sim/diplomacy';
 import { rt, updateTerritory } from '../sim/runtime';
 import { deserialize, loadRaw, saveRaw, serialize } from '../sim/save';
 import { tick } from '../sim/tick';
@@ -53,6 +54,7 @@ export class Core {
         case 'boot': {
           if (m.newGame) {
             this.state = createGame(m.newGame.seed, m.newGame.kingdom, m.newGame.capital);
+            updateTensions(this.state);
             await this.save();
           } else if (this.db) {
             const raw = await loadRaw(this.db).catch(() => null);

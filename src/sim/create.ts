@@ -229,7 +229,8 @@ export function randomHero(state: GameState): Hero {
   const traitsPool = ['cauteloso', 'ousado', 'bom em cerco', 'protetor', 'administrador', 'general', 'mercador', 'honesto', 'corrupto'];
   const t1 = traitsPool[Math.floor(rand(state) * traitsPool.length)];
   let t2 = traitsPool[Math.floor(rand(state) * traitsPool.length)];
-  if (t2 === t1) t2 = traitsPool[(traitsPool.indexOf(t1) + 3) % traitsPool.length];
+  const clash = (a: string, b: string) => a === b || [a, b].sort().join() === 'corrupto,honesto' || [a, b].sort().join() === 'cauteloso,ousado';
+  for (let i = 1; clash(t1, t2); i++) t2 = traitsPool[(traitsPool.indexOf(t1) + 2 + i) % traitsPool.length];
   const level = 1 + Math.floor(rand(state) * 3);
   return {
     id: newId(state),

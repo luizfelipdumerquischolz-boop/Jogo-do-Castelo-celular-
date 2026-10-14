@@ -59,10 +59,11 @@ export class MapView {
     this.dirty = true;
   }
 
-  centerOn(x: number, y: number): void {
+  /** Centraliza numa casa. Com `upper`, deixa o ponto no quarto de cima (um painel cobre a parte de baixo). */
+  centerOn(x: number, y: number, upper = false): void {
     const p = this.iso(x + 0.5, y + 0.5);
     this.camX = p.x;
-    this.camY = p.y;
+    this.camY = p.y + (upper ? ((this.ch() > 50 ? this.ch() : window.innerHeight * 0.8) * 0.27) / this.zoom : 0);
     this.dirty = true;
   }
 

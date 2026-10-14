@@ -4,6 +4,7 @@ import type { UnitId } from '../sim/data/units';
 import type { Action } from '../sim/actions';
 import type { ProposalType } from '../sim/diplomacy';
 import { MAP_SIZE, getMap } from '../sim/map';
+import { findSpot } from '../sim/ai';
 import type { Army, GameState, Settlement } from '../sim/types';
 import type { Snapshot } from '../client/core';
 import type { Engine } from '../client/engine';
@@ -215,7 +216,7 @@ export class App {
     morph(
       $('#mapbar'),
       this.screen === 'map'
-        ? `<button class="fab" data-action="zoom" data-arg="1.3">＋</button><button class="fab" data-action="zoom" data-arg="0.77">－</button><button class="fab" data-action="center-capital" title="Capital">⌂</button>${this.mapMode ? `<div class="mode-hint">Toque no destino · <button class="btn small neutral" data-action="cancel-mode">Cancelar</button></div>` : ''}`
+        ? `<button class="fab" data-action="zoom" data-arg="1.3">＋</button><button class="fab" data-action="zoom" data-arg="0.77">－</button><button class="fab" data-action="center-capital" title="Capital">⌂</button>${this.mapMode ? `<div class="mode-hint">${this.mapMode.type === 'army-patrol' ? 'Toque no ponto final da patrulha' : 'Toque no destino do exército'} <button class="btn small neutral" data-action="cancel-mode">Cancelar</button></div>` : ''}`
         : '',
     );
     // Janela modal
@@ -233,6 +234,7 @@ export class App {
 
   private sheetVisible(): boolean {
     if (!this.sheet) return false;
+    if (this.mapMode && this.screen === 'map') return false;
     const mapSheets = ['settlement', 'army', 'tile', 'traveler'];
     if (this.screen === 'map') return mapSheets.includes(this.sheet.type) || ['form-army', 'recruit', 'overview'].includes(this.sheet.type);
     if (this.screen === 'city') return !mapSheets.includes(this.sheet.type) || this.sheet.type === 'settlement';
@@ -390,7 +392,9 @@ export class App {
     if (!s) return;
     const n = BUILDINGS[type].size;
     const c = Math.floor(12 - n / 2);
-    this.city.setGhost({ type, x: at?.x ?? c, y: at?.y ?? c, moving });
+    const spot = at ?? (this.state ? findSpot(this.state, s, type) : null) ?? { x: c, y: c };
+    this.city.setGhost({ type, x: spot.x, y: spot.y, moving });
+    this.city.focusTile(spot.x + n / 2, spot.y + n / 2);
     this.sheet = { type: 'ghost' };
     this.renderUI();
   }
@@ -487,6 +491,7 @@ export class App {
     const num = Number(arg);
     switch (action) {
       case 'screen':
+        if (arg !== this.screen) this.sheet = null;
         this.screen = arg;
         if (arg !== 'map') this.mapMode = null;
         if (arg === 'reports') void this.engine.act({ type: 'read-reports' });
@@ -623,7 +628,7 @@ export class App {
             this.sheet = { type: 'army', id: r.armyId };
             this.map.selected = { kind: 'army', id: r.armyId };
             const s = st?.settlements.find((x) => x.id === num);
-            if (s) this.map.centerOn(s.x, s.y);
+            if (s) this.map.centerOn(s.x, s.y, true);
           }
         }
         break;
@@ -641,7 +646,7 @@ export class App {
         if (a) {
           this.screen = 'map';
           this.resize();
-          this.map.centerOn(Math.round(a.x), Math.round(a.y));
+          this.map.centerOn(Math.round(a.x), Math.round(a.y), true);
           this.map.selected = { kind: 'army', id: a.id };
           this.sheet = { type: 'army', id: a.id };
         }

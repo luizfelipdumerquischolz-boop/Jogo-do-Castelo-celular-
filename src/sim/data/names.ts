@@ -51,6 +51,13 @@ export function banditName(r1: number, r2: number): string {
   return `${pick(BANDIT_A, r1)} ${pick(BANDIT_B, r2)}`;
 }
 
+const FEMALE = new Set(['Bruna', 'Dália', 'Fausta', 'Helena', 'Joana', 'Mirela', 'Olga', 'Rosa', 'Teresa', 'Vera']);
+const EPITHET_F: Record<string, string> = { 'o Sereno': 'a Serena', 'o Velho': 'a Velha' };
+const EPITHET_M: Record<string, string> = { 'a Astuta': 'o Astuto', 'a Justa': 'o Justo' };
+
 export function heroName(r1: number, r2: number): string {
-  return `${pick(HERO_FIRST, r1)} ${pick(HERO_LAST, r2)}`;
+  const first = pick(HERO_FIRST, r1);
+  const last = pick(HERO_LAST, r2);
+  const fixed = FEMALE.has(first) ? EPITHET_F[last] ?? last : EPITHET_M[last] ?? last;
+  return `${first} ${fixed}`;
 }

@@ -268,12 +268,12 @@ export function renderOverview(state: GameState, s: Settlement, tab: string): st
       <div>${icon('icone-morale', 22)} Moral <b>${Math.round(s.morale)}</b></div>
       ${s.kind !== 'capital' ? `<div>${icon('icone-loyalty', 22)} Lealdade <b>${Math.round(s.loyalty)}</b>${s.revolt ? ' <span class="bad">REVOLTA</span>' : ''}</div>` : ''}
       <div>${icon('icone-culture', 22)} Cultura <b>${Math.round(s.culture)}</b></div>
-      <div>Zona: <b>${ZONE_NAMES[s.zone]}</b> (fronteira estrangeira a ${Math.round(s.foreignDistance)} casas)</div>
+      <div>Zona: <b>${ZONE_NAMES[s.zone]}</b> (${s.foreignDistance >= 999 ? 'nenhum vizinho estrangeiro conhecido' : `fronteira estrangeira a ${Math.round(s.foreignDistance)} casas`})</div>
       <div>Impostos: ${itemIcon('gold', 16)} ${s.taxIncome.toFixed(1)}/min</div>
     </div>
     <h4>Prioridade dos trabalhadores</h4>
     <p class="hint">Os adultos livres vão primeiro para a categoria do topo.</p>
-    ${s.priorities.map((p, i) => `<div class="prio">${i + 1}. ${CATEGORY_NAMES[p]} ${btn('▲', 'prio-up', i, 'small', i === 0)}${btn('▼', 'prio-down', i, 'small', i === s.priorities.length - 1)}</div>`).join('')}`;
+    ${s.priorities.map((p, i) => `<div class="prio"><span>${i + 1}. ${CATEGORY_NAMES[p]}</span>${btn('▲', 'prio-up', i, 'small', i === 0)}${btn('▼', 'prio-down', i, 'small', i === s.priorities.length - 1)}</div>`).join('')}`;
   } else if (tab === 'comida') {
     const groups = FOOD_GROUPS.map((g) => `<div class="bar-row"><span>${FOOD_GROUP_NAMES[g]}</span><div class="bar"><div style="width:${Math.round(s.diet[g] * 100)}%"></div></div><b>${Math.round(s.diet[g] * 100)}%</b></div>`).join('');
     const foods = FOOD_IDS.filter((f) => (s.stock[f] ?? 0) >= 1).map((f) => `<span class="chip">${itemIcon(f, 16)}${fmt(s.stock[f] ?? 0)}</span>`).join('');

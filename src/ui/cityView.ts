@@ -73,6 +73,14 @@ export class CityView {
     this.dirty = true;
   }
 
+  /** Centraliza a câmera numa casa (sem mudar o zoom). */
+  focusTile(x: number, y: number): void {
+    const p = this.iso(x, y);
+    this.camX = p.x;
+    this.camY = p.y;
+    this.dirty = true;
+  }
+
   iso(x: number, y: number): { x: number; y: number } {
     return { x: ((x - y) * TW) / 2, y: ((x + y) * TH) / 2 };
   }

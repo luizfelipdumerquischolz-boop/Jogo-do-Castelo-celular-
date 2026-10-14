@@ -37,10 +37,10 @@ const UI_RULES: [string, (url: string) => string][] = [
   ['ui-botao-desativado', (u) => buttonRule('.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled', u) + '.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled{opacity:.8;color:#e8e8e8}'],
   ['ui-barra-topo', (u) => `#top{background:url(${u}) left center/auto 100% repeat-x}`],
   ['ui-barra-inferior', (u) => `#nav{background:url(${u}) left center/auto 100% repeat-x}`],
-  ['ui-painel', (u) => `#sheet{background:url(${u}) center/100% 100%}`],
-  ['ui-fundo', (u) => `#screen{background:url(${u}) repeat}`],
-  ['ui-carta', (u) => `.letter-paper{background:url(${u}) center/100% 100% no-repeat}`],
-  ['ui-moldura-retrato', (u) => `.portrait{position:relative}.portrait::after{content:'';position:absolute;inset:0;background:url(${u}) center/100% 100% no-repeat;pointer-events:none}`],
+  ['ui-painel', (u) => `#sheet{background:var(--parch);border:solid transparent;border-width:14px 14px 0;border-radius:0;border-image:url(${u}) 52 52 0 fill / 14px 14px 0 stretch;padding-top:4px}`],
+  ['ui-fundo', (u) => `#screen{background:url(${u}) center/512px repeat}`],
+  ['ui-carta', (u) => `.letter-paper{background:url(${u}) center/100% 100% no-repeat;border:none;border-radius:0;padding:28px 26px}`],
+  ['ui-moldura-retrato', (u) => `.pframe{position:relative;width:72px;height:72px;align-items:center;justify-content:center}.pframe .portrait{width:52px;height:52px;border:none;border-radius:50%;object-fit:cover;background:#3b2a1a}.pframe::after{content:'';position:absolute;inset:0;background:url(${u}) center/100% 100% no-repeat;pointer-events:none}`],
 ];
 
 function applyInterfaceArt(): void {

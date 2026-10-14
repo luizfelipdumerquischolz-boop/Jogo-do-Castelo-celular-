@@ -236,7 +236,7 @@ export function renderRecruit(state: GameState, s: Settlement): string {
       const locked = !check1.ok && (check1.reason.startsWith('Precisa') || check1.reason === 'Unidade indisponível');
       const strong = def.strong.filter((x) => UNITS[x].playable).map((x) => UNITS[x].plural.toLowerCase()).join(', ');
       return `<div class="unit-card ${locked ? 'locked' : ''}" data-key="u-${u}">
-        <img src="${artUrlFor(`retrato-${u}`)}" alt="" class="portrait">
+        <span class="pframe"><img src="${artUrlFor(`retrato-${u}`)}" alt="" class="portrait"></span>
         <div class="unit-info"><b>${def.name}</b> <span class="count" data-testid="garrison-${u}">${Math.floor(g?.troops[u] ?? 0)}</span>
           <small>⚔ ${def.attack} · 🛡 ${def.defense} · ❤ ${def.hp}${strong ? ` · forte contra ${strong}` : ''}</small>
           <div class="cost">${costChips(def.cost, def.gold, s.stock, nation.gold)}${def.people ? `<span class="chip">${icon('icone-population', 14)}${def.people}</span>` : ''}<span class="chip">⏱ ${fmtTime(trainSeconds(state, s, u))}</span></div>
@@ -540,7 +540,7 @@ export function renderHeroes(state: GameState): string {
   const p = state.playerNation;
   const mine = state.heroes.filter((h) => h.nation === p);
   const pool = state.heroes.filter((h) => h.nation === -1);
-  const card = (h: Hero, hire: boolean) => `<div class="card hero" data-key="h-${h.id}"><img class="portrait" src="${artUrlFor(`heroi-${(h.id % 8) + 1}`)}" alt=""><div>
+  const card = (h: Hero, hire: boolean) => `<div class="card hero" data-key="h-${h.id}"><span class="pframe"><img class="portrait" src="${artUrlFor(`heroi-${(h.id % 8) + 1}`)}" alt=""></span><div>
     <b>${esc(h.name)}</b> <small>nível ${h.level}${h.captiveOf != null ? ' · CAPTURADO' : ''}${h.role !== 'none' ? ` · ${h.role === 'commander' ? 'comandante' : 'cônsul'}` : ''}</small>
     <p>${h.traits.map((t) => `<span class="trait" title="${esc(TRAIT_INFO[t] ?? '')}">${esc(t)}</span>`).join(' ')}</p>
     <small>${h.traits.map((t) => esc(TRAIT_INFO[t] ?? '')).join(' ')}</small>

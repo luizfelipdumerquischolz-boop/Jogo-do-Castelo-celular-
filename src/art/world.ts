@@ -1,6 +1,6 @@
 // Arte padrão de soldados, terreno, objetos do mapa, efeitos e ilustrações.
 import type { UnitId } from '../sim/data/units';
-import { TILE_H, TILE_W, box, circle, ellipse, flag, gableRoof, groundPt, groundQuad, hashRand, poly, pyramidRoof, shade, type Ctx } from './iso';
+import { TILE_H, TILE_W, box, circle, ellipse, flag, gableRoof, groundPt, groundQuad, hashRand, poly, pyramidRoof, shade, type Ctx, type Pt } from './iso';
 
 // Soldados --------------------------------------------------------------------
 
@@ -501,21 +501,25 @@ export function drawHeroPortrait(c: Ctx, n: number, s: number): void {
   if (n % 3 === 0) poly(c, [{ x: s * 0.36, y: s * 0.24 }, { x: s * 0.4, y: s * 0.12 }, { x: s * 0.5, y: s * 0.2 }, { x: s * 0.6, y: s * 0.12 }, { x: s * 0.64, y: s * 0.24 }], '#d4af37');
 }
 
-export function drawWallPiece(c: Ctx, piece: string, s: number, stage: number, damaged: boolean): void {
-  const base = { x: s / 2, y: s - 2 };
+export function drawWallPiece(c: Ctx, piece: string, s: number, stage: number, damaged: boolean, ih = s): void {
+  // Ponta de baixo do losango da casa encosta no pé da imagem.
+  // Eixo u (↗) = direção y do terreno; eixo v (↖) = direção x do terreno.
+  const base = { x: s / 2, y: ih - 1 };
   const col = stage === 1 ? '#8a6a45' : stage === 2 ? '#9a948a' : '#c8beae';
   const h = 30 + stage * 10;
-  const b0 = { x: base.x, y: base.y - TILE_H / 4 };
+  const b0 = base;
   if (piece === 'reta-a' || piece === 'reta-b') {
-    const top = piece === 'reta-a' ? box(c, groundPt(b0, 0, 0.35), 1, 0.3, h, col) : box(c, groundPt(b0, 0.35, 0), 0.3, 1, h, col);
-    void top;
+    // reta-a corre ao longo de x (tela ↘), reta-b ao longo de y (tela ↙).
+    const t = piece === 'reta-a' ? box(c, groundPt(b0, 0.35, 0), 0.3, 1, h, col) : box(c, groundPt(b0, 0, 0.35), 1, 0.3, h, col);
+    battlements(c, t, piece === 'reta-a');
   } else if (piece === 'canto' || piece === 'torre') {
     const t = box(c, groundPt(b0, 0.15, 0.15), 0.7, 0.7, h + (piece === 'torre' ? 30 : 10), shade(col, 0.05));
     if (piece === 'torre') pyramidRoof(c, t, 24, stage === 1 ? '#c9a050' : '#a14a35');
   } else if (piece === 'portao') {
-    box(c, groundPt(b0, 0, 0.35), 1, 0.3, h + 14, col);
-    const p = groundPt(b0, 0.5, 0.35);
-    poly(c, [{ x: p.x - 14, y: p.y + 6 }, { x: p.x + 14, y: p.y - 8 }, { x: p.x + 14, y: p.y - 38 }, { x: p.x - 14, y: p.y - 24 }], '#5a3a1e');
+    box(c, groundPt(b0, 0.35, 0), 0.3, 1, h + 14, col);
+    const a = groundPt(b0, 0.35, 0.36);
+    const b = groundPt(b0, 0.35, 0.64);
+    poly(c, [a, b, { x: b.x, y: b.y - 34 }, { x: a.x, y: a.y - 34 }], '#5a3a1e');
   } else if (piece === 'fosso') {
     groundQuad(c, b0, 0, 0, 1, 1, '#3f7fbf', 'rgba(0,0,0,0.3)');
   }
@@ -528,6 +532,18 @@ export function drawWallPiece(c: Ctx, piece: string, s: number, stage: number, d
     c.lineTo(base.x - 6, base.y - h * 0.3);
     c.stroke();
     ellipse(c, base.x + 16, base.y - 6, 10, 5, '#7a7266');
+  }
+}
+
+/** Ameias no topo de um trecho reto. */
+function battlements(c: Ctx, t: { B: Pt; R: Pt; L: Pt; T: Pt }, alongV: boolean): void {
+  const from = t.B;
+  const to = alongV ? t.L : t.R;
+  for (let i = 0; i < 4; i++) {
+    const f = (i + 0.25) / 4;
+    const x = from.x + (to.x - from.x) * f;
+    const y = from.y + (to.y - from.y) * f;
+    poly(c, [{ x: x - 4, y }, { x: x + 4, y }, { x: x + 4, y: y - 7 }, { x: x - 4, y: y - 7 }], 'rgba(0,0,0,0.18)', '', 0);
   }
 }
 

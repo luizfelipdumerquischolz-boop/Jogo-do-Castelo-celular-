@@ -24,11 +24,17 @@ export async function initArt(changed: () => void): Promise<void> {
 }
 
 /** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */
+/** Botão com arte: as pontas mantêm o desenho e só o miolo estica. */
+function buttonRule(sel: string, u: string): string {
+  return `${sel}{background:none;border-style:solid;border-color:transparent;border-width:0 18px;border-radius:0;border-image:url(${u}) 0 84 fill / 0 18px stretch;box-shadow:none;padding-left:4px;padding-right:4px;text-shadow:0 1px 2px rgba(0,0,0,.6)}`;
+}
+
+/** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */
 const UI_RULES: [string, (url: string) => string][] = [
-  ['ui-botao', (u) => `.btn.primary{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
-  ['ui-botao-perigo', (u) => `.btn.danger{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
-  ['ui-botao-neutro', (u) => `.btn.neutral{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
-  ['ui-botao-desativado', (u) => `.btn:disabled{background:url(${u}) center/100% 100% no-repeat;border-color:transparent}`],
+  ['ui-botao', (u) => buttonRule('.btn.primary', u)],
+  ['ui-botao-perigo', (u) => buttonRule('.btn.danger', u)],
+  ['ui-botao-neutro', (u) => buttonRule('.btn.neutral', u)],
+  ['ui-botao-desativado', (u) => buttonRule('.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled', u) + '.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled{opacity:.8;color:#e8e8e8}'],
   ['ui-barra-topo', (u) => `#top{background:url(${u}) left center/auto 100% repeat-x}`],
   ['ui-barra-inferior', (u) => `#nav{background:url(${u}) left center/auto 100% repeat-x}`],
   ['ui-painel', (u) => `#sheet{background:url(${u}) center/100% 100%}`],

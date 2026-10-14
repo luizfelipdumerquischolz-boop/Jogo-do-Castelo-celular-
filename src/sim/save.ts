@@ -1,20 +1,24 @@
-import { SAVE_VERSION } from './state';
+import { SAVE_VERSION } from './create';
+import { encodeBits, reindex, rt, syncMoveContext } from './runtime';
 import type { GameState } from './types';
 
 const DB_NAME = 'coroa-de-pedra';
 const STORE = 'saves';
-const KEY = 'main';
+const KEY = 'alpha';
 
 export function serialize(state: GameState): string {
+  state.explored = encodeBits(rt(state).explored);
   return JSON.stringify(state);
 }
 
 export function deserialize(data: string): GameState {
   const parsed = JSON.parse(data) as GameState;
-  if (!parsed || typeof parsed !== 'object' || !Array.isArray(parsed.fortresses) || typeof parsed.time !== 'number') {
+  if (!parsed || typeof parsed !== 'object' || !Array.isArray(parsed.settlements) || typeof parsed.time !== 'number') {
     throw new Error('Save inválido');
   }
   if (parsed.version !== SAVE_VERSION) throw new Error(`Versão de save incompatível: ${parsed.version}`);
+  reindex(parsed);
+  syncMoveContext(parsed);
   return parsed;
 }
 
@@ -47,17 +51,22 @@ function run<T>(factory: IDBFactory, mode: IDBTransactionMode, fn: (s: IDBObject
   );
 }
 
-/** Salva o estado no IndexedDB do aparelho. */
-export function saveGame(state: GameState, factory: IDBFactory = indexedDB): Promise<void> {
-  const data = serialize(state);
+export function saveRaw(data: string, factory: IDBFactory = indexedDB): Promise<void> {
   return run(factory, 'readwrite', (s) => s.put(data, KEY)).then(() => undefined);
 }
 
-/** Carrega o save, ou null se ainda não existe. */
-export async function loadGame(factory: IDBFactory = indexedDB): Promise<GameState | null> {
+export function saveGame(state: GameState, factory: IDBFactory = indexedDB): Promise<void> {
+  return saveRaw(serialize(state), factory);
+}
+
+export async function loadRaw(factory: IDBFactory = indexedDB): Promise<string | null> {
   const data = await run<unknown>(factory, 'readonly', (s) => s.get(KEY));
-  if (typeof data !== 'string') return null;
-  return deserialize(data);
+  return typeof data === 'string' ? data : null;
+}
+
+export async function loadGame(factory: IDBFactory = indexedDB): Promise<GameState | null> {
+  const raw = await loadRaw(factory);
+  return raw ? deserialize(raw) : null;
 }
 
 export function deleteSave(factory: IDBFactory = indexedDB): Promise<void> {

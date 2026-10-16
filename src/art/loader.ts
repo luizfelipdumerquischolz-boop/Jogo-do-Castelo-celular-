@@ -20,8 +20,17 @@ export async function initArt(changed: () => void): Promise<void> {
   } catch {
     provided = new Set();
   }
+  try {
+    const res = await fetch('./arte/ancoras.json');
+    if (res.ok) anchors = (await res.json()) as Record<string, number>;
+  } catch {
+    anchors = {};
+  }
   applyInterfaceArt();
 }
+
+/** Centro do chão (fração da altura) para artes cujo chão foi apagado. */
+let anchors: Record<string, number> = {};
 
 /** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */
 /** Botão com arte: as pontas mantêm o desenho e só o miolo estica. */
@@ -115,7 +124,8 @@ const anchorCache = new WeakMap<object, number>();
  * Altura (em px da imagem) do centro do chão de uma arte isométrica fornecida.
  * Mede a borda de baixo do bloco: a ponta da frente e a inclinação dos lados.
  */
-export function groundCenterY(img: Img): number {
+export function groundCenterY(img: Img, key?: string): number {
+  if (key && anchors[key] != null) return anchors[key] * (img.height as number);
   const hit = anchorCache.get(img);
   if (hit !== undefined) return hit;
   const W = img.width as number;

@@ -355,7 +355,7 @@ export class CityView {
     const ih = img.height as number;
     const k = (n * TW * this.zoom) / iw;
     const center = this.toScreen(x + n / 2, y + n / 2);
-    c.drawImage(img, center.x - (iw / 2) * k, center.y - groundCenterY(img) * k, iw * k, ih * k);
+    c.drawImage(img, center.x - (iw / 2) * k, center.y - groundCenterY(img, key) * k, iw * k, ih * k);
   }
 
   private drawScaffold(c: CanvasRenderingContext2D, x: number, y: number, n: number): void {

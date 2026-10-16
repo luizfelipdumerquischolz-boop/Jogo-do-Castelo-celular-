@@ -238,9 +238,26 @@ export class CityView {
             else if (x >= core0 + 3 && x < core0 + 9 && y >= core0 + 3 && y < core0 + 9) key = 'chao-pavimento';
           } else if (Math.abs(x - 11.5) < 2.5 && Math.abs(y - 11.5) < 2.5) key = 'chao-pavimento';
         }
-        const img = art(key);
         c.globalAlpha = inside ? 1 : 0.55;
-        c.drawImage(img, p.x - tw / 2, p.y, tw, th);
+        if (this.ghost) {
+          // Modo de construção: ladrilhos com as linhas da grade.
+          c.drawImage(art(key), p.x - tw / 2, p.y, tw, th);
+        } else {
+          // Fora do modo de construção: chão contínuo, sem linhas.
+          const pat = this.groundPattern(c, key);
+          if (pat) {
+            const o = this.toScreen(0, 0);
+            pat.setTransform(new DOMMatrix().translate(o.x, o.y).scale(this.zoom));
+            c.fillStyle = pat;
+            c.beginPath();
+            c.moveTo(p.x, p.y - 0.5);
+            c.lineTo(p.x + tw / 2 + 0.5, p.y + th / 2);
+            c.lineTo(p.x, p.y + th + 0.5);
+            c.lineTo(p.x - tw / 2 - 0.5, p.y + th / 2);
+            c.closePath();
+            c.fill();
+          } else c.drawImage(art(key), p.x - tw / 2, p.y, tw, th);
+        }
         c.globalAlpha = 1;
       }
     }
@@ -348,12 +365,45 @@ export class CityView {
     c.drawImage(img, base.x - dw / 2, base.y - dh + 2 * sc, dw, dh);
   }
 
+  private patterns = new Map<string, { src: unknown; pat: CanvasPattern | null }>();
+
+  /** Textura sem emendas feita do miolo do ladrilho (espelhada para repetir). */
+  private groundPattern(c: CanvasRenderingContext2D, key: string): CanvasPattern | null {
+    const img = art(key);
+    const hit = this.patterns.get(key);
+    if (hit && hit.src === img) return hit.pat;
+    const iw = img.width as number;
+    const ih = img.height as number;
+    const cw = Math.max(2, Math.round(iw * 0.4));
+    const chh = Math.max(2, Math.round(ih * 0.4));
+    const sx = (iw - cw) / 2;
+    const sy = (ih - chh) / 2;
+    // A textura tem o tamanho de 1 casa no zoom 1 (TW × TH) dividido em 2 × 2 cópias espelhadas.
+    const tile = document.createElement('canvas');
+    tile.width = TW;
+    tile.height = TH;
+    const t = tile.getContext('2d')!;
+    const hw = TW / 2;
+    const hh = TH / 2;
+    for (const [fx, fy] of [[1, 1], [-1, 1], [1, -1], [-1, -1]]) {
+      t.save();
+      t.translate(fx === 1 ? 0 : TW, fy === 1 ? 0 : TH);
+      t.scale(fx, fy);
+      t.drawImage(img, sx, sy, cw, chh, 0, 0, hw, hh);
+      t.restore();
+    }
+    const pat = c.createPattern(tile, 'repeat');
+    this.patterns.set(key, { src: img, pat });
+    return pat;
+  }
+
   /** Arte fornecida: o centro do chão da imagem fica no centro das casas ocupadas. */
   private drawOnFootprint(c: CanvasRenderingContext2D, key: string, x: number, y: number, n: number): void {
     const img = art(key);
     const iw = img.width as number;
     const ih = img.height as number;
-    const k = (n * TW * this.zoom) / iw;
+    // As construções ocupam 80% das casas: sobra um respiro entre vizinhas.
+    const k = (n * TW * this.zoom * BUILD_FILL) / iw;
     const center = this.toScreen(x + n / 2, y + n / 2);
     c.drawImage(img, center.x - (iw / 2) * k, center.y - groundCenterY(img, key) * k, iw * k, ih * k);
   }
@@ -418,6 +468,9 @@ export class CityView {
 function vocLabel(v: string): string {
   return ({ agricultural: 'agrícola', mining: 'mineiro', industrial: 'industrial', commercial: 'comercial', cultural: 'cultural', military: 'militar', fortress: 'fortaleza' } as Record<string, string>)[v] ?? v;
 }
+
+/** Fração da largura das casas ocupada pela arte da construção. */
+const BUILD_FILL = 0.8;
 
 function diamond(c: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, fill: string): void {
   c.beginPath();

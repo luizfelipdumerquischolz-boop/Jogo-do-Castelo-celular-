@@ -333,7 +333,6 @@ export class MapView {
     const maxY = Math.min(MAP_SIZE - 1, Math.ceil(Math.max(...corners.map((p) => p.y))) + 4);
     const tw = TW * this.zoom;
     const th = TH * this.zoom;
-    const s = tw / 128;
     const roads = new Set(this.snap!.state.roads);
     const bridges = new Set(this.snap!.state.bridges);
     const cut = new Set(this.snap!.state.forestCut);
@@ -362,7 +361,7 @@ export class MapView {
         }
         const key = tileArt(m, i, roads, bridges, cut);
         const img = art(key);
-        const ih = (img.height as number) * s;
+        const ih = ((img.height as number) * tw) / (img.width as number);
         c.drawImage(img, p.x - tw / 2, p.y + th - ih, tw, ih);
         if (roads.has(i) && key !== 'terreno-estrada' && key !== 'terreno-ponte') {
           c.globalAlpha = 0.7;

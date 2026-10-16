@@ -221,7 +221,6 @@ export class CityView {
     if (!s || !st) return;
     const tw = TW * this.zoom;
     const th = TH * this.zoom;
-    const sc = tw / 128;
     const bnd = usableBounds(s);
     const unlocked = districtsUnlocked(s);
     const core0 = (FRAME - BALANCE.capitalCore) / 2;
@@ -282,7 +281,7 @@ export class CityView {
           draw: () => {
             const p = this.toScreen(x, y);
             const img = art(`muralha-${piece}-${stage}${dmg}`);
-            const h = (img.height as number) * sc;
+            const h = ((img.height as number) * tw) / (img.width as number);
             c.drawImage(img, p.x - tw / 2, p.y + th - h, tw, h);
           },
         });
@@ -302,7 +301,7 @@ export class CityView {
           for (const y of [bnd.y0 - 2, bnd.y1 + 1]) {
             const p = this.toScreen(x, y);
             const img = art('muralha-fosso');
-            const h = (img.height as number) * sc;
+            const h = ((img.height as number) * tw) / (img.width as number);
             c.drawImage(img, p.x - tw / 2, p.y + th - h, tw, h);
           }
         }
@@ -348,8 +347,8 @@ export class CityView {
     if (b.level === 0 && b.build) {
       const base = this.toScreen(b.x + n, b.y + n);
       const img = art(`andaime-${n}`);
-      const h = (img.height as number) * sc;
-      const w = (img.width as number) * sc;
+      const w = n * 128 * sc;
+      const h = ((img.height as number) * w) / (img.width as number);
       c.drawImage(img, base.x - w / 2, base.y - h + 2 * sc, w, h);
     } else {
       this.drawSprite(c, b.type, b.level, b.x, b.y);
@@ -357,8 +356,10 @@ export class CityView {
         // Melhoria em andamento: andaime por cima, meio transparente.
         const base = this.toScreen(b.x + n, b.y + n);
         const img = art(`andaime-${n}`);
+        const aw = n * 128 * sc;
+        const ah = ((img.height as number) * aw) / (img.width as number);
         c.globalAlpha = 0.55;
-        c.drawImage(img, base.x - ((img.width as number) * sc) / 2, base.y - (img.height as number) * sc + 2 * sc, (img.width as number) * sc, (img.height as number) * sc);
+        c.drawImage(img, base.x - aw / 2, base.y - ah + 2 * sc, aw, ah);
         c.globalAlpha = 1;
       }
     }

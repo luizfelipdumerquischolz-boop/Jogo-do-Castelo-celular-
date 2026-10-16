@@ -335,10 +335,13 @@ export class CityView {
   private drawSprite(c: CanvasRenderingContext2D, type: BuildingId, level: number, x: number, y: number): void {
     const n = BUILDINGS[type].size;
     const base = this.toScreen(x + n, y + n);
-    const { w, h } = buildingSpriteSize(type);
+    const { w } = buildingSpriteSize(type);
     const sc = (TW * this.zoom) / 128;
     const img = art(`construcao-${type}-${stageForLevel(Math.max(1, level))}`);
-    c.drawImage(img, base.x - (w * sc) / 2, base.y - h * sc + 2 * sc, w * sc, h * sc);
+    // A largura segue o tamanho da construção; a altura segue a proporção da imagem.
+    const dw = w * sc;
+    const dh = ((img.height as number) * dw) / (img.width as number);
+    c.drawImage(img, base.x - dw / 2, base.y - dh + 2 * sc, dw, dh);
   }
 
   private drawBuilding(c: CanvasRenderingContext2D, b: PlacedBuilding, now: number): void {

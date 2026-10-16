@@ -17,7 +17,7 @@ import {
 import { FOOD_GROUPS, FOOD_GROUP_NAMES, FOOD_IDS, ITEMS, ITEM_IDS, type ItemId } from '../sim/data/items';
 import { BRANCH_NAMES, RESEARCH, type ResearchBranch } from '../sim/data/research';
 import { PLAYABLE_UNITS, UNITS, troopCount, type UnitId } from '../sim/data/units';
-import { CONTINENT_NAME } from '../sim/data/names';
+import { CONTINENT_NAME, heroPortrait } from '../sim/data/names';
 import { REGION_NAMES, describeTile, getMap, idx } from '../sim/map';
 import {
   canRecruit,
@@ -540,7 +540,7 @@ export function renderHeroes(state: GameState): string {
   const p = state.playerNation;
   const mine = state.heroes.filter((h) => h.nation === p);
   const pool = state.heroes.filter((h) => h.nation === -1);
-  const card = (h: Hero, hire: boolean) => `<div class="card hero" data-key="h-${h.id}"><span class="pframe"><img class="portrait" src="${artUrlFor(`heroi-${(h.id % 8) + 1}`)}" alt=""></span><div>
+  const card = (h: Hero, hire: boolean) => `<div class="card hero" data-key="h-${h.id}"><span class="pframe"><img class="portrait" src="${artUrlFor(`heroi-${heroPortrait(h.name, h.id)}`)}" alt=""></span><div>
     <b>${esc(h.name)}</b> <small>nível ${h.level}${h.captiveOf != null ? ' · CAPTURADO' : ''}${h.role !== 'none' ? ` · ${h.role === 'commander' ? 'comandante' : 'cônsul'}` : ''}</small>
     <p>${h.traits.map((t) => `<span class="trait" title="${esc(TRAIT_INFO[t] ?? '')}">${esc(t)}</span>`).join(' ')}</p>
     <small>${h.traits.map((t) => esc(TRAIT_INFO[t] ?? '')).join(' ')}</small>

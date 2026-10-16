@@ -55,6 +55,12 @@ const FEMALE = new Set(['Bruna', 'Dália', 'Fausta', 'Helena', 'Joana', 'Mirela'
 const EPITHET_F: Record<string, string> = { 'o Sereno': 'a Serena', 'o Velho': 'a Velha' };
 const EPITHET_M: Record<string, string> = { 'a Astuta': 'o Astuto', 'a Justa': 'o Justo' };
 
+/** Retrato do herói (1–8): mulheres usam os pares, homens os ímpares. */
+export function heroPortrait(name: string, id: number): number {
+  const female = FEMALE.has(name.split(' ')[0]);
+  return (id % 4) * 2 + (female ? 2 : 1);
+}
+
 export function heroName(r1: number, r2: number): string {
   const first = pick(HERO_FIRST, r1);
   const last = pick(HERO_LAST, r2);

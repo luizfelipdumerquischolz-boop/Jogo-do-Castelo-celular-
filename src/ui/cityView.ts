@@ -3,7 +3,7 @@ import { BALANCE } from '../sim/data/balance';
 import { BUILDINGS, type BuildingId } from '../sim/data/buildings';
 import { FRAME, buildingAt, canPlace, districtsUnlocked, quadrantOf, usableBounds, wallMaxHp } from '../sim/settlement';
 import type { GameState, PlacedBuilding, Settlement } from '../sim/types';
-import { art } from '../art/loader';
+import { art, groundCenterY, isProvided } from '../art/loader';
 import { buildingSpriteSize, stageForLevel } from '../art/registry';
 
 const TW = 64;
@@ -337,32 +337,48 @@ export class CityView {
     const base = this.toScreen(x + n, y + n);
     const { w } = buildingSpriteSize(type);
     const sc = (TW * this.zoom) / 128;
-    const img = art(`construcao-${type}-${stageForLevel(Math.max(1, level))}`);
-    // A largura segue o tamanho da construção; a altura segue a proporção da imagem.
+    const key = `construcao-${type}-${stageForLevel(Math.max(1, level))}`;
+    if (isProvided(key)) {
+      this.drawOnFootprint(c, key, x, y, n);
+      return;
+    }
+    const img = art(key);
     const dw = w * sc;
     const dh = ((img.height as number) * dw) / (img.width as number);
     c.drawImage(img, base.x - dw / 2, base.y - dh + 2 * sc, dw, dh);
   }
 
+  /** Arte fornecida: o centro do chão da imagem fica no centro das casas ocupadas. */
+  private drawOnFootprint(c: CanvasRenderingContext2D, key: string, x: number, y: number, n: number): void {
+    const img = art(key);
+    const iw = img.width as number;
+    const ih = img.height as number;
+    const k = (n * TW * this.zoom) / iw;
+    const center = this.toScreen(x + n / 2, y + n / 2);
+    c.drawImage(img, center.x - (iw / 2) * k, center.y - groundCenterY(img) * k, iw * k, ih * k);
+  }
+
+  private drawScaffold(c: CanvasRenderingContext2D, x: number, y: number, n: number): void {
+    const key = `andaime-${n}`;
+    if (isProvided(key)) return this.drawOnFootprint(c, key, x, y, n);
+    const sc = (TW * this.zoom) / 128;
+    const base = this.toScreen(x + n, y + n);
+    const img = art(key);
+    const w = n * 128 * sc;
+    const h = ((img.height as number) * w) / (img.width as number);
+    c.drawImage(img, base.x - w / 2, base.y - h + 2 * sc, w, h);
+  }
+
   private drawBuilding(c: CanvasRenderingContext2D, b: PlacedBuilding, now: number): void {
     const n = BUILDINGS[b.type].size;
-    const sc = (TW * this.zoom) / 128;
     if (b.level === 0 && b.build) {
-      const base = this.toScreen(b.x + n, b.y + n);
-      const img = art(`andaime-${n}`);
-      const w = n * 128 * sc;
-      const h = ((img.height as number) * w) / (img.width as number);
-      c.drawImage(img, base.x - w / 2, base.y - h + 2 * sc, w, h);
+      this.drawScaffold(c, b.x, b.y, n);
     } else {
       this.drawSprite(c, b.type, b.level, b.x, b.y);
       if (b.build) {
         // Melhoria em andamento: andaime por cima, meio transparente.
-        const base = this.toScreen(b.x + n, b.y + n);
-        const img = art(`andaime-${n}`);
-        const aw = n * 128 * sc;
-        const ah = ((img.height as number) * aw) / (img.width as number);
         c.globalAlpha = 0.55;
-        c.drawImage(img, base.x - aw / 2, base.y - ah + 2 * sc, aw, ah);
+        this.drawScaffold(c, b.x, b.y, n);
         c.globalAlpha = 1;
       }
     }

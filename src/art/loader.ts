@@ -108,3 +108,51 @@ export function artSize(key: string): { w: number; h: number } {
   const s = ART_BY_KEY.get(key);
   return s ? { w: s.w, h: s.h } : { w: 1, h: 1 };
 }
+
+const anchorCache = new WeakMap<object, number>();
+
+/**
+ * Altura (em px da imagem) do centro do chão de uma arte isométrica fornecida.
+ * Mede a borda de baixo do bloco: a ponta da frente e a inclinação dos lados.
+ */
+export function groundCenterY(img: Img): number {
+  const hit = anchorCache.get(img);
+  if (hit !== undefined) return hit;
+  const W = img.width as number;
+  const H = img.height as number;
+  let result = H - W / 4;
+  try {
+    const cv = document.createElement('canvas');
+    cv.width = W;
+    cv.height = H;
+    const cx = cv.getContext('2d', { willReadFrequently: true })!;
+    cx.drawImage(img, 0, 0);
+    const data = cx.getImageData(0, 0, W, H).data;
+    const low = new Float64Array(W).fill(-1);
+    for (let x = 0; x < W; x++) {
+      for (let y = H - 1; y >= 0; y--) {
+        if (data[(y * W + x) * 4 + 3] > 100) {
+          low[x] = y;
+          break;
+        }
+      }
+    }
+    let xb = 0;
+    for (let x = 0; x < W; x++) if (low[x] > low[xb]) xb = x;
+    const tip = low[xb];
+    // Inclinação média da borda de baixo, dos dois lados da ponta.
+    const slopes: number[] = [];
+    for (const dir of [-1, 1]) {
+      const a = Math.round(xb + dir * W * 0.08);
+      const b = Math.round(xb + dir * W * 0.32);
+      if (a >= 0 && a < W && b >= 0 && b < W && low[a] >= 0 && low[b] >= 0) slopes.push((low[a] - low[b]) / Math.abs(b - a));
+    }
+    const s = slopes.length ? slopes.reduce((p, q) => p + q, 0) / slopes.length : 0.5;
+    const slope = Math.min(0.8, Math.max(0.3, s));
+    result = tip - slope * (W / 2) - W * 0.035;
+  } catch {
+    /* imagem ainda não pronta: usa a estimativa */
+  }
+  anchorCache.set(img, result);
+  return result;
+}

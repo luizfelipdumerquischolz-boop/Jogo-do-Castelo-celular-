@@ -98,3 +98,15 @@ tests/  e2e/      testes Vitest e Playwright
 A função central é `tick(state, segundos)` em `src/sim/tick.ts`: avança o mundo de forma determinística, em
 passos de no máximo 1 segundo, sem ler relógio nem fazer I/O. O núcleo chama `tick` com o tempo decorrido
 (limitado a 1 s por quadro), então pausas com o app em segundo plano nunca viram produção.
+
+## App Android (APK)
+
+`android/` é um app Android mínimo (sem bibliotecas extras) que abre o jogo publicado em tela cheia.
+Como ele carrega o site, o jogo dentro do app se atualiza sozinho a cada publicação; depois da primeira
+abertura funciona offline pelo service worker. O APK fica em `public/coroa-de-pedra.apk` e é baixado em
+**https://luizfelipdumerquischolz-boop.github.io/Jogo-do-Castelo-celular-/coroa-de-pedra.apk**.
+
+Para gerar de novo (só é preciso se o app em si mudar): instale o Android SDK, crie `android/local.properties`
+com `sdk.dir=...` e `android/chave.properties` com a chave de assinatura (fora do repositório; para o Android
+aceitar a atualização sem desinstalar, use sempre a mesma chave e aumente `versionCode`), e rode
+`gradle assembleRelease` dentro de `android/`.

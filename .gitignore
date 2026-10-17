@@ -3,3 +3,9 @@ dist
 test-results
 playwright-report
 tests/_*
+android/.gradle
+android/build
+android/app/build
+android/local.properties
+android/chave.properties
+android/*.jks

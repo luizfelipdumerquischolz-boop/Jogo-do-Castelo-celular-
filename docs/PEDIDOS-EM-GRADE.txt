@@ -1,456 +1,599 @@
-COROA DE PEDRA — PEDIDOS EM GRADE (as 302 imagens que faltam)
+COROA DE PEDRA — PEDIDOS EM GRADE (402 imagens em 32 pedidos)
 
-Como usar: copie um PEDIDO por vez (do título até o fim da lista dele) e cole na IA. Me mande a grade pronta; eu recorto, limpo e coloco no jogo.
+Como usar: copie um PEDIDO por vez (do texto até o fim da lista dele) e cole na IA. Me mande a grade pronta; eu recorto, limpo e coloco no jogo.
 Se a IA não conseguir fazer tudo numa grade, peça metade da lista e depois a outra metade.
+Regra de ouro: construções, muralhas, andaimes, soldados e objetos vêm SEM chão e SEM sombra. Chãos e sombras têm pedidos próprios.
 
 
 ============================================
-PEDIDO 1 — Ícones dos botões que faltam (16 imagens)
+PEDIDO 1 — Peças da interface (12 imagens)
 ============================================
-Monte uma única imagem em GRADE com 4 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1200 × 1380 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones planos vistos de frente, sem perspectiva, um objeto principal grande e reconhecível em miniatura, sem cenário. São ícones de botões de um jogo medieval. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 4 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1449 pixels (cada célula com cerca de 420 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Peças de interface vistas de frente, sem perspectiva. Barras, painel e fundo de menu são texturas que se repetem: sem ícones nem objetos dentro. Botões sem texto. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. icone-ui-espionar.png — Espionar — Ícone do botão "Espionar".
-2. icone-ui-defender.png — Defender — Ícone do botão "Defender".
-3. icone-ui-voltar.png — Voltar para casa — Ícone do botão "Voltar para casa".
-4. icone-ui-fechar.png — Fechar painel — Ícone do botão "Fechar painel".
-5. icone-ui-pesquisa.png — Pesquisa — Ícone do botão "Pesquisa".
-6. icone-ui-diplomacia.png — Diplomacia — Ícone do botão "Diplomacia".
-7. icone-ui-taverna.png — Taverna — Ícone do botão "Taverna".
-8. icone-ui-herois.png — Heróis — Ícone do botão "Heróis".
-9. icone-ui-missoes.png — Missões — Ícone do botão "Missões".
-10. icone-ui-mercado.png — Mercado — Ícone do botão "Mercado".
-11. icone-ui-rotas.png — Rotas e carroças — Ícone do botão "Rotas e carroças".
-12. icone-ui-colonos.png — Colonos — Ícone do botão "Colonos".
-13. icone-ui-relatorios.png — Relatórios de batalha — Ícone do botão "Relatórios de batalha".
-14. icone-ui-artes.png — Lista de artes — Ícone do botão "Lista de artes".
-15. icone-ui-ajuda.png — Ajuda — Ícone do botão "Ajuda".
-16. icone-ui-novo.png — Novo jogo — Ícone do botão "Novo jogo".
+1. ui-botao.png — Botão principal. Botão verde de ação (Construir, Melhorar, Recrutar). Esticado na largura: bordas arredondadas com moldura, miolo liso.
+2. ui-botao-perigo.png — Botão de perigo. Botão vermelho (Atacar, Demolir).
+3. ui-botao-neutro.png — Botão neutro. Botão marrom para ações secundárias (Cancelar, Voltar).
+4. ui-botao-desativado.png — Botão desativado. Botão acinzentado quando a ação não está disponível.
+5. ui-barra-topo.png — Barra superior. Faixa de madeira escura atrás dos recursos no topo da tela. Repete na horizontal.
+6. ui-barra-inferior.png — Barra de navegação. Faixa de madeira atrás das abas na parte de baixo. Repete na horizontal.
+7. ui-painel.png — Painel de pergaminho. Fundo dos painéis que sobem de baixo (informações de construções, exércitos). Textura de pergaminho que se repete, com borda escura de 16 px.
+8. ui-fundo.png — Fundo das telas de menu. Couro ou madeira escura atrás das listas (cartas, pesquisa, diplomacia). Repete sem emenda.
+9. ui-moldura-retrato.png — Moldura de retrato. Moldura dourada redonda para retratos de heróis e soldados. Miolo transparente.
+10. ui-selo.png — Selo de cera. Selo vermelho das cartas não lidas.
+11. ui-carta.png — Papel de carta. Folha de pergaminho para ler cartas. Bordas levemente queimadas.
+12. ui-icone-app.png — Ícone do aplicativo. Ícone que aparece na tela inicial do celular. Castelo ou coroa de pedra, sem texto, fundo escuro.
 
 ============================================
-PEDIDO 2 — Marcadores e viajantes do mapa (18 imagens)
+PEDIDO 2 — Ícones dos botões e abas (31 imagens)
 ============================================
-Monte uma única imagem em GRADE com 6 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 1035 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones vistos levemente de cima (isométrico suave), base embaixo, silhueta simples. Bandeiras em cinza claro (o jogo pinta a cor de cada reino). Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 6 colunas × 6 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 2070 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones planos vistos de frente, sem perspectiva, um objeto principal grande e reconhecível em miniatura, sem cenário. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. mapa-capital.png — Capital — Capital visto no mapa-múndi.
-2. mapa-city.png — Cidade — Cidade visto no mapa-múndi.
-3. mapa-village.png — Aldeia — Aldeia visto no mapa-múndi.
-4. mapa-castle.png — Castelo — Castelo visto no mapa-múndi.
-5. mapa-outpost.png — Entreposto — Entreposto visto no mapa-múndi.
-6. mapa-camp.png — Acampamento de bandidos — Acampamento de bandidos visto no mapa-múndi.
-7. mapa-camp-ruin.png — Acampamento de bandidos em ruínas — Acampamento de bandidos em ruínas visto no mapa-múndi.
-8. mapa-tribe1.png — Acampamento tribal (nível 1) — Acampamento tribal (nível 1) visto no mapa-múndi.
-9. mapa-tribe2.png — Aldeia tribal (nível 2) — Aldeia tribal (nível 2) visto no mapa-múndi.
-10. mapa-tribe3.png — Fortaleza tribal (nível 3) — Fortaleza tribal (nível 3) visto no mapa-múndi.
-11. mapa-tribe4.png — Confederação tribal (nível 4) — Confederação tribal (nível 4) visto no mapa-múndi.
-12. mapa-batalha.png — Batalha em andamento — Marca de batalha (espadas cruzadas, poeira) sobre o local do combate.
-13. viajante-wagon.png — Carroça de recursos — Carroça de recursos se movendo pelo mapa.
-14. viajante-caravan.png — Caravana de comércio — Caravana de comércio se movendo pelo mapa.
-15. viajante-messenger.png — Mensageiro a cavalo — Mensageiro a cavalo se movendo pelo mapa.
-16. viajante-colonists.png — Grupo de colonos — Grupo de colonos se movendo pelo mapa.
-17. viajante-spy.png — Espião encapuzado — Espião encapuzado se movendo pelo mapa.
-18. viajante-ship.png — Navio da horda — Navio da horda se movendo pelo mapa.
+1. icone-ui-reino.png — Aba Reino (mapa). Ícone do botão "Aba Reino (mapa)".
+2. icone-ui-cidade.png — Aba Cidade. Ícone do botão "Aba Cidade".
+3. icone-ui-exercitos.png — Aba Exércitos. Ícone do botão "Aba Exércitos".
+4. icone-ui-cartas.png — Aba Cartas. Ícone do botão "Aba Cartas".
+5. icone-ui-mais.png — Aba Mais. Ícone do botão "Aba Mais".
+6. icone-ui-construir.png — Construir. Ícone do botão "Construir".
+7. icone-ui-melhorar.png — Melhorar. Ícone do botão "Melhorar".
+8. icone-ui-mover.png — Mover construção. Ícone do botão "Mover construção".
+9. icone-ui-demolir.png — Demolir. Ícone do botão "Demolir".
+10. icone-ui-atacar.png — Atacar / conquistar. Ícone do botão "Atacar / conquistar".
+11. icone-ui-saquear.png — Saquear. Ícone do botão "Saquear".
+12. icone-ui-espionar.png — Espionar. Ícone do botão "Espionar".
+13. icone-ui-defender.png — Defender. Ícone do botão "Defender".
+14. icone-ui-voltar.png — Voltar para casa. Ícone do botão "Voltar para casa".
+15. icone-ui-fechar.png — Fechar painel. Ícone do botão "Fechar painel".
+16. icone-ui-pesquisa.png — Pesquisa. Ícone do botão "Pesquisa".
+17. icone-ui-diplomacia.png — Diplomacia. Ícone do botão "Diplomacia".
+18. icone-ui-taverna.png — Taverna. Ícone do botão "Taverna".
+19. icone-ui-herois.png — Heróis. Ícone do botão "Heróis".
+20. icone-ui-missoes.png — Missões. Ícone do botão "Missões".
+21. icone-ui-mercado.png — Mercado. Ícone do botão "Mercado".
+22. icone-ui-rotas.png — Rotas e carroças. Ícone do botão "Rotas e carroças".
+23. icone-ui-colonos.png — Colonos. Ícone do botão "Colonos".
+24. icone-ui-relatorios.png — Relatórios de batalha. Ícone do botão "Relatórios de batalha".
+25. icone-ui-cronica.png — Crônica do reino. Ícone do botão "Crônica do reino".
+26. icone-ui-artes.png — Lista de artes. Ícone do botão "Lista de artes".
+27. icone-ui-ajuda.png — Ajuda. Ícone do botão "Ajuda".
+28. icone-ui-novo.png — Novo jogo. Ícone do botão "Novo jogo".
+29. icone-ui-zoom.png — Zoom do mapa. Ícone do botão "Zoom do mapa".
+30. icone-ui-fundar.png — Fundar assentamento. Ícone do botão "Fundar assentamento".
+31. icone-ui-recrutar.png — Recrutar. Ícone do botão "Recrutar".
 
 ============================================
-PEDIDO 3 — Depósitos de recursos e efeitos (20 imagens)
+PEDIDO 3 — Ícones de recursos, alimentos e itens (39 imagens)
 ============================================
-Monte uma única imagem em GRADE com 5 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1500 × 1380 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Depósitos: vistos levemente de cima, a versão '-esgotado' é o mesmo depósito quase vazio. Efeitos: um único quadro, solto, sem fundo próprio. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 7 colunas × 6 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1960 × 1932 pixels (cada célula com cerca de 280 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones planos vistos de frente, sem perspectiva, um objeto principal grande e reconhecível em miniatura, sem cenário. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. deposito-iron.png — Ferro — Depósito de ferro no mapa.
-2. deposito-iron-esgotado.png — Ferro (esgotado) — Depósito de ferro no mapa, já esgotado.
-3. deposito-stone.png — Pedra — Depósito de pedra no mapa.
-4. deposito-stone-esgotado.png — Pedra (esgotado) — Depósito de pedra no mapa, já esgotado.
-5. deposito-gold.png — Ouro — Depósito de ouro no mapa.
-6. deposito-gold-esgotado.png — Ouro (esgotado) — Depósito de ouro no mapa, já esgotado.
-7. deposito-diamond.png — Diamante — Depósito de diamante no mapa.
-8. deposito-diamond-esgotado.png — Diamante (esgotado) — Depósito de diamante no mapa, já esgotado.
-9. deposito-fertile.png — Solo fértil — Depósito de solo fértil no mapa.
-10. deposito-fertile-esgotado.png — Solo fértil (esgotado) — Depósito de solo fértil no mapa, já esgotado.
-11. deposito-fish.png — Cardume (pesca) — Depósito de cardume (pesca) no mapa.
-12. deposito-fish-esgotado.png — Cardume (pesca) (esgotado) — Depósito de cardume (pesca) no mapa, já esgotado.
-13. efeito-fogo.png — Fogo — Fogo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-14. efeito-fumaca.png — Fumaça — Fumaça. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-15. efeito-poeira.png — Poeira de marcha — Poeira de marcha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-16. efeito-flecha.png — Flecha — Flecha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-17. efeito-impacto.png — Impacto na muralha — Impacto na muralha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-18. efeito-neve.png — Neve caindo — Neve caindo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-19. efeito-chuva.png — Chuva — Chuva. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
-20. efeito-batalha.png — Choque de batalha — Choque de batalha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+1. icone-wood.png — Madeira. Ícone de madeira.
+2. icone-stone.png — Pedra. Ícone de pedra.
+3. icone-iron.png — Ferro. Ícone de ferro.
+4. icone-diamond.png — Diamante. Ícone de diamante.
+5. icone-wheat.png — Trigo. Ícone de trigo.
+6. icone-oats.png — Aveia. Ícone de aveia.
+7. icone-barley.png — Cevada. Ícone de cevada.
+8. icone-grapes.png — Uva. Ícone de uva.
+9. icone-cattle.png — Gado. Ícone de gado.
+10. icone-milk.png — Leite. Ícone de leite.
+11. icone-wool.png — Lã. Ícone de lã.
+12. icone-wax.png — Cera. Ícone de cera.
+13. icone-flour.png — Farinha. Ícone de farinha.
+14. icone-charcoal.png — Carvão. Ícone de carvão.
+15. icone-steel.png — Aço. Ícone de aço.
+16. icone-leather.png — Couro. Ícone de couro.
+17. icone-cloth.png — Tecido. Ícone de tecido.
+18. icone-jewels.png — Joias. Ícone de joias.
+19. icone-bread.png — Pão. Ícone de pão.
+20. icone-porridge.png — Mingau. Ícone de mingau.
+21. icone-meat.png — Carne. Ícone de carne.
+22. icone-fish.png — Peixe. Ícone de peixe.
+23. icone-eggs.png — Ovos. Ícone de ovos.
+24. icone-cheese.png — Queijo. Ícone de queijo.
+25. icone-vegetables.png — Legumes. Ícone de legumes.
+26. icone-fruit.png — Frutas. Ícone de frutas.
+27. icone-beer.png — Cerveja. Ícone de cerveja.
+28. icone-wine.png — Vinho. Ícone de vinho.
+29. icone-honey.png — Mel. Ícone de mel.
+30. icone-weapon.png — Arma. Ícone de arma.
+31. icone-armor.png — Armadura. Ícone de armadura.
+32. icone-shield.png — Escudo. Ícone de escudo.
+33. icone-crossbow.png — Besta. Ícone de besta.
+34. icone-steelWeapon.png — Arma de aço. Ícone de arma de aço.
+35. icone-steelArmor.png — Armadura de aço. Ícone de armadura de aço.
+36. icone-bow.png — Arco. Ícone de arco.
+37. icone-horse.png — Cavalo. Ícone de cavalo.
+38. icone-banner.png — Estandarte. Ícone de estandarte.
+39. icone-gold.png — Ouro. Pilha de moedas de ouro (tesouro do reino).
 
 ============================================
-PEDIDO 4 — Terreno do mapa e chão da cidade (22 imagens)
+PEDIDO 4 — Ícones de status (8 imagens)
 ============================================
-Monte uma única imagem em GRADE com 6 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 1380 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Cada ladrilho é um LOSANGO isométrico deitado (2 vezes mais largo que alto), visto de cima em ângulo, que se encaixa lado a lado sem emenda. Colina, montanha, floresta e bosque podem subir acima do losango. Decorações (árvore, arbusto, pedras) são objetos soltos. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 4 colunas × 2 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1200 × 690 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones planos vistos de frente, sem perspectiva, um objeto principal grande e reconhecível em miniatura, sem cenário. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. terreno-mar.png — Mar — Mar. Casa do mapa-múndi.
-2. terreno-grama.png — Campo de grama — Campo de grama. Casa do mapa-múndi.
-3. terreno-terra.png — Terra — Terra. Casa do mapa-múndi.
-4. terreno-areia.png — Areia da praia — Areia da praia. Casa do mapa-múndi.
-5. terreno-neve.png — Neve — Neve. Casa do mapa-múndi.
-6. terreno-colina.png — Colina — Colina. Casa do mapa-múndi.
-7. terreno-montanha.png — Montanha (intransponível) — Montanha (intransponível). Casa do mapa-múndi.
-8. terreno-rio.png — Rio — Rio. Casa do mapa-múndi.
-9. terreno-vau.png — Vau (travessia rasa do rio) — Vau (travessia rasa do rio). Casa do mapa-múndi.
-10. terreno-floresta.png — Floresta densa — Floresta densa. Casa do mapa-múndi.
-11. terreno-bosque.png — Bosque — Bosque. Casa do mapa-múndi.
-12. terreno-pantano.png — Pântano — Pântano. Casa do mapa-múndi.
-13. terreno-estrada.png — Estrada — Estrada. Casa do mapa-múndi.
-14. terreno-ponte.png — Ponte sobre o rio — Ponte sobre o rio. Casa do mapa-múndi.
-15. terreno-costa.png — Transição areia → mar — Transição areia → mar. Casa do mapa-múndi.
-16. chao-grama.png — Grama dentro do assentamento — Grama dentro do assentamento. Losango que se repete sem emenda.
-17. chao-terra.png — Terra batida (caminhos) — Terra batida (caminhos). Losango que se repete sem emenda.
-18. chao-pavimento.png — Pavimento de pedra (perto da Torre) — Pavimento de pedra (perto da Torre). Losango que se repete sem emenda.
-19. chao-bairro.png — Chão dos bairros especializados da capital — Chão dos bairros especializados da capital. Losango que se repete sem emenda.
-20. decoracao-arvore.png — Árvore — Árvore decorativa do lado de fora da muralha.
-21. decoracao-arbusto.png — Arbusto — Arbusto decorativa do lado de fora da muralha.
-22. decoracao-pedras.png — Pedras — Pedras decorativa do lado de fora da muralha.
+1. icone-population.png — População. Ícone de população.
+2. icone-happiness.png — Felicidade. Ícone de felicidade.
+3. icone-health.png — Saúde. Ícone de saúde.
+4. icone-morale.png — Moral. Ícone de moral.
+5. icone-loyalty.png — Lealdade. Ícone de lealdade.
+6. icone-culture.png — Cultura. Ícone de cultura.
+7. icone-research.png — Pesquisa. Ícone de pesquisa.
+8. icone-time.png — Tempo / estação. Ícone de tempo / estação.
 
 ============================================
-PEDIDO 5 — Muralhas (estágios 1 e 2) (20 imagens)
+PEDIDO 5 — Construções grandes (3×3 casas): Torre de Menagem, Oficina de cerco, Porto (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 5 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1600 × 1472 pixels (cada célula com cerca de 320 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Peças isométricas que se encaixam formando uma muralha contínua em volta da cidade, todas na mesma escala e altura. 'reta-a' corre na diagonal ↘ (de cima-esquerda para baixo-direita), 'reta-b' na diagonal ↙, o portão na mesma direção da reta-a. Estágio 1 = paliçada de troncos; 2 = muro de pedra simples com ameias; 3 = muro alto de pedra clara com ameias. '-danificada' = a mesma peça com rachaduras e pedras caídas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1920 × 2208 pixels (cada célula com cerca de 640 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 3×3 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. muralha-reta-a-1.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1 — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
-2. muralha-reta-a-1-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1 (danificada) — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
-3. muralha-reta-a-2.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2 — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
-4. muralha-reta-a-2-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2 (danificada) — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
-5. muralha-reta-b-1.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1 — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
-6. muralha-reta-b-1-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1 (danificada) — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
-7. muralha-reta-b-2.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2 — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
-8. muralha-reta-b-2-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2 (danificada) — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
-9. muralha-canto-1.png — Canto da muralha — estágio 1 — Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
-10. muralha-canto-1-danificada.png — Canto da muralha — estágio 1 (danificada) — Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
-11. muralha-canto-2.png — Canto da muralha — estágio 2 — Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
-12. muralha-canto-2-danificada.png — Canto da muralha — estágio 2 (danificada) — Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
-13. muralha-torre-1.png — Torre da muralha — estágio 1 — Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
-14. muralha-torre-1-danificada.png — Torre da muralha — estágio 1 (danificada) — Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
-15. muralha-torre-2.png — Torre da muralha — estágio 2 — Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
-16. muralha-torre-2-danificada.png — Torre da muralha — estágio 2 (danificada) — Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
-17. muralha-portao-1.png — Portão — estágio 1 — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira.
-18. muralha-portao-1-danificada.png — Portão — estágio 1 (danificada) — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
-19. muralha-portao-2.png — Portão — estágio 2 — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias.
-20. muralha-portao-2-danificada.png — Portão — estágio 2 (danificada) — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+1. construcao-keep-1.png — Torre de Menagem — estágio 1. Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-keep-2.png — Torre de Menagem — estágio 2. Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-keep-3.png — Torre de Menagem — estágio 3. Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-siege_workshop-1.png — Oficina de cerco — estágio 1. Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-siege_workshop-2.png — Oficina de cerco — estágio 2. Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-siege_workshop-3.png — Oficina de cerco — estágio 3. Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-port-1.png — Porto — estágio 1. Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-port-2.png — Porto — estágio 2. Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-port-3.png — Porto — estágio 3. Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 6 — Muralhas (estágio 3), fosso e andaimes (14 imagens)
+PEDIDO 6 — Construções médias (2×2 casas): Salão do governador, Fazenda de trigo, Fazenda de aveia (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 5 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1600 × 1104 pixels (cada célula com cerca de 320 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Peças isométricas que se encaixam formando uma muralha contínua em volta da cidade, todas na mesma escala e altura. 'reta-a' corre na diagonal ↘ (de cima-esquerda para baixo-direita), 'reta-b' na diagonal ↙, o portão na mesma direção da reta-a. Estágio 1 = paliçada de troncos; 2 = muro de pedra simples com ameias; 3 = muro alto de pedra clara com ameias. '-danificada' = a mesma peça com rachaduras e pedras caídas. Andaimes: estrutura de madeira com blocos de pedra para obras. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. muralha-reta-a-3.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3 — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
-2. muralha-reta-a-3-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3 (danificada) — Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
-3. muralha-reta-b-3.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3 — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
-4. muralha-reta-b-3-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3 (danificada) — Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
-5. muralha-canto-3.png — Canto da muralha — estágio 3 — Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
-6. muralha-canto-3-danificada.png — Canto da muralha — estágio 3 (danificada) — Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
-7. muralha-torre-3.png — Torre da muralha — estágio 3 — Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
-8. muralha-torre-3-danificada.png — Torre da muralha — estágio 3 (danificada) — Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
-9. muralha-portao-3.png — Portão — estágio 3 — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
-10. muralha-portao-3-danificada.png — Portão — estágio 3 (danificada) — Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
-11. muralha-fosso.png — Fosso com água — Fosso com água. Ocupa uma casa do contorno.
-12. andaime-1.png — Andaime 1×1 — Andaime de madeira com blocos de pedra no chão, para construções de 1×1 casas em obra.
-13. andaime-2.png — Andaime 2×2 — Andaime de madeira com blocos de pedra no chão, para construções de 2×2 casas em obra.
-14. andaime-3.png — Andaime 3×3 — Andaime de madeira com blocos de pedra no chão, para construções de 3×3 casas em obra.
+1. construcao-governor_hall-1.png — Salão do governador — estágio 1. Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-governor_hall-2.png — Salão do governador — estágio 2. Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-governor_hall-3.png — Salão do governador — estágio 3. Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-wheat_farm-1.png — Fazenda de trigo — estágio 1. Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-wheat_farm-2.png — Fazenda de trigo — estágio 2. Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-wheat_farm-3.png — Fazenda de trigo — estágio 3. Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-oat_farm-1.png — Fazenda de aveia — estágio 1. Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-oat_farm-2.png — Fazenda de aveia — estágio 2. Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-oat_farm-3.png — Fazenda de aveia — estágio 3. Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 7 — Retratos dos soldados (21 imagens)
+PEDIDO 7 — Construções médias (2×2 casas): Fazenda de cevada, Pomar, Vinhedo (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 5 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 2000 × 2295 pixels (cada célula com cerca de 400 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Retratos de corpo inteiro, de frente e levemente de lado, pose heroica, uma unidade por célula, nada cortado. Cada tipo bem diferente do outro (arma, armadura, roupa e cores). Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. retrato-spearman.png — Lanceiro (retrato) — Infantaria barata com lança longa. Segura a cavalaria.
-2. retrato-archer.png — Arqueiro (retrato) — Atira de longe. Desfaz formações de infantaria.
-3. retrato-knight.png — Cavaleiro (retrato) — Carga veloz que esmaga arqueiros.
-4. retrato-shieldman.png — Escudeiro (retrato) — Parede de escudos: aguenta flechas.
-5. retrato-crossbowman.png — Besteiro (retrato) — Virotes atravessam armaduras e escudos.
-6. retrato-scout.png — Batedor (retrato) — Explora a névoa, caça carroças e mensageiros. Não luta bem.
-7. retrato-horseArcher.png — Arqueiro montado (retrato) — Atira a cavalo e foge antes do contato.
-8. retrato-heavyKnight.png — Cavaleiro pesado (retrato) — Aço da cabeça aos cascos. Caro e lento, mas quase imparável.
-9. retrato-ram.png — Aríete (retrato) — Derruba portões.
-10. retrato-catapult.png — Catapulta (retrato) — Arremessa pedras na muralha e nas construções.
-11. retrato-ladder.png — Escada de cerco (retrato) — Cada escada leva até 10 soldados por cima da muralha, enfraquecidos.
-12. retrato-siegeTower.png — Torre de cerco (retrato) — Leva até 25 soldados por cima da muralha sem penalidade. Bloqueada pelo fosso.
-13. retrato-axeman.png — Guerreiro do machado (retrato) — Guerreiro tribal que racha escudos.
-14. retrato-hunter.png — Arqueiro de caça (retrato) — Caçador tribal com arco curto.
-15. retrato-tribalRider.png — Cavaleiro bárbaro (retrato) — Ginete tribal rápido e sem armadura.
-16. retrato-brigand.png — Bandido (retrato) — Salteador de estrada mal armado.
-17. retrato-northman.png — Nórdico (retrato) — Infantaria pesada das hordas do mar.
-18. retrato-steppeRider.png — Cavaleiro das estepes (retrato) — Ginete veloz das hordas, mestre das incursões.
-19. retrato-mercenary.png — Mercenário (retrato) — Soldado de aluguel bem equipado.
-20. retrato-warlord.png — Chefe da horda (retrato) — Comandante temido que vem a cada cinco ondas.
-21. retrato-militia.png — Miliciano (retrato) — Cidadão armado às pressas para defender as muralhas.
+1. construcao-barley_farm-1.png — Fazenda de cevada — estágio 1. Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-barley_farm-2.png — Fazenda de cevada — estágio 2. Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-barley_farm-3.png — Fazenda de cevada — estágio 3. Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-orchard-1.png — Pomar — estágio 1. Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-orchard-2.png — Pomar — estágio 2. Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-orchard-3.png — Pomar — estágio 3. Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-vineyard-1.png — Vinhedo — estágio 1. Uvas para o lagar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-vineyard-2.png — Vinhedo — estágio 2. Uvas para o lagar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-vineyard-3.png — Vinhedo — estágio 3. Uvas para o lagar. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 8 — Bonecos de batalha e heróis (29 imagens)
+PEDIDO 8 — Construções médias (2×2 casas): Pasto, Pasto de ovelhas, Moinho (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 6 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1980 × 1895 pixels (cada célula com cerca de 330 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Bonecos: a unidade inteira, pequena, vista em isométrico suave, virada para a DIREITA, silhueta forte. Heróis: retrato do peito para cima, rostos bem variados (jovens, velhos, homens e mulheres). Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. boneco-spearman.png — Lanceiro (boneco) — Lanceiro pequeno para o mapa e as batalhas, virado para a direita.
-2. boneco-archer.png — Arqueiro (boneco) — Arqueiro pequeno para o mapa e as batalhas, virado para a direita.
-3. boneco-knight.png — Cavaleiro (boneco) — Cavaleiro pequeno para o mapa e as batalhas, virado para a direita.
-4. boneco-shieldman.png — Escudeiro (boneco) — Escudeiro pequeno para o mapa e as batalhas, virado para a direita.
-5. boneco-crossbowman.png — Besteiro (boneco) — Besteiro pequeno para o mapa e as batalhas, virado para a direita.
-6. boneco-scout.png — Batedor (boneco) — Batedor pequeno para o mapa e as batalhas, virado para a direita.
-7. boneco-horseArcher.png — Arqueiro montado (boneco) — Arqueiro montado pequeno para o mapa e as batalhas, virado para a direita.
-8. boneco-heavyKnight.png — Cavaleiro pesado (boneco) — Cavaleiro pesado pequeno para o mapa e as batalhas, virado para a direita.
-9. boneco-ram.png — Aríete (boneco) — Aríete pequeno para o mapa e as batalhas, virado para a direita.
-10. boneco-catapult.png — Catapulta (boneco) — Catapulta pequeno para o mapa e as batalhas, virado para a direita.
-11. boneco-ladder.png — Escada de cerco (boneco) — Escada de cerco pequeno para o mapa e as batalhas, virado para a direita.
-12. boneco-siegeTower.png — Torre de cerco (boneco) — Torre de cerco pequeno para o mapa e as batalhas, virado para a direita.
-13. boneco-axeman.png — Guerreiro do machado (boneco) — Guerreiro do machado pequeno para o mapa e as batalhas, virado para a direita.
-14. boneco-hunter.png — Arqueiro de caça (boneco) — Arqueiro de caça pequeno para o mapa e as batalhas, virado para a direita.
-15. boneco-tribalRider.png — Cavaleiro bárbaro (boneco) — Cavaleiro bárbaro pequeno para o mapa e as batalhas, virado para a direita.
-16. boneco-brigand.png — Bandido (boneco) — Bandido pequeno para o mapa e as batalhas, virado para a direita.
-17. boneco-northman.png — Nórdico (boneco) — Nórdico pequeno para o mapa e as batalhas, virado para a direita.
-18. boneco-steppeRider.png — Cavaleiro das estepes (boneco) — Cavaleiro das estepes pequeno para o mapa e as batalhas, virado para a direita.
-19. boneco-mercenary.png — Mercenário (boneco) — Mercenário pequeno para o mapa e as batalhas, virado para a direita.
-20. boneco-warlord.png — Chefe da horda (boneco) — Chefe da horda pequeno para o mapa e as batalhas, virado para a direita.
-21. boneco-militia.png — Miliciano (boneco) — Miliciano pequeno para o mapa e as batalhas, virado para a direita.
-22. heroi-1.png — Herói 1 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-23. heroi-2.png — Herói 2 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-24. heroi-3.png — Herói 3 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-25. heroi-4.png — Herói 4 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-26. heroi-5.png — Herói 5 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-27. heroi-6.png — Herói 6 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-28. heroi-7.png — Herói 7 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
-29. heroi-8.png — Herói 8 — Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+1. construcao-pasture-1.png — Pasto — estágio 1. Cria gado e dá leite. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-pasture-2.png — Pasto — estágio 2. Cria gado e dá leite. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-pasture-3.png — Pasto — estágio 3. Cria gado e dá leite. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-sheep_pasture-1.png — Pasto de ovelhas — estágio 1. Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-sheep_pasture-2.png — Pasto de ovelhas — estágio 2. Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-sheep_pasture-3.png — Pasto de ovelhas — estágio 3. Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-mill-1.png — Moinho — estágio 1. Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-mill-2.png — Moinho — estágio 2. Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-mill-3.png — Moinho — estágio 3. Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 9 — Construções grandes (3×3 casas): Oficina de cerco, Porto (6 imagens)
+PEDIDO 9 — Construções médias (2×2 casas): Cervejaria, Serraria, Pedreira (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 2 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 1380 pixels (cada célula com cerca de 600 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção grande: ocupa 3×3 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-siege_workshop-1.png — Oficina de cerco — estágio 1 — Constrói aríetes, catapultas, escadas e torres de cerco. Estágio 1: madeira e palha, simples.
-2. construcao-siege_workshop-2.png — Oficina de cerco — estágio 2 — Constrói aríetes, catapultas, escadas e torres de cerco. Estágio 2: pedra e telhas, mais alta.
-3. construcao-siege_workshop-3.png — Oficina de cerco — estágio 3 — Constrói aríetes, catapultas, escadas e torres de cerco. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-port-1.png — Porto — estágio 1 — Pesca no mar e comércio. Só na costa. Estágio 1: madeira e palha, simples.
-5. construcao-port-2.png — Porto — estágio 2 — Pesca no mar e comércio. Só na costa. Estágio 2: pedra e telhas, mais alta.
-6. construcao-port-3.png — Porto — estágio 3 — Pesca no mar e comércio. Só na costa. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-brewery-1.png — Cervejaria — estágio 1. Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-brewery-2.png — Cervejaria — estágio 2. Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-brewery-3.png — Cervejaria — estágio 3. Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-sawmill-1.png — Serraria — estágio 1. Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-sawmill-2.png — Serraria — estágio 2. Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-sawmill-3.png — Serraria — estágio 3. Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-quarry-1.png — Pedreira — estágio 1. Corta blocos de pedra. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-quarry-2.png — Pedreira — estágio 2. Corta blocos de pedra. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-quarry-3.png — Pedreira — estágio 3. Corta blocos de pedra. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 10 — Construções médias (2×2 casas): Fazenda de trigo, Fazenda de aveia, Fazenda de cevada (8 imagens)
+PEDIDO 10 — Construções médias (2×2 casas): Mina de ferro, Mina de ouro, Mina de diamante (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-wheat_farm-2.png — Fazenda de trigo — estágio 2 — Planta trigo. A colheita se concentra no outono. Estágio 2: pedra e telhas, mais alta.
-2. construcao-wheat_farm-3.png — Fazenda de trigo — estágio 3 — Planta trigo. A colheita se concentra no outono. Estágio 3: imponente, com detalhes e bandeiras.
-3. construcao-oat_farm-1.png — Fazenda de aveia — estágio 1 — Planta aveia para mingau e para os cavalos. Estágio 1: madeira e palha, simples.
-4. construcao-oat_farm-2.png — Fazenda de aveia — estágio 2 — Planta aveia para mingau e para os cavalos. Estágio 2: pedra e telhas, mais alta.
-5. construcao-oat_farm-3.png — Fazenda de aveia — estágio 3 — Planta aveia para mingau e para os cavalos. Estágio 3: imponente, com detalhes e bandeiras.
-6. construcao-barley_farm-1.png — Fazenda de cevada — estágio 1 — Planta cevada para a cervejaria. Estágio 1: madeira e palha, simples.
-7. construcao-barley_farm-2.png — Fazenda de cevada — estágio 2 — Planta cevada para a cervejaria. Estágio 2: pedra e telhas, mais alta.
-8. construcao-barley_farm-3.png — Fazenda de cevada — estágio 3 — Planta cevada para a cervejaria. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-iron_mine-1.png — Mina de ferro — estágio 1. Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-iron_mine-2.png — Mina de ferro — estágio 2. Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-iron_mine-3.png — Mina de ferro — estágio 3. Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-gold_mine-1.png — Mina de ouro — estágio 1. Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-gold_mine-2.png — Mina de ouro — estágio 2. Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-gold_mine-3.png — Mina de ouro — estágio 3. Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-diamond_mine-1.png — Mina de diamante — estágio 1. Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-diamond_mine-2.png — Mina de diamante — estágio 2. Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-diamond_mine-3.png — Mina de diamante — estágio 3. Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 11 — Construções médias (2×2 casas): Pomar, Vinhedo, Pasto (9 imagens)
+PEDIDO 11 — Construções médias (2×2 casas): Fundição, Tecelagem, Armazém (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-orchard-1.png — Pomar — estágio 1 — Árvores frutíferas: vitaminas para o povo. Estágio 1: madeira e palha, simples.
-2. construcao-orchard-2.png — Pomar — estágio 2 — Árvores frutíferas: vitaminas para o povo. Estágio 2: pedra e telhas, mais alta.
-3. construcao-orchard-3.png — Pomar — estágio 3 — Árvores frutíferas: vitaminas para o povo. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-vineyard-1.png — Vinhedo — estágio 1 — Uvas para o lagar. Estágio 1: madeira e palha, simples.
-5. construcao-vineyard-2.png — Vinhedo — estágio 2 — Uvas para o lagar. Estágio 2: pedra e telhas, mais alta.
-6. construcao-vineyard-3.png — Vinhedo — estágio 3 — Uvas para o lagar. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-pasture-1.png — Pasto — estágio 1 — Cria gado e dá leite. Estágio 1: madeira e palha, simples.
-8. construcao-pasture-2.png — Pasto — estágio 2 — Cria gado e dá leite. Estágio 2: pedra e telhas, mais alta.
-9. construcao-pasture-3.png — Pasto — estágio 3 — Cria gado e dá leite. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-foundry-1.png — Fundição — estágio 1. Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-foundry-2.png — Fundição — estágio 2. Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-foundry-3.png — Fundição — estágio 3. Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-weaver-1.png — Tecelagem — estágio 1. Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-weaver-2.png — Tecelagem — estágio 2. Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-weaver-3.png — Tecelagem — estágio 3. Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-storehouse-1.png — Armazém — estágio 1. Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-storehouse-2.png — Armazém — estágio 2. Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-storehouse-3.png — Armazém — estágio 3. Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 12 — Construções médias (2×2 casas): Pasto de ovelhas, Moinho, Cervejaria (9 imagens)
+PEDIDO 12 — Construções médias (2×2 casas): Ferreiro, Estábulo, Quartel (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-sheep_pasture-1.png — Pasto de ovelhas — estágio 1 — Ovelhas dão lã para a tecelagem. Estágio 1: madeira e palha, simples.
-2. construcao-sheep_pasture-2.png — Pasto de ovelhas — estágio 2 — Ovelhas dão lã para a tecelagem. Estágio 2: pedra e telhas, mais alta.
-3. construcao-sheep_pasture-3.png — Pasto de ovelhas — estágio 3 — Ovelhas dão lã para a tecelagem. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-mill-1.png — Moinho — estágio 1 — Mói o trigo e faz farinha. Estágio 1: madeira e palha, simples.
-5. construcao-mill-2.png — Moinho — estágio 2 — Mói o trigo e faz farinha. Estágio 2: pedra e telhas, mais alta.
-6. construcao-mill-3.png — Moinho — estágio 3 — Mói o trigo e faz farinha. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-brewery-1.png — Cervejaria — estágio 1 — Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Estágio 1: madeira e palha, simples.
-8. construcao-brewery-2.png — Cervejaria — estágio 2 — Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Estágio 2: pedra e telhas, mais alta.
-9. construcao-brewery-3.png — Cervejaria — estágio 3 — Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-blacksmith-1.png — Ferreiro — estágio 1. Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-blacksmith-2.png — Ferreiro — estágio 2. Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-blacksmith-3.png — Ferreiro — estágio 3. Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-stable-1.png — Estábulo — estágio 1. Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-stable-2.png — Estábulo — estágio 2. Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-stable-3.png — Estábulo — estágio 3. Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-barracks-1.png — Quartel — estágio 1. Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-barracks-2.png — Quartel — estágio 2. Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-barracks-3.png — Quartel — estágio 3. Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 13 — Construções médias (2×2 casas): Serraria, Pedreira, Mina de ferro (9 imagens)
+PEDIDO 13 — Construções médias (2×2 casas): Campo de treino, Enfermaria, Masmorra (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-sawmill-1.png — Serraria — estágio 1 — Lenhadores e serras: madeira. Estágio 1: madeira e palha, simples.
-2. construcao-sawmill-2.png — Serraria — estágio 2 — Lenhadores e serras: madeira. Estágio 2: pedra e telhas, mais alta.
-3. construcao-sawmill-3.png — Serraria — estágio 3 — Lenhadores e serras: madeira. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-quarry-1.png — Pedreira — estágio 1 — Corta blocos de pedra. Estágio 1: madeira e palha, simples.
-5. construcao-quarry-2.png — Pedreira — estágio 2 — Corta blocos de pedra. Estágio 2: pedra e telhas, mais alta.
-6. construcao-quarry-3.png — Pedreira — estágio 3 — Corta blocos de pedra. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-iron_mine-1.png — Mina de ferro — estágio 1 — Extrai ferro. Só perto de um depósito de ferro. Estágio 1: madeira e palha, simples.
-8. construcao-iron_mine-2.png — Mina de ferro — estágio 2 — Extrai ferro. Só perto de um depósito de ferro. Estágio 2: pedra e telhas, mais alta.
-9. construcao-iron_mine-3.png — Mina de ferro — estágio 3 — Extrai ferro. Só perto de um depósito de ferro. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-training_ground-1.png — Campo de treino — estágio 1. A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-training_ground-2.png — Campo de treino — estágio 2. A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-training_ground-3.png — Campo de treino — estágio 3. A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-infirmary-1.png — Enfermaria — estágio 1. Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-infirmary-2.png — Enfermaria — estágio 2. Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-infirmary-3.png — Enfermaria — estágio 3. Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-dungeon-1.png — Masmorra — estágio 1. Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-dungeon-2.png — Masmorra — estágio 2. Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-dungeon-3.png — Masmorra — estágio 3. Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 14 — Construções médias (2×2 casas): Mina de ouro, Mina de diamante, Fundição (9 imagens)
+PEDIDO 14 — Construções médias (2×2 casas): Mercado, Taverna, Capela (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-gold_mine-1.png — Mina de ouro — estágio 1 — Extrai ouro para o tesouro. Só perto de um depósito de ouro. Estágio 1: madeira e palha, simples.
-2. construcao-gold_mine-2.png — Mina de ouro — estágio 2 — Extrai ouro para o tesouro. Só perto de um depósito de ouro. Estágio 2: pedra e telhas, mais alta.
-3. construcao-gold_mine-3.png — Mina de ouro — estágio 3 — Extrai ouro para o tesouro. Só perto de um depósito de ouro. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-diamond_mine-1.png — Mina de diamante — estágio 1 — Extrai diamantes. Só perto de um depósito de diamante. Estágio 1: madeira e palha, simples.
-5. construcao-diamond_mine-2.png — Mina de diamante — estágio 2 — Extrai diamantes. Só perto de um depósito de diamante. Estágio 2: pedra e telhas, mais alta.
-6. construcao-diamond_mine-3.png — Mina de diamante — estágio 3 — Extrai diamantes. Só perto de um depósito de diamante. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-foundry-1.png — Fundição — estágio 1 — Ferro e carvão viram aço. Estágio 1: madeira e palha, simples.
-8. construcao-foundry-2.png — Fundição — estágio 2 — Ferro e carvão viram aço. Estágio 2: pedra e telhas, mais alta.
-9. construcao-foundry-3.png — Fundição — estágio 3 — Ferro e carvão viram aço. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-market-1.png — Mercado — estágio 1. Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-market-2.png — Mercado — estágio 2. Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-market-3.png — Mercado — estágio 3. Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-tavern-1.png — Taverna — estágio 1. Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-tavern-2.png — Taverna — estágio 2. Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-tavern-3.png — Taverna — estágio 3. Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-chapel-1.png — Capela — estágio 1. Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-chapel-2.png — Capela — estágio 2. Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-chapel-3.png — Capela — estágio 3. Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 15 — Construções médias (2×2 casas): Tecelagem, Armazém, Ferreiro (9 imagens)
+PEDIDO 15 — Construções médias (2×2 casas): Biblioteca (3 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 1 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 644 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 2×2 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-weaver-1.png — Tecelagem — estágio 1 — Lã vira tecido; tecido vira estandartes. Estágio 1: madeira e palha, simples.
-2. construcao-weaver-2.png — Tecelagem — estágio 2 — Lã vira tecido; tecido vira estandartes. Estágio 2: pedra e telhas, mais alta.
-3. construcao-weaver-3.png — Tecelagem — estágio 3 — Lã vira tecido; tecido vira estandartes. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-storehouse-1.png — Armazém — estágio 1 — Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Estágio 1: madeira e palha, simples.
-5. construcao-storehouse-2.png — Armazém — estágio 2 — Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Estágio 2: pedra e telhas, mais alta.
-6. construcao-storehouse-3.png — Armazém — estágio 3 — Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-blacksmith-1.png — Ferreiro — estágio 1 — Forja armas, armaduras, escudos, bestas e itens de aço. Estágio 1: madeira e palha, simples.
-8. construcao-blacksmith-2.png — Ferreiro — estágio 2 — Forja armas, armaduras, escudos, bestas e itens de aço. Estágio 2: pedra e telhas, mais alta.
-9. construcao-blacksmith-3.png — Ferreiro — estágio 3 — Forja armas, armaduras, escudos, bestas e itens de aço. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-library-1.png — Biblioteca — estágio 1. Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-library-2.png — Biblioteca — estágio 2. Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-library-3.png — Biblioteca — estágio 3. Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 16 — Construções médias (2×2 casas): Estábulo, Quartel, Campo de treino (9 imagens)
+PEDIDO 16 — Construções pequenas (1 casa): Casa, Horta, Galinheiro (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-stable-1.png — Estábulo — estágio 1 — Cria cavalos com aveia. Estágio 1: madeira e palha, simples.
-2. construcao-stable-2.png — Estábulo — estágio 2 — Cria cavalos com aveia. Estágio 2: pedra e telhas, mais alta.
-3. construcao-stable-3.png — Estábulo — estágio 3 — Cria cavalos com aveia. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-barracks-1.png — Quartel — estágio 1 — Recruta soldados. O nível acelera o treino. Estágio 1: madeira e palha, simples.
-5. construcao-barracks-2.png — Quartel — estágio 2 — Recruta soldados. O nível acelera o treino. Estágio 2: pedra e telhas, mais alta.
-6. construcao-barracks-3.png — Quartel — estágio 3 — Recruta soldados. O nível acelera o treino. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-training_ground-1.png — Campo de treino — estágio 1 — A guarnição ganha experiência sem lutar. Estágio 1: madeira e palha, simples.
-8. construcao-training_ground-2.png — Campo de treino — estágio 2 — A guarnição ganha experiência sem lutar. Estágio 2: pedra e telhas, mais alta.
-9. construcao-training_ground-3.png — Campo de treino — estágio 3 — A guarnição ganha experiência sem lutar. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-house-1.png — Casa — estágio 1. Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-house-2.png — Casa — estágio 2. Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-house-3.png — Casa — estágio 3. Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-vegetable_garden-1.png — Horta — estágio 1. Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-vegetable_garden-2.png — Horta — estágio 2. Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-vegetable_garden-3.png — Horta — estágio 3. Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-henhouse-1.png — Galinheiro — estágio 1. Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-henhouse-2.png — Galinheiro — estágio 2. Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-henhouse-3.png — Galinheiro — estágio 3. Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 17 — Construções médias (2×2 casas): Enfermaria, Masmorra, Mercado (9 imagens)
+PEDIDO 17 — Construções pequenas (1 casa): Pescador, Apiário, Padaria (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-infirmary-1.png — Enfermaria — estágio 1 — Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Estágio 1: madeira e palha, simples.
-2. construcao-infirmary-2.png — Enfermaria — estágio 2 — Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Estágio 2: pedra e telhas, mais alta.
-3. construcao-infirmary-3.png — Enfermaria — estágio 3 — Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-dungeon-1.png — Masmorra — estágio 1 — Guarda prisioneiros para pedir resgate. Estágio 1: madeira e palha, simples.
-5. construcao-dungeon-2.png — Masmorra — estágio 2 — Guarda prisioneiros para pedir resgate. Estágio 2: pedra e telhas, mais alta.
-6. construcao-dungeon-3.png — Masmorra — estágio 3 — Guarda prisioneiros para pedir resgate. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-market-1.png — Mercado — estágio 1 — Troca recursos com taxa e envia caravanas. Estágio 1: madeira e palha, simples.
-8. construcao-market-2.png — Mercado — estágio 2 — Troca recursos com taxa e envia caravanas. Estágio 2: pedra e telhas, mais alta.
-9. construcao-market-3.png — Mercado — estágio 3 — Troca recursos com taxa e envia caravanas. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-fisher-1.png — Pescador — estágio 1. Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-fisher-2.png — Pescador — estágio 2. Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-fisher-3.png — Pescador — estágio 3. Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-apiary-1.png — Apiário — estágio 1. Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-apiary-2.png — Apiário — estágio 2. Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-apiary-3.png — Apiário — estágio 3. Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-bakery-1.png — Padaria — estágio 1. Transforma farinha em pão. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-bakery-2.png — Padaria — estágio 2. Transforma farinha em pão. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-bakery-3.png — Padaria — estágio 3. Transforma farinha em pão. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 18 — Construções médias (2×2 casas): Taverna, Capela, Biblioteca (9 imagens)
+PEDIDO 18 — Construções pequenas (1 casa): Cozinha comunitária, Açougue, Queijaria (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1680 × 1932 pixels (cada célula com cerca de 560 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção média: ocupa 2×2 casas. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-tavern-1.png — Taverna — estágio 1 — Contrata espiões, heróis e mercenários; contraespionagem. Estágio 1: madeira e palha, simples.
-2. construcao-tavern-2.png — Taverna — estágio 2 — Contrata espiões, heróis e mercenários; contraespionagem. Estágio 2: pedra e telhas, mais alta.
-3. construcao-tavern-3.png — Taverna — estágio 3 — Contrata espiões, heróis e mercenários; contraespionagem. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-chapel-1.png — Capela — estágio 1 — Felicidade, moral e cultura. Usa cera para velas, se houver. Estágio 1: madeira e palha, simples.
-5. construcao-chapel-2.png — Capela — estágio 2 — Felicidade, moral e cultura. Usa cera para velas, se houver. Estágio 2: pedra e telhas, mais alta.
-6. construcao-chapel-3.png — Capela — estágio 3 — Felicidade, moral e cultura. Usa cera para velas, se houver. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-library-1.png — Biblioteca — estágio 1 — Gera pontos de pesquisa. Estágio 1: madeira e palha, simples.
-8. construcao-library-2.png — Biblioteca — estágio 2 — Gera pontos de pesquisa. Estágio 2: pedra e telhas, mais alta.
-9. construcao-library-3.png — Biblioteca — estágio 3 — Gera pontos de pesquisa. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-kitchen-1.png — Cozinha comunitária — estágio 1. Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-kitchen-2.png — Cozinha comunitária — estágio 2. Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-kitchen-3.png — Cozinha comunitária — estágio 3. Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-butcher-1.png — Açougue — estágio 1. Gado vira carne. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-butcher-2.png — Açougue — estágio 2. Gado vira carne. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-butcher-3.png — Açougue — estágio 3. Gado vira carne. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-dairy-1.png — Queijaria — estágio 1. Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-dairy-2.png — Queijaria — estágio 2. Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-dairy-3.png — Queijaria — estágio 3. Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 19 — Construções pequenas (1 casa): Horta, Galinheiro, Pescador (9 imagens)
+PEDIDO 19 — Construções pequenas (1 casa): Lagar, Carvoaria, Curtume (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1551 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-vegetable_garden-1.png — Horta — estágio 1 — Legumes: o grupo das vitaminas, que protege contra doenças. Estágio 1: madeira e palha, simples.
-2. construcao-vegetable_garden-2.png — Horta — estágio 2 — Legumes: o grupo das vitaminas, que protege contra doenças. Estágio 2: pedra e telhas, mais alta.
-3. construcao-vegetable_garden-3.png — Horta — estágio 3 — Legumes: o grupo das vitaminas, que protege contra doenças. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-henhouse-1.png — Galinheiro — estágio 1 — Galinhas botam ovos: proteína barata. Estágio 1: madeira e palha, simples.
-5. construcao-henhouse-2.png — Galinheiro — estágio 2 — Galinhas botam ovos: proteína barata. Estágio 2: pedra e telhas, mais alta.
-6. construcao-henhouse-3.png — Galinheiro — estágio 3 — Galinhas botam ovos: proteína barata. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-fisher-1.png — Pescador — estágio 1 — Pesca no rio ou no mar. Precisa de água perto. Estágio 1: madeira e palha, simples.
-8. construcao-fisher-2.png — Pescador — estágio 2 — Pesca no rio ou no mar. Precisa de água perto. Estágio 2: pedra e telhas, mais alta.
-9. construcao-fisher-3.png — Pescador — estágio 3 — Pesca no rio ou no mar. Precisa de água perto. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-winepress-1.png — Lagar — estágio 1. Uva vira vinho. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-winepress-2.png — Lagar — estágio 2. Uva vira vinho. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-winepress-3.png — Lagar — estágio 3. Uva vira vinho. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-charcoal_kiln-1.png — Carvoaria — estágio 1. Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-charcoal_kiln-2.png — Carvoaria — estágio 2. Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-charcoal_kiln-3.png — Carvoaria — estágio 3. Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-tannery-1.png — Curtume — estágio 1. Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-tannery-2.png — Curtume — estágio 2. Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-tannery-3.png — Curtume — estágio 3. Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 20 — Construções pequenas (1 casa): Apiário, Padaria, Cozinha comunitária (9 imagens)
+PEDIDO 20 — Construções pequenas (1 casa): Joalheiro, Flecheiro, Torre de vigia (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1551 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-apiary-1.png — Apiário — estágio 1 — Abelhas dão mel e cera. Estágio 1: madeira e palha, simples.
-2. construcao-apiary-2.png — Apiário — estágio 2 — Abelhas dão mel e cera. Estágio 2: pedra e telhas, mais alta.
-3. construcao-apiary-3.png — Apiário — estágio 3 — Abelhas dão mel e cera. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-bakery-1.png — Padaria — estágio 1 — Transforma farinha em pão. Estágio 1: madeira e palha, simples.
-5. construcao-bakery-2.png — Padaria — estágio 2 — Transforma farinha em pão. Estágio 2: pedra e telhas, mais alta.
-6. construcao-bakery-3.png — Padaria — estágio 3 — Transforma farinha em pão. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-kitchen-1.png — Cozinha comunitária — estágio 1 — Cozinha aveia e faz mingau. Estágio 1: madeira e palha, simples.
-8. construcao-kitchen-2.png — Cozinha comunitária — estágio 2 — Cozinha aveia e faz mingau. Estágio 2: pedra e telhas, mais alta.
-9. construcao-kitchen-3.png — Cozinha comunitária — estágio 3 — Cozinha aveia e faz mingau. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-jeweler-1.png — Joalheiro — estágio 1. Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-jeweler-2.png — Joalheiro — estágio 2. Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-jeweler-3.png — Joalheiro — estágio 3. Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-fletcher-1.png — Flecheiro — estágio 1. Faz arcos com madeira. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-fletcher-2.png — Flecheiro — estágio 2. Faz arcos com madeira. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-fletcher-3.png — Flecheiro — estágio 3. Faz arcos com madeira. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-watchtower-1.png — Torre de vigia — estágio 1. Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-watchtower-2.png — Torre de vigia — estágio 2. Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-watchtower-3.png — Torre de vigia — estágio 3. Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 21 — Construções pequenas (1 casa): Açougue, Queijaria, Lagar (9 imagens)
+PEDIDO 21 — Construções pequenas (1 casa): Poço, Estátua, Jardim (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1551 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1552 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade). Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada e imponente. Mesma construção, mesmo ângulo e mesma posição nos 3 estágios. A ponta da frente das paredes fica embaixo, no centro da célula. Ocupa 1×1 casas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-butcher-1.png — Açougue — estágio 1 — Gado vira carne. Estágio 1: madeira e palha, simples.
-2. construcao-butcher-2.png — Açougue — estágio 2 — Gado vira carne. Estágio 2: pedra e telhas, mais alta.
-3. construcao-butcher-3.png — Açougue — estágio 3 — Gado vira carne. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-dairy-1.png — Queijaria — estágio 1 — Leite vira queijo, que dura muito no armazém. Estágio 1: madeira e palha, simples.
-5. construcao-dairy-2.png — Queijaria — estágio 2 — Leite vira queijo, que dura muito no armazém. Estágio 2: pedra e telhas, mais alta.
-6. construcao-dairy-3.png — Queijaria — estágio 3 — Leite vira queijo, que dura muito no armazém. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-winepress-1.png — Lagar — estágio 1 — Uva vira vinho. Estágio 1: madeira e palha, simples.
-8. construcao-winepress-2.png — Lagar — estágio 2 — Uva vira vinho. Estágio 2: pedra e telhas, mais alta.
-9. construcao-winepress-3.png — Lagar — estágio 3 — Uva vira vinho. Estágio 3: imponente, com detalhes e bandeiras.
+1. construcao-well-1.png — Poço — estágio 1. Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+2. construcao-well-2.png — Poço — estágio 2. Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+3. construcao-well-3.png — Poço — estágio 3. Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+4. construcao-statue-1.png — Estátua — estágio 1. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+5. construcao-statue-2.png — Estátua — estágio 2. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+6. construcao-statue-3.png — Estátua — estágio 3. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
+7. construcao-garden-1.png — Jardim — estágio 1. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
+8. construcao-garden-2.png — Jardim — estágio 2. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
+9. construcao-garden-3.png — Jardim — estágio 3. Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 22 — Construções pequenas (1 casa): Carvoaria, Curtume, Joalheiro (9 imagens)
+PEDIDO 22 — Andaimes de obra (3 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1551 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 1 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1500 × 575 pixels (cada célula com cerca de 500 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Andaimes de madeira isométricos 2:1, com blocos de pedra empilhados. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-charcoal_kiln-1.png — Carvoaria — estágio 1 — Queima madeira e faz carvão para a fundição. Estágio 1: madeira e palha, simples.
-2. construcao-charcoal_kiln-2.png — Carvoaria — estágio 2 — Queima madeira e faz carvão para a fundição. Estágio 2: pedra e telhas, mais alta.
-3. construcao-charcoal_kiln-3.png — Carvoaria — estágio 3 — Queima madeira e faz carvão para a fundição. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-tannery-1.png — Curtume — estágio 1 — Gado vira couro para escudos e máquinas de cerco. Estágio 1: madeira e palha, simples.
-5. construcao-tannery-2.png — Curtume — estágio 2 — Gado vira couro para escudos e máquinas de cerco. Estágio 2: pedra e telhas, mais alta.
-6. construcao-tannery-3.png — Curtume — estágio 3 — Gado vira couro para escudos e máquinas de cerco. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-jeweler-1.png — Joalheiro — estágio 1 — Diamante e ouro viram joias de alto valor. Estágio 1: madeira e palha, simples.
-8. construcao-jeweler-2.png — Joalheiro — estágio 2 — Diamante e ouro viram joias de alto valor. Estágio 2: pedra e telhas, mais alta.
-9. construcao-jeweler-3.png — Joalheiro — estágio 3 — Diamante e ouro viram joias de alto valor. Estágio 3: imponente, com detalhes e bandeiras.
+1. andaime-1.png — Andaime 1×1. Andaime de madeira com blocos de pedra empilhados, para construções de 1×1 casas em obra. Sem chão e sem sombra.
+2. andaime-2.png — Andaime 2×2. Andaime de madeira com blocos de pedra empilhados, para construções de 2×2 casas em obra. Sem chão e sem sombra.
+3. andaime-3.png — Andaime 3×3. Andaime de madeira com blocos de pedra empilhados, para construções de 3×3 casas em obra. Sem chão e sem sombra.
 
 ============================================
-PEDIDO 23 — Construções pequenas (1 casa): Flecheiro, Torre de vigia, Poço (9 imagens)
+PEDIDO 23 — Chão dos terrenos das construções (9 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1551 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 3 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1500 × 1725 pixels (cada célula com cerca de 500 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Cada imagem é SÓ um losango plano visto de cima (2 vezes mais largo que alto), sem espessura, sem bloco, sem bordas pretas e sem objetos. As bordas do losango ficam suaves para se misturar com a grama. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-fletcher-1.png — Flecheiro — estágio 1 — Faz arcos com madeira. Estágio 1: madeira e palha, simples.
-2. construcao-fletcher-2.png — Flecheiro — estágio 2 — Faz arcos com madeira. Estágio 2: pedra e telhas, mais alta.
-3. construcao-fletcher-3.png — Flecheiro — estágio 3 — Faz arcos com madeira. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-watchtower-1.png — Torre de vigia — estágio 1 — Avisa ataques mais cedo, revela exércitos e dificulta espiões. Estágio 1: madeira e palha, simples.
-5. construcao-watchtower-2.png — Torre de vigia — estágio 2 — Avisa ataques mais cedo, revela exércitos e dificulta espiões. Estágio 2: pedra e telhas, mais alta.
-6. construcao-watchtower-3.png — Torre de vigia — estágio 3 — Avisa ataques mais cedo, revela exércitos e dificulta espiões. Estágio 3: imponente, com detalhes e bandeiras.
-7. construcao-well-1.png — Poço — estágio 1 — Reduz incêndios e doenças. Estágio 1: madeira e palha, simples.
-8. construcao-well-2.png — Poço — estágio 2 — Reduz incêndios e doenças. Estágio 2: pedra e telhas, mais alta.
-9. construcao-well-3.png — Poço — estágio 3 — Reduz incêndios e doenças. Estágio 3: imponente, com detalhes e bandeiras.
+1. lote-terra-1.png — Terra batida 1×1. Terra batida sob construções de 1×1 casas.
+2. lote-terra-2.png — Terra batida 2×2. Terra batida sob construções de 2×2 casas.
+3. lote-terra-3.png — Terra batida 3×3. Terra batida sob construções de 3×3 casas.
+4. lote-pavimento-1.png — Pavimento de pedra 1×1. Pavimento de pedra sob construções de 1×1 casas.
+5. lote-pavimento-2.png — Pavimento de pedra 2×2. Pavimento de pedra sob construções de 2×2 casas.
+6. lote-pavimento-3.png — Pavimento de pedra 3×3. Pavimento de pedra sob construções de 3×3 casas.
+7. lote-grama-1.png — Grama aparada 1×1. Grama aparada sob construções de 1×1 casas.
+8. lote-grama-2.png — Grama aparada 2×2. Grama aparada sob construções de 2×2 casas.
+9. lote-grama-3.png — Grama aparada 3×3. Grama aparada sob construções de 3×3 casas.
 
 ============================================
-PEDIDO 24 — Construções pequenas (1 casa): Estátua, Jardim (6 imagens)
+PEDIDO 24 — Sombras (7 imagens)
 ============================================
-Monte uma única imagem em GRADE com 3 colunas × 2 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1350 × 1034 pixels (cada célula com cerca de 450 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Construções isométricas 2:1 (ângulo de jogo de construção de cidade), cada uma sobre sua base em losango, sem terreno extra em volta. A ponta de baixo do losango sempre virada para baixo. Cada construção aparece em 3 estágios lado a lado na mesma linha: 1 = simples, de madeira e palha; 2 = melhorada, pedra e telhas; 3 = refinada, imponente. Mesma construção, mesma posição e mesmo ângulo nos 3 estágios. Construção pequena: ocupa 1 casa, mais alta que larga. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Monte uma única imagem em GRADE com 4 colunas × 2 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1440 × 828 pixels (cada célula com cerca de 360 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Cada imagem é SÓ uma sombra: mancha preta suave e semitransparente, vista de cima em isométrico, esticada para baixo e para a direita. Sem nenhum objeto. Se a ferramenta não fizer transparência, desenhe a sombra preta sobre o fundo cinza que eu converto. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
-1. construcao-statue-1.png — Estátua — estágio 1 — Decoração: felicidade e cultura. Estágio 1: madeira e palha, simples.
-2. construcao-statue-2.png — Estátua — estágio 2 — Decoração: felicidade e cultura. Estágio 2: pedra e telhas, mais alta.
-3. construcao-statue-3.png — Estátua — estágio 3 — Decoração: felicidade e cultura. Estágio 3: imponente, com detalhes e bandeiras.
-4. construcao-garden-1.png — Jardim — estágio 1 — Decoração: felicidade e cultura. Estágio 1: madeira e palha, simples.
-5. construcao-garden-2.png — Jardim — estágio 2 — Decoração: felicidade e cultura. Estágio 2: pedra e telhas, mais alta.
-6. construcao-garden-3.png — Jardim — estágio 3 — Decoração: felicidade e cultura. Estágio 3: imponente, com detalhes e bandeiras.
+1. sombra-construcao-1.png — Sombra de construção 1×1. Sombra para construções de 1×1 casas: o contorno do losango da base esticado para a direita e para baixo.
+2. sombra-construcao-2.png — Sombra de construção 2×2. Sombra para construções de 2×2 casas: o contorno do losango da base esticado para a direita e para baixo.
+3. sombra-construcao-3.png — Sombra de construção 3×3. Sombra para construções de 3×3 casas: o contorno do losango da base esticado para a direita e para baixo.
+4. sombra-alta.png — Sombra de construção alta. Sombra comprida para torres e construções altas (Torre de Menagem, torre de vigia, capela), projetada bem para a direita.
+5. sombra-muralha.png — Sombra de trecho de muralha. Faixa de sombra de um trecho de muralha (uma casa).
+6. sombra-unidade.png — Sombra de soldado ou viajante. Oval pequena de sombra sob soldados, carroças e viajantes.
+7. sombra-arvore.png — Sombra de árvore. Sombra arredondada e irregular de copa de árvore.
 
 ============================================
-PEDIDO 25 em diante — Ilustrações (uma por imagem, sem grade)
+PEDIDO 25 — Terreno do mapa e chão da cidade (22 imagens)
+============================================
+Monte uma única imagem em GRADE com 6 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 1380 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Cada ladrilho é um LOSANGO PLANO isométrico (2 vezes mais largo que alto), visto de cima em ângulo, SEM bloco de terra embaixo, SEM espessura e SEM linhas na borda, que se encaixa lado a lado sem emenda. Colina, montanha, floresta e bosque podem subir acima do losango. Decorações (árvore, arbusto, pedras) são objetos soltos. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. terreno-mar.png — Mar. Mar. Casa do mapa-múndi.
+2. terreno-grama.png — Campo de grama. Campo de grama. Casa do mapa-múndi.
+3. terreno-terra.png — Terra. Terra. Casa do mapa-múndi.
+4. terreno-areia.png — Areia da praia. Areia da praia. Casa do mapa-múndi.
+5. terreno-neve.png — Neve. Neve. Casa do mapa-múndi.
+6. terreno-colina.png — Colina. Colina. Casa do mapa-múndi.
+7. terreno-montanha.png — Montanha (intransponível). Montanha (intransponível). Casa do mapa-múndi.
+8. terreno-rio.png — Rio. Rio. Casa do mapa-múndi.
+9. terreno-vau.png — Vau (travessia rasa do rio). Vau (travessia rasa do rio). Casa do mapa-múndi.
+10. terreno-floresta.png — Floresta densa. Floresta densa. Casa do mapa-múndi.
+11. terreno-bosque.png — Bosque. Bosque. Casa do mapa-múndi.
+12. terreno-pantano.png — Pântano. Pântano. Casa do mapa-múndi.
+13. terreno-estrada.png — Estrada. Estrada. Casa do mapa-múndi.
+14. terreno-ponte.png — Ponte sobre o rio. Ponte sobre o rio. Casa do mapa-múndi.
+15. terreno-costa.png — Transição areia → mar. Transição areia → mar. Casa do mapa-múndi.
+16. chao-grama.png — Grama dentro do assentamento. Grama dentro do assentamento. Losango que se repete sem emenda.
+17. chao-terra.png — Terra batida (caminhos). Terra batida (caminhos). Losango que se repete sem emenda.
+18. chao-pavimento.png — Pavimento de pedra (perto da Torre). Pavimento de pedra (perto da Torre). Losango que se repete sem emenda.
+19. chao-bairro.png — Chão dos bairros especializados da capital. Chão dos bairros especializados da capital. Losango que se repete sem emenda.
+20. decoracao-arvore.png — Árvore. Árvore decorativa do lado de fora da muralha.
+21. decoracao-arbusto.png — Arbusto. Arbusto decorativa do lado de fora da muralha.
+22. decoracao-pedras.png — Pedras. Pedras decorativa do lado de fora da muralha.
+
+============================================
+PEDIDO 26 — Muralhas (estágios 1 e 2) (20 imagens)
+============================================
+Monte uma única imagem em GRADE com 5 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1600 × 1472 pixels (cada célula com cerca de 320 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Peças isométricas que se encaixam formando uma muralha contínua em volta da cidade, todas na mesma escala e altura. 'reta-a' corre na diagonal ↘ (de cima-esquerda para baixo-direita), 'reta-b' na diagonal ↙, o portão na mesma direção da reta-a. Estágio 1 = paliçada de troncos; 2 = muro de pedra simples com ameias; 3 = muro alto de pedra clara com ameias. '-danificada' = a mesma peça com rachaduras e pedras caídas. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. muralha-reta-a-1.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1. Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
+2. muralha-reta-a-1-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1 (danificada). Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+3. muralha-reta-a-2.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2. Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
+4. muralha-reta-a-2-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 2 (danificada). Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+5. muralha-reta-b-1.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1. Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
+6. muralha-reta-b-1-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 1 (danificada). Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+7. muralha-reta-b-2.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2. Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias.
+8. muralha-reta-b-2-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 2 (danificada). Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+9. muralha-canto-1.png — Canto da muralha — estágio 1. Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
+10. muralha-canto-1-danificada.png — Canto da muralha — estágio 1 (danificada). Canto da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+11. muralha-canto-2.png — Canto da muralha — estágio 2. Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
+12. muralha-canto-2-danificada.png — Canto da muralha — estágio 2 (danificada). Canto da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+13. muralha-torre-1.png — Torre da muralha — estágio 1. Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira.
+14. muralha-torre-1-danificada.png — Torre da muralha — estágio 1 (danificada). Torre da muralha. Ocupa uma casa do contorno. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+15. muralha-torre-2.png — Torre da muralha — estágio 2. Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias.
+16. muralha-torre-2-danificada.png — Torre da muralha — estágio 2 (danificada). Torre da muralha. Ocupa uma casa do contorno. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+17. muralha-portao-1.png — Portão — estágio 1. Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira.
+18. muralha-portao-1-danificada.png — Portão — estágio 1 (danificada). Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 1: paliçada de troncos de madeira. Versão com rachaduras e pedras caídas.
+19. muralha-portao-2.png — Portão — estágio 2. Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias.
+20. muralha-portao-2-danificada.png — Portão — estágio 2 (danificada). Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 2: muro de pedra simples com ameias. Versão com rachaduras e pedras caídas.
+
+============================================
+PEDIDO 27 — Muralhas (estágio 3) e fosso (11 imagens)
+============================================
+Monte uma única imagem em GRADE com 4 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1280 × 1104 pixels (cada célula com cerca de 320 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Peças isométricas que se encaixam formando uma muralha contínua em volta da cidade, todas na mesma escala e altura. 'reta-a' corre na diagonal ↘ (de cima-esquerda para baixo-direita), 'reta-b' na diagonal ↙, o portão na mesma direção da reta-a. Estágio 1 = paliçada de troncos; 2 = muro de pedra simples com ameias; 3 = muro alto de pedra clara com ameias. '-danificada' = a mesma peça com rachaduras e pedras caídas. O fosso é só a água e as bordas da vala. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. muralha-reta-a-3.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3. Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+2. muralha-reta-a-3-danificada.png — Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 3 (danificada). Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+3. muralha-reta-b-3.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3. Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+4. muralha-reta-b-3-danificada.png — Muralha reta (direção ↙, de cima-direita para baixo-esquerda) — estágio 3 (danificada). Muralha reta (direção ↙, de cima-direita para baixo-esquerda). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+5. muralha-canto-3.png — Canto da muralha — estágio 3. Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+6. muralha-canto-3-danificada.png — Canto da muralha — estágio 3 (danificada). Canto da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+7. muralha-torre-3.png — Torre da muralha — estágio 3. Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+8. muralha-torre-3-danificada.png — Torre da muralha — estágio 3 (danificada). Torre da muralha. Ocupa uma casa do contorno. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+9. muralha-portao-3.png — Portão — estágio 3. Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes.
+10. muralha-portao-3-danificada.png — Portão — estágio 3 (danificada). Portão. Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Mesma direção da muralha reta ↘, com o portão de madeira na face da frente. Estágio 3: muro alto de pedra clara, imponente, com ameias e detalhes. Versão com rachaduras e pedras caídas.
+11. muralha-fosso.png — Fosso com água. Fosso com água. Ocupa uma casa do contorno.
+
+============================================
+PEDIDO 28 — Depósitos de recursos e efeitos (20 imagens)
+============================================
+Monte uma única imagem em GRADE com 5 colunas × 4 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1500 × 1380 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Depósitos: vistos levemente de cima; a versão '-esgotado' é o mesmo depósito quase vazio. Efeitos: um único quadro, solto. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. deposito-iron.png — Ferro. Depósito de ferro no mapa.
+2. deposito-iron-esgotado.png — Ferro (esgotado). Depósito de ferro no mapa, já esgotado.
+3. deposito-stone.png — Pedra. Depósito de pedra no mapa.
+4. deposito-stone-esgotado.png — Pedra (esgotado). Depósito de pedra no mapa, já esgotado.
+5. deposito-gold.png — Ouro. Depósito de ouro no mapa.
+6. deposito-gold-esgotado.png — Ouro (esgotado). Depósito de ouro no mapa, já esgotado.
+7. deposito-diamond.png — Diamante. Depósito de diamante no mapa.
+8. deposito-diamond-esgotado.png — Diamante (esgotado). Depósito de diamante no mapa, já esgotado.
+9. deposito-fertile.png — Solo fértil. Depósito de solo fértil no mapa.
+10. deposito-fertile-esgotado.png — Solo fértil (esgotado). Depósito de solo fértil no mapa, já esgotado.
+11. deposito-fish.png — Cardume (pesca). Depósito de cardume (pesca) no mapa.
+12. deposito-fish-esgotado.png — Cardume (pesca) (esgotado). Depósito de cardume (pesca) no mapa, já esgotado.
+13. efeito-fogo.png — Fogo. Fogo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+14. efeito-fumaca.png — Fumaça. Fumaça. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+15. efeito-poeira.png — Poeira de marcha. Poeira de marcha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+16. efeito-flecha.png — Flecha. Flecha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+17. efeito-impacto.png — Impacto na muralha. Impacto na muralha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+18. efeito-neve.png — Neve caindo. Neve caindo. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+19. efeito-chuva.png — Chuva. Chuva. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+20. efeito-batalha.png — Choque de batalha. Choque de batalha. Pode ser uma tira de 4 quadros lado a lado (256 × 64 px) para animar.
+
+============================================
+PEDIDO 29 — Marcadores e viajantes do mapa (18 imagens)
+============================================
+Monte uma única imagem em GRADE com 6 colunas × 3 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1800 × 1035 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Ícones vistos levemente de cima (isométrico suave), base embaixo, silhueta simples. Bandeiras em cinza claro (o jogo pinta a cor de cada reino). MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. mapa-capital.png — Capital. Capital visto no mapa-múndi.
+2. mapa-city.png — Cidade. Cidade visto no mapa-múndi.
+3. mapa-village.png — Aldeia. Aldeia visto no mapa-múndi.
+4. mapa-castle.png — Castelo. Castelo visto no mapa-múndi.
+5. mapa-outpost.png — Entreposto. Entreposto visto no mapa-múndi.
+6. mapa-camp.png — Acampamento de bandidos. Acampamento de bandidos visto no mapa-múndi.
+7. mapa-camp-ruin.png — Acampamento de bandidos em ruínas. Acampamento de bandidos em ruínas visto no mapa-múndi.
+8. mapa-tribe1.png — Acampamento tribal (nível 1). Acampamento tribal (nível 1) visto no mapa-múndi.
+9. mapa-tribe2.png — Aldeia tribal (nível 2). Aldeia tribal (nível 2) visto no mapa-múndi.
+10. mapa-tribe3.png — Fortaleza tribal (nível 3). Fortaleza tribal (nível 3) visto no mapa-múndi.
+11. mapa-tribe4.png — Confederação tribal (nível 4). Confederação tribal (nível 4) visto no mapa-múndi.
+12. mapa-batalha.png — Batalha em andamento. Marca de batalha (espadas cruzadas, poeira) sobre o local do combate.
+13. viajante-wagon.png — Carroça de recursos. Carroça de recursos se movendo pelo mapa.
+14. viajante-caravan.png — Caravana de comércio. Caravana de comércio se movendo pelo mapa.
+15. viajante-messenger.png — Mensageiro a cavalo. Mensageiro a cavalo se movendo pelo mapa.
+16. viajante-colonists.png — Grupo de colonos. Grupo de colonos se movendo pelo mapa.
+17. viajante-spy.png — Espião encapuzado. Espião encapuzado se movendo pelo mapa.
+18. viajante-ship.png — Navio da horda. Navio da horda se movendo pelo mapa.
+
+============================================
+PEDIDO 30 — Retratos dos soldados (21 imagens)
+============================================
+Monte uma única imagem em GRADE com 5 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 2000 × 2300 pixels (cada célula com cerca de 400 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Retratos de corpo inteiro, de frente e levemente de lado, pose heroica, uma unidade por célula, nada cortado. Cada tipo bem diferente do outro (arma, armadura, roupa e cores). MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. retrato-spearman.png — Lanceiro (retrato). Infantaria barata com lança longa. Segura a cavalaria. Retrato de corpo inteiro.
+2. retrato-archer.png — Arqueiro (retrato). Atira de longe. Desfaz formações de infantaria. Retrato de corpo inteiro.
+3. retrato-knight.png — Cavaleiro (retrato). Carga veloz que esmaga arqueiros. Retrato de corpo inteiro.
+4. retrato-shieldman.png — Escudeiro (retrato). Parede de escudos: aguenta flechas. Retrato de corpo inteiro.
+5. retrato-crossbowman.png — Besteiro (retrato). Virotes atravessam armaduras e escudos. Retrato de corpo inteiro.
+6. retrato-scout.png — Batedor (retrato). Explora a névoa, caça carroças e mensageiros. Não luta bem. Retrato de corpo inteiro.
+7. retrato-horseArcher.png — Arqueiro montado (retrato). Atira a cavalo e foge antes do contato. Retrato de corpo inteiro.
+8. retrato-heavyKnight.png — Cavaleiro pesado (retrato). Aço da cabeça aos cascos. Caro e lento, mas quase imparável. Retrato de corpo inteiro.
+9. retrato-ram.png — Aríete (retrato). Derruba portões. Retrato de corpo inteiro.
+10. retrato-catapult.png — Catapulta (retrato). Arremessa pedras na muralha e nas construções. Retrato de corpo inteiro.
+11. retrato-ladder.png — Escada de cerco (retrato). Cada escada leva até 10 soldados por cima da muralha, enfraquecidos. Retrato de corpo inteiro.
+12. retrato-siegeTower.png — Torre de cerco (retrato). Leva até 25 soldados por cima da muralha sem penalidade. Bloqueada pelo fosso. Retrato de corpo inteiro.
+13. retrato-axeman.png — Guerreiro do machado (retrato). Guerreiro tribal que racha escudos. Retrato de corpo inteiro.
+14. retrato-hunter.png — Arqueiro de caça (retrato). Caçador tribal com arco curto. Retrato de corpo inteiro.
+15. retrato-tribalRider.png — Cavaleiro bárbaro (retrato). Ginete tribal rápido e sem armadura. Retrato de corpo inteiro.
+16. retrato-brigand.png — Bandido (retrato). Salteador de estrada mal armado. Retrato de corpo inteiro.
+17. retrato-northman.png — Nórdico (retrato). Infantaria pesada das hordas do mar. Retrato de corpo inteiro.
+18. retrato-steppeRider.png — Cavaleiro das estepes (retrato). Ginete veloz das hordas, mestre das incursões. Retrato de corpo inteiro.
+19. retrato-mercenary.png — Mercenário (retrato). Soldado de aluguel bem equipado. Retrato de corpo inteiro.
+20. retrato-warlord.png — Chefe da horda (retrato). Comandante temido que vem a cada cinco ondas. Retrato de corpo inteiro.
+21. retrato-militia.png — Miliciano (retrato). Cidadão armado às pressas para defender as muralhas. Retrato de corpo inteiro.
+
+============================================
+PEDIDO 31 — Bonecos de batalha e heróis (29 imagens)
+============================================
+Monte uma única imagem em GRADE com 6 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1980 × 1897 pixels (cada célula com cerca de 330 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Bonecos: a unidade inteira, pequena, vista em isométrico suave, virada para a DIREITA, silhueta forte. Heróis: retrato do peito para cima, rostos bem variados (jovens, velhos, homens e mulheres). MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. boneco-spearman.png — Lanceiro (boneco). Lanceiro pequeno para o mapa e as batalhas, virado para a direita.
+2. boneco-archer.png — Arqueiro (boneco). Arqueiro pequeno para o mapa e as batalhas, virado para a direita.
+3. boneco-knight.png — Cavaleiro (boneco). Cavaleiro pequeno para o mapa e as batalhas, virado para a direita.
+4. boneco-shieldman.png — Escudeiro (boneco). Escudeiro pequeno para o mapa e as batalhas, virado para a direita.
+5. boneco-crossbowman.png — Besteiro (boneco). Besteiro pequeno para o mapa e as batalhas, virado para a direita.
+6. boneco-scout.png — Batedor (boneco). Batedor pequeno para o mapa e as batalhas, virado para a direita.
+7. boneco-horseArcher.png — Arqueiro montado (boneco). Arqueiro montado pequeno para o mapa e as batalhas, virado para a direita.
+8. boneco-heavyKnight.png — Cavaleiro pesado (boneco). Cavaleiro pesado pequeno para o mapa e as batalhas, virado para a direita.
+9. boneco-ram.png — Aríete (boneco). Aríete pequeno para o mapa e as batalhas, virado para a direita.
+10. boneco-catapult.png — Catapulta (boneco). Catapulta pequeno para o mapa e as batalhas, virado para a direita.
+11. boneco-ladder.png — Escada de cerco (boneco). Escada de cerco pequeno para o mapa e as batalhas, virado para a direita.
+12. boneco-siegeTower.png — Torre de cerco (boneco). Torre de cerco pequeno para o mapa e as batalhas, virado para a direita.
+13. boneco-axeman.png — Guerreiro do machado (boneco). Guerreiro do machado pequeno para o mapa e as batalhas, virado para a direita.
+14. boneco-hunter.png — Arqueiro de caça (boneco). Arqueiro de caça pequeno para o mapa e as batalhas, virado para a direita.
+15. boneco-tribalRider.png — Cavaleiro bárbaro (boneco). Cavaleiro bárbaro pequeno para o mapa e as batalhas, virado para a direita.
+16. boneco-brigand.png — Bandido (boneco). Bandido pequeno para o mapa e as batalhas, virado para a direita.
+17. boneco-northman.png — Nórdico (boneco). Nórdico pequeno para o mapa e as batalhas, virado para a direita.
+18. boneco-steppeRider.png — Cavaleiro das estepes (boneco). Cavaleiro das estepes pequeno para o mapa e as batalhas, virado para a direita.
+19. boneco-mercenary.png — Mercenário (boneco). Mercenário pequeno para o mapa e as batalhas, virado para a direita.
+20. boneco-warlord.png — Chefe da horda (boneco). Chefe da horda pequeno para o mapa e as batalhas, virado para a direita.
+21. boneco-militia.png — Miliciano (boneco). Miliciano pequeno para o mapa e as batalhas, virado para a direita.
+22. heroi-1.png — Herói 1. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+23. heroi-2.png — Herói 2. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+24. heroi-3.png — Herói 3. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+25. heroi-4.png — Herói 4. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+26. heroi-5.png — Herói 5. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+27. heroi-6.png — Herói 6. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+28. heroi-7.png — Herói 7. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+29. heroi-8.png — Herói 8. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
+
+============================================
+PEDIDO 32 — Ilustrações (5 imagens, uma por vez, sem grade)
 ============================================
 Faça cada uma separada, imagem horizontal 16:9 com pelo menos 1536 × 864 pixels, cena completa sem transparência e sem moldura, sem letras. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
-- ilustracao-titulo.png — Tela de abertura: o castelo ao amanhecer
-- ilustracao-vitoria.png — Vitória numa batalha
-- ilustracao-derrota.png — Derrota (castelo em chamas, fumaça)
-- ilustracao-imperador.png — Coroação do Imperador do Continente X
-- ilustracao-carta-secreta.png — Mensagem secreta do Continente Y (navio ao luar)
+1. ilustracao-titulo.png — Tela de abertura: o castelo ao amanhecer. Tela de abertura: o castelo ao amanhecer.
+2. ilustracao-vitoria.png — Vitória numa batalha. Vitória numa batalha.
+3. ilustracao-derrota.png — Derrota (castelo em chamas, fumaça). Derrota (castelo em chamas, fumaça).
+4. ilustracao-imperador.png — Coroação do Imperador do Continente X. Coroação do Imperador do Continente X.
+5. ilustracao-carta-secreta.png — Mensagem secreta do Continente Y (navio ao luar). Mensagem secreta do Continente Y (navio ao luar).

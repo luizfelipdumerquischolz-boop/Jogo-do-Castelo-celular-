@@ -1,6 +1,6 @@
 # Coroa de Pedra — lista de imagens
 
-Total: **386 imagens** em 16 grupos. Esta lista é gerada pelo próprio jogo (`npm run artes`), então nunca fica desatualizada.
+Total: **402 imagens** em 18 grupos. Esta lista é gerada pelo próprio jogo (`npm run artes`), então nunca fica desatualizada.
 
 ## Como entregar as imagens
 
@@ -21,6 +21,8 @@ Total: **386 imagens** em 16 grupos. Esta lista é gerada pelo próprio jogo (`n
 | Ícones de status | 8 |
 | Construções (3 estágios cada) | 147 |
 | Andaimes de obra | 3 |
+| Sombras | 7 |
+| Chão dos terrenos das construções | 9 |
 | Chão e decoração do assentamento | 7 |
 | Muralha, portão e fosso | 31 |
 | Terreno do mapa-múndi | 15 |
@@ -31,7 +33,7 @@ Total: **386 imagens** em 16 grupos. Esta lista é gerada pelo próprio jogo (`n
 | Heróis | 8 |
 | Efeitos | 8 |
 | Ilustrações | 5 |
-| **Total** | **386** |
+| **Total** | **402** |
 
 ## Interface (botões, barras e painéis) (12)
 
@@ -235,317 +237,359 @@ Peças da tela. Botões e painéis são esticados pelo jogo: deixe as bordas dec
 
 ## Construções (3 estágios cada) (147)
 
-Isométricas 2:1, luz de cima e da esquerda. Estágio 1 = níveis 1–2 (madeira, simples), 2 = níveis 3–4 (pedra), 3 = nível 5 (imponente, bandeiras). A base do prédio encosta embaixo da imagem.
+Isométricas 2:1, luz de cima e da esquerda. SÓ a construção e seus objetos: SEM chão, SEM base de terra ou pedra embaixo e SEM sombra (o chão e a sombra são imagens separadas). A ponta da frente das paredes encosta embaixo da imagem, no centro. Estágio 1 = níveis 1–2 (madeira, simples), 2 = níveis 3–4 (pedra), 3 = nível 5 (imponente).
 
 1. **Torre de Menagem — estágio 1** — `construcao-keep-1.png` · 384 × 452 px · isométrico  
-   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 2. **Torre de Menagem — estágio 2** — `construcao-keep-2.png` · 384 × 452 px · isométrico  
-   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 3. **Torre de Menagem — estágio 3** — `construcao-keep-3.png` · 384 × 452 px · isométrico  
-   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Coração da capital. O nível libera terreno, bairros, construções e o limite de assentamentos. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 4. **Salão do governador — estágio 1** — `construcao-governor_hall-1.png` · 256 × 298 px · isométrico  
-   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 5. **Salão do governador — estágio 2** — `construcao-governor_hall-2.png` · 256 × 298 px · isométrico  
-   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 6. **Salão do governador — estágio 3** — `construcao-governor_hall-3.png` · 256 × 298 px · isométrico  
-   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Sede do cônsul nos outros assentamentos. O nível aumenta terreno, moradia e o bônus da vocação. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 7. **Casa — estágio 1** — `construcao-house-1.png` · 128 × 204 px · isométrico  
-   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 8. **Casa — estágio 2** — `construcao-house-2.png` · 128 × 204 px · isométrico  
-   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 9. **Casa — estágio 3** — `construcao-house-3.png` · 128 × 204 px · isométrico  
-   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Moradia para 8 cidadãos por nível. Gera impostos. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 10. **Fazenda de trigo — estágio 1** — `construcao-wheat_farm-1.png` · 256 × 298 px · isométrico  
-   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 11. **Fazenda de trigo — estágio 2** — `construcao-wheat_farm-2.png` · 256 × 298 px · isométrico  
-   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 12. **Fazenda de trigo — estágio 3** — `construcao-wheat_farm-3.png` · 256 × 298 px · isométrico  
-   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Planta trigo. A colheita se concentra no outono. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 13. **Fazenda de aveia — estágio 1** — `construcao-oat_farm-1.png` · 256 × 298 px · isométrico  
-   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 14. **Fazenda de aveia — estágio 2** — `construcao-oat_farm-2.png` · 256 × 298 px · isométrico  
-   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 15. **Fazenda de aveia — estágio 3** — `construcao-oat_farm-3.png` · 256 × 298 px · isométrico  
-   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Planta aveia para mingau e para os cavalos. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 16. **Fazenda de cevada — estágio 1** — `construcao-barley_farm-1.png` · 256 × 298 px · isométrico  
-   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 17. **Fazenda de cevada — estágio 2** — `construcao-barley_farm-2.png` · 256 × 298 px · isométrico  
-   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 18. **Fazenda de cevada — estágio 3** — `construcao-barley_farm-3.png` · 256 × 298 px · isométrico  
-   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Planta cevada para a cervejaria. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 19. **Horta — estágio 1** — `construcao-vegetable_garden-1.png` · 128 × 204 px · isométrico  
-   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 20. **Horta — estágio 2** — `construcao-vegetable_garden-2.png` · 128 × 204 px · isométrico  
-   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 21. **Horta — estágio 3** — `construcao-vegetable_garden-3.png` · 128 × 204 px · isométrico  
-   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Legumes: o grupo das vitaminas, que protege contra doenças. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 22. **Pomar — estágio 1** — `construcao-orchard-1.png` · 256 × 298 px · isométrico  
-   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 23. **Pomar — estágio 2** — `construcao-orchard-2.png` · 256 × 298 px · isométrico  
-   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 24. **Pomar — estágio 3** — `construcao-orchard-3.png` · 256 × 298 px · isométrico  
-   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Árvores frutíferas: vitaminas para o povo. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 25. **Vinhedo — estágio 1** — `construcao-vineyard-1.png` · 256 × 298 px · isométrico  
-   Uvas para o lagar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 26. **Vinhedo — estágio 2** — `construcao-vineyard-2.png` · 256 × 298 px · isométrico  
-   Uvas para o lagar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 27. **Vinhedo — estágio 3** — `construcao-vineyard-3.png` · 256 × 298 px · isométrico  
-   Uvas para o lagar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Uvas para o lagar. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 28. **Pasto — estágio 1** — `construcao-pasture-1.png` · 256 × 298 px · isométrico  
-   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 29. **Pasto — estágio 2** — `construcao-pasture-2.png` · 256 × 298 px · isométrico  
-   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 30. **Pasto — estágio 3** — `construcao-pasture-3.png` · 256 × 298 px · isométrico  
-   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Cria gado e dá leite. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 31. **Pasto de ovelhas — estágio 1** — `construcao-sheep_pasture-1.png` · 256 × 298 px · isométrico  
-   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 32. **Pasto de ovelhas — estágio 2** — `construcao-sheep_pasture-2.png` · 256 × 298 px · isométrico  
-   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 33. **Pasto de ovelhas — estágio 3** — `construcao-sheep_pasture-3.png` · 256 × 298 px · isométrico  
-   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Ovelhas dão lã para a tecelagem. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 34. **Galinheiro — estágio 1** — `construcao-henhouse-1.png` · 128 × 204 px · isométrico  
-   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 35. **Galinheiro — estágio 2** — `construcao-henhouse-2.png` · 128 × 204 px · isométrico  
-   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 36. **Galinheiro — estágio 3** — `construcao-henhouse-3.png` · 128 × 204 px · isométrico  
-   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Galinhas botam ovos: proteína barata. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 37. **Pescador — estágio 1** — `construcao-fisher-1.png` · 128 × 204 px · isométrico  
-   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 38. **Pescador — estágio 2** — `construcao-fisher-2.png` · 128 × 204 px · isométrico  
-   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 39. **Pescador — estágio 3** — `construcao-fisher-3.png` · 128 × 204 px · isométrico  
-   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Pesca no rio ou no mar. Precisa de água perto. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 40. **Apiário — estágio 1** — `construcao-apiary-1.png` · 128 × 204 px · isométrico  
-   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 41. **Apiário — estágio 2** — `construcao-apiary-2.png` · 128 × 204 px · isométrico  
-   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 42. **Apiário — estágio 3** — `construcao-apiary-3.png` · 128 × 204 px · isométrico  
-   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Abelhas dão mel e cera. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 43. **Moinho — estágio 1** — `construcao-mill-1.png` · 256 × 298 px · isométrico  
-   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 44. **Moinho — estágio 2** — `construcao-mill-2.png` · 256 × 298 px · isométrico  
-   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 45. **Moinho — estágio 3** — `construcao-mill-3.png` · 256 × 298 px · isométrico  
-   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Mói o trigo e faz farinha. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 46. **Padaria — estágio 1** — `construcao-bakery-1.png` · 128 × 204 px · isométrico  
-   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 47. **Padaria — estágio 2** — `construcao-bakery-2.png` · 128 × 204 px · isométrico  
-   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 48. **Padaria — estágio 3** — `construcao-bakery-3.png` · 128 × 204 px · isométrico  
-   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Transforma farinha em pão. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 49. **Cozinha comunitária — estágio 1** — `construcao-kitchen-1.png` · 128 × 204 px · isométrico  
-   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 50. **Cozinha comunitária — estágio 2** — `construcao-kitchen-2.png` · 128 × 204 px · isométrico  
-   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 51. **Cozinha comunitária — estágio 3** — `construcao-kitchen-3.png` · 128 × 204 px · isométrico  
-   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Cozinha aveia e faz mingau. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 52. **Açougue — estágio 1** — `construcao-butcher-1.png` · 128 × 204 px · isométrico  
-   Gado vira carne. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Gado vira carne. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 53. **Açougue — estágio 2** — `construcao-butcher-2.png` · 128 × 204 px · isométrico  
-   Gado vira carne. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Gado vira carne. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 54. **Açougue — estágio 3** — `construcao-butcher-3.png` · 128 × 204 px · isométrico  
-   Gado vira carne. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Gado vira carne. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 55. **Queijaria — estágio 1** — `construcao-dairy-1.png` · 128 × 204 px · isométrico  
-   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 56. **Queijaria — estágio 2** — `construcao-dairy-2.png` · 128 × 204 px · isométrico  
-   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 57. **Queijaria — estágio 3** — `construcao-dairy-3.png` · 128 × 204 px · isométrico  
-   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Leite vira queijo, que dura muito no armazém. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 58. **Cervejaria — estágio 1** — `construcao-brewery-1.png` · 256 × 298 px · isométrico  
-   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 59. **Cervejaria — estágio 2** — `construcao-brewery-2.png` · 256 × 298 px · isométrico  
-   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 60. **Cervejaria — estágio 3** — `construcao-brewery-3.png` · 256 × 298 px · isométrico  
-   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Cevada vira cerveja. Moral alta, mas cuidado com a embriaguez. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 61. **Lagar — estágio 1** — `construcao-winepress-1.png` · 128 × 204 px · isométrico  
-   Uva vira vinho. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 62. **Lagar — estágio 2** — `construcao-winepress-2.png` · 128 × 204 px · isométrico  
-   Uva vira vinho. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 63. **Lagar — estágio 3** — `construcao-winepress-3.png` · 128 × 204 px · isométrico  
-   Uva vira vinho. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Uva vira vinho. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 64. **Serraria — estágio 1** — `construcao-sawmill-1.png` · 256 × 298 px · isométrico  
-   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 65. **Serraria — estágio 2** — `construcao-sawmill-2.png` · 256 × 298 px · isométrico  
-   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 66. **Serraria — estágio 3** — `construcao-sawmill-3.png` · 256 × 298 px · isométrico  
-   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Lenhadores e serras: madeira. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 67. **Pedreira — estágio 1** — `construcao-quarry-1.png` · 256 × 298 px · isométrico  
-   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 68. **Pedreira — estágio 2** — `construcao-quarry-2.png` · 256 × 298 px · isométrico  
-   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 69. **Pedreira — estágio 3** — `construcao-quarry-3.png` · 256 × 298 px · isométrico  
-   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Corta blocos de pedra. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 70. **Mina de ferro — estágio 1** — `construcao-iron_mine-1.png` · 256 × 298 px · isométrico  
-   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 71. **Mina de ferro — estágio 2** — `construcao-iron_mine-2.png` · 256 × 298 px · isométrico  
-   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 72. **Mina de ferro — estágio 3** — `construcao-iron_mine-3.png` · 256 × 298 px · isométrico  
-   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Extrai ferro. Só perto de um depósito de ferro. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 73. **Mina de ouro — estágio 1** — `construcao-gold_mine-1.png` · 256 × 298 px · isométrico  
-   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 74. **Mina de ouro — estágio 2** — `construcao-gold_mine-2.png` · 256 × 298 px · isométrico  
-   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 75. **Mina de ouro — estágio 3** — `construcao-gold_mine-3.png` · 256 × 298 px · isométrico  
-   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Extrai ouro para o tesouro. Só perto de um depósito de ouro. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 76. **Mina de diamante — estágio 1** — `construcao-diamond_mine-1.png` · 256 × 298 px · isométrico  
-   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 77. **Mina de diamante — estágio 2** — `construcao-diamond_mine-2.png` · 256 × 298 px · isométrico  
-   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 78. **Mina de diamante — estágio 3** — `construcao-diamond_mine-3.png` · 256 × 298 px · isométrico  
-   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Extrai diamantes. Só perto de um depósito de diamante. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 79. **Carvoaria — estágio 1** — `construcao-charcoal_kiln-1.png` · 128 × 204 px · isométrico  
-   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 80. **Carvoaria — estágio 2** — `construcao-charcoal_kiln-2.png` · 128 × 204 px · isométrico  
-   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 81. **Carvoaria — estágio 3** — `construcao-charcoal_kiln-3.png` · 128 × 204 px · isométrico  
-   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Queima madeira e faz carvão para a fundição. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 82. **Fundição — estágio 1** — `construcao-foundry-1.png` · 256 × 298 px · isométrico  
-   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 83. **Fundição — estágio 2** — `construcao-foundry-2.png` · 256 × 298 px · isométrico  
-   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 84. **Fundição — estágio 3** — `construcao-foundry-3.png` · 256 × 298 px · isométrico  
-   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Ferro e carvão viram aço. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 85. **Curtume — estágio 1** — `construcao-tannery-1.png` · 128 × 204 px · isométrico  
-   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 86. **Curtume — estágio 2** — `construcao-tannery-2.png` · 128 × 204 px · isométrico  
-   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 87. **Curtume — estágio 3** — `construcao-tannery-3.png` · 128 × 204 px · isométrico  
-   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Gado vira couro para escudos e máquinas de cerco. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 88. **Tecelagem — estágio 1** — `construcao-weaver-1.png` · 256 × 298 px · isométrico  
-   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 89. **Tecelagem — estágio 2** — `construcao-weaver-2.png` · 256 × 298 px · isométrico  
-   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 90. **Tecelagem — estágio 3** — `construcao-weaver-3.png` · 256 × 298 px · isométrico  
-   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Lã vira tecido; tecido vira estandartes. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 91. **Joalheiro — estágio 1** — `construcao-jeweler-1.png` · 128 × 204 px · isométrico  
-   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 92. **Joalheiro — estágio 2** — `construcao-jeweler-2.png` · 128 × 204 px · isométrico  
-   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 93. **Joalheiro — estágio 3** — `construcao-jeweler-3.png` · 128 × 204 px · isométrico  
-   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Diamante e ouro viram joias de alto valor. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 94. **Armazém — estágio 1** — `construcao-storehouse-1.png` · 256 × 298 px · isométrico  
-   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 95. **Armazém — estágio 2** — `construcao-storehouse-2.png` · 256 × 298 px · isométrico  
-   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 96. **Armazém — estágio 3** — `construcao-storehouse-3.png` · 256 × 298 px · isométrico  
-   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Aumenta o limite de cada recurso e esconde parte deles dos saqueadores. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 97. **Ferreiro — estágio 1** — `construcao-blacksmith-1.png` · 256 × 298 px · isométrico  
-   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 98. **Ferreiro — estágio 2** — `construcao-blacksmith-2.png` · 256 × 298 px · isométrico  
-   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 99. **Ferreiro — estágio 3** — `construcao-blacksmith-3.png` · 256 × 298 px · isométrico  
-   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Forja armas, armaduras, escudos, bestas e itens de aço. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 100. **Flecheiro — estágio 1** — `construcao-fletcher-1.png` · 128 × 204 px · isométrico  
-   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 101. **Flecheiro — estágio 2** — `construcao-fletcher-2.png` · 128 × 204 px · isométrico  
-   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 102. **Flecheiro — estágio 3** — `construcao-fletcher-3.png` · 128 × 204 px · isométrico  
-   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Faz arcos com madeira. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 103. **Estábulo — estágio 1** — `construcao-stable-1.png` · 256 × 298 px · isométrico  
-   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 104. **Estábulo — estágio 2** — `construcao-stable-2.png` · 256 × 298 px · isométrico  
-   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 105. **Estábulo — estágio 3** — `construcao-stable-3.png` · 256 × 298 px · isométrico  
-   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Cria cavalos com aveia. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 106. **Quartel — estágio 1** — `construcao-barracks-1.png` · 256 × 298 px · isométrico  
-   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 107. **Quartel — estágio 2** — `construcao-barracks-2.png` · 256 × 298 px · isométrico  
-   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 108. **Quartel — estágio 3** — `construcao-barracks-3.png` · 256 × 298 px · isométrico  
-   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Recruta soldados. O nível acelera o treino. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 109. **Campo de treino — estágio 1** — `construcao-training_ground-1.png` · 256 × 298 px · isométrico  
-   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 110. **Campo de treino — estágio 2** — `construcao-training_ground-2.png` · 256 × 298 px · isométrico  
-   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 111. **Campo de treino — estágio 3** — `construcao-training_ground-3.png` · 256 × 298 px · isométrico  
-   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   A guarnição ganha experiência sem lutar. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 112. **Oficina de cerco — estágio 1** — `construcao-siege_workshop-1.png` · 384 × 392 px · isométrico  
-   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 113. **Oficina de cerco — estágio 2** — `construcao-siege_workshop-2.png` · 384 × 392 px · isométrico  
-   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 114. **Oficina de cerco — estágio 3** — `construcao-siege_workshop-3.png` · 384 × 392 px · isométrico  
-   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Constrói aríetes, catapultas, escadas e torres de cerco. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 115. **Enfermaria — estágio 1** — `construcao-infirmary-1.png` · 256 × 298 px · isométrico  
-   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 116. **Enfermaria — estágio 2** — `construcao-infirmary-2.png` · 256 × 298 px · isométrico  
-   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 117. **Enfermaria — estágio 3** — `construcao-infirmary-3.png` · 256 × 298 px · isométrico  
-   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Parte dos soldados derrotados volta ferida em vez de morrer; trata doenças. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 118. **Torre de vigia — estágio 1** — `construcao-watchtower-1.png` · 128 × 234 px · isométrico  
-   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 119. **Torre de vigia — estágio 2** — `construcao-watchtower-2.png` · 128 × 234 px · isométrico  
-   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 120. **Torre de vigia — estágio 3** — `construcao-watchtower-3.png` · 128 × 234 px · isométrico  
-   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Avisa ataques mais cedo, revela exércitos e dificulta espiões. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 121. **Masmorra — estágio 1** — `construcao-dungeon-1.png` · 256 × 298 px · isométrico  
-   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 122. **Masmorra — estágio 2** — `construcao-dungeon-2.png` · 256 × 298 px · isométrico  
-   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 123. **Masmorra — estágio 3** — `construcao-dungeon-3.png` · 256 × 298 px · isométrico  
-   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Guarda prisioneiros para pedir resgate. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 124. **Mercado — estágio 1** — `construcao-market-1.png` · 256 × 298 px · isométrico  
-   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 125. **Mercado — estágio 2** — `construcao-market-2.png` · 256 × 298 px · isométrico  
-   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 126. **Mercado — estágio 3** — `construcao-market-3.png` · 256 × 298 px · isométrico  
-   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Troca recursos com taxa e envia caravanas. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 127. **Taverna — estágio 1** — `construcao-tavern-1.png` · 256 × 298 px · isométrico  
-   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 128. **Taverna — estágio 2** — `construcao-tavern-2.png` · 256 × 298 px · isométrico  
-   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 129. **Taverna — estágio 3** — `construcao-tavern-3.png` · 256 × 298 px · isométrico  
-   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Contrata espiões, heróis e mercenários; contraespionagem. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 130. **Capela — estágio 1** — `construcao-chapel-1.png` · 256 × 298 px · isométrico  
-   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 131. **Capela — estágio 2** — `construcao-chapel-2.png` · 256 × 298 px · isométrico  
-   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 132. **Capela — estágio 3** — `construcao-chapel-3.png` · 256 × 298 px · isométrico  
-   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Felicidade, moral e cultura. Usa cera para velas, se houver. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 133. **Biblioteca — estágio 1** — `construcao-library-1.png` · 256 × 298 px · isométrico  
-   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples.
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 134. **Biblioteca — estágio 2** — `construcao-library-2.png` · 256 × 298 px · isométrico  
-   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 2: pedra e telhas, mais alta.
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 135. **Biblioteca — estágio 3** — `construcao-library-3.png` · 256 × 298 px · isométrico  
-   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Gera pontos de pesquisa. Ocupa 2×2 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 136. **Poço — estágio 1** — `construcao-well-1.png` · 128 × 204 px · isométrico  
-   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 137. **Poço — estágio 2** — `construcao-well-2.png` · 128 × 204 px · isométrico  
-   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 138. **Poço — estágio 3** — `construcao-well-3.png` · 128 × 204 px · isométrico  
-   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Reduz incêndios e doenças. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 139. **Porto — estágio 1** — `construcao-port-1.png` · 384 × 392 px · isométrico  
-   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples.
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 140. **Porto — estágio 2** — `construcao-port-2.png` · 384 × 392 px · isométrico  
-   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 2: pedra e telhas, mais alta.
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 141. **Porto — estágio 3** — `construcao-port-3.png` · 384 × 392 px · isométrico  
-   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Pesca no mar e comércio. Só na costa. Ocupa 3×3 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 142. **Estátua — estágio 1** — `construcao-statue-1.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 143. **Estátua — estágio 2** — `construcao-statue-2.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 144. **Estátua — estágio 3** — `construcao-statue-3.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 145. **Jardim — estágio 1** — `construcao-garden-1.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 1: madeira e palha, simples. Sem chão e sem sombra.
 146. **Jardim — estágio 2** — `construcao-garden-2.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, mais alta.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 2: pedra e telhas, melhorada. Sem chão e sem sombra.
 147. **Jardim — estágio 3** — `construcao-garden-3.png` · 128 × 204 px · isométrico  
-   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: imponente, com detalhes e bandeiras.
+   Decoração: felicidade e cultura. Ocupa 1×1 casas. Estágio 3: refinada e imponente. Sem chão e sem sombra.
 
 ## Andaimes de obra (3)
 
-Aparecem enquanto uma construção é erguida ou melhorada.
+Aparecem enquanto uma construção é erguida ou melhorada. Sem chão e sem sombra.
 
 1. **Andaime 1×1** — `andaime-1.png` · 128 × 174 px · isométrico  
-   Andaime de madeira com blocos de pedra no chão, para construções de 1×1 casas em obra.
+   Andaime de madeira com blocos de pedra empilhados, para construções de 1×1 casas em obra. Sem chão e sem sombra.
 2. **Andaime 2×2** — `andaime-2.png` · 256 × 238 px · isométrico  
-   Andaime de madeira com blocos de pedra no chão, para construções de 2×2 casas em obra.
+   Andaime de madeira com blocos de pedra empilhados, para construções de 2×2 casas em obra. Sem chão e sem sombra.
 3. **Andaime 3×3** — `andaime-3.png` · 384 × 302 px · isométrico  
-   Andaime de madeira com blocos de pedra no chão, para construções de 3×3 casas em obra.
+   Andaime de madeira com blocos de pedra empilhados, para construções de 3×3 casas em obra. Sem chão e sem sombra.
+
+## Sombras (7)
+
+Sombras separadas, colocadas pelo jogo embaixo de cada objeto. Mancha preta suave e semitransparente (cerca de 40%), vista de cima em isométrico, projetada para baixo e para a direita (luz vinda de cima e da esquerda). Sem nenhum objeto, só a sombra.
+
+1. **Sombra de construção 1×1** — `sombra-construcao-1.png` · 128 × 64 px · isométrico  
+   Sombra para construções de 1×1 casas: o contorno do losango da base esticado para a direita e para baixo.
+2. **Sombra de construção 2×2** — `sombra-construcao-2.png` · 256 × 128 px · isométrico  
+   Sombra para construções de 2×2 casas: o contorno do losango da base esticado para a direita e para baixo.
+3. **Sombra de construção 3×3** — `sombra-construcao-3.png` · 384 × 192 px · isométrico  
+   Sombra para construções de 3×3 casas: o contorno do losango da base esticado para a direita e para baixo.
+4. **Sombra de construção alta** — `sombra-alta.png` · 256 × 128 px · isométrico  
+   Sombra comprida para torres e construções altas (Torre de Menagem, torre de vigia, capela), projetada bem para a direita.
+5. **Sombra de trecho de muralha** — `sombra-muralha.png` · 128 × 64 px · isométrico  
+   Faixa de sombra de um trecho de muralha (uma casa).
+6. **Sombra de soldado ou viajante** — `sombra-unidade.png` · 64 × 32 px · isométrico  
+   Oval pequena de sombra sob soldados, carroças e viajantes.
+7. **Sombra de árvore** — `sombra-arvore.png` · 128 × 64 px · isométrico  
+   Sombra arredondada e irregular de copa de árvore.
+
+## Chão dos terrenos das construções (9)
+
+Losango isométrico 2:1 que fica embaixo de cada construção, no tamanho exato das casas que ela ocupa. Visto de cima, plano, SEM bloco de terra embaixo, sem objetos e sem sombra. As bordas se misturam suavemente com a grama.
+
+1. **Terra batida 1×1** — `lote-terra-1.png` · 128 × 64 px · isométrico  
+   Terra batida sob construções de 1×1 casas.
+2. **Terra batida 2×2** — `lote-terra-2.png` · 256 × 128 px · isométrico  
+   Terra batida sob construções de 2×2 casas.
+3. **Terra batida 3×3** — `lote-terra-3.png` · 384 × 192 px · isométrico  
+   Terra batida sob construções de 3×3 casas.
+4. **Pavimento de pedra 1×1** — `lote-pavimento-1.png` · 128 × 64 px · isométrico  
+   Pavimento de pedra sob construções de 1×1 casas.
+5. **Pavimento de pedra 2×2** — `lote-pavimento-2.png` · 256 × 128 px · isométrico  
+   Pavimento de pedra sob construções de 2×2 casas.
+6. **Pavimento de pedra 3×3** — `lote-pavimento-3.png` · 384 × 192 px · isométrico  
+   Pavimento de pedra sob construções de 3×3 casas.
+7. **Grama aparada 1×1** — `lote-grama-1.png` · 128 × 64 px · isométrico  
+   Grama aparada sob construções de 1×1 casas.
+8. **Grama aparada 2×2** — `lote-grama-2.png` · 256 × 128 px · isométrico  
+   Grama aparada sob construções de 2×2 casas.
+9. **Grama aparada 3×3** — `lote-grama-3.png` · 384 × 192 px · isométrico  
+   Grama aparada sob construções de 3×3 casas.
 
 ## Chão e decoração do assentamento (7)
 
-Ladrilhos isométricos de 128 × 64 px que se repetem sem emenda.
+Ladrilhos: losango isométrico 2:1 PLANO (sem bloco de terra embaixo, sem bordas desenhadas, sem linhas), que se repete sem emenda. Decorações: só o objeto, sem chão e sem sombra.
 
 1. **Grama dentro do assentamento** — `chao-grama.png` · 128 × 64 px · isométrico  
    Grama dentro do assentamento. Losango que se repete sem emenda.
@@ -564,7 +608,7 @@ Ladrilhos isométricos de 128 × 64 px que se repetem sem emenda.
 
 ## Muralha, portão e fosso (31)
 
-Peças isométricas que se encaixam em volta do terreno do assentamento. 3 estágios e versão danificada.
+Peças isométricas que se encaixam em volta do terreno do assentamento, sem chão e sem sombra. 3 estágios e versão danificada.
 
 1. **Muralha reta (direção ↘, de cima-esquerda para baixo-direita) — estágio 1** — `muralha-reta-a-1.png` · 128 × 154 px · isométrico  
    Muralha reta (direção ↘, de cima-esquerda para baixo-direita). Ocupa uma casa do contorno. O trecho vai de uma ponta à outra do losango da casa, para os pedaços se encaixarem lado a lado formando uma muralha contínua. Estágio 1: paliçada de troncos de madeira.
@@ -631,7 +675,7 @@ Peças isométricas que se encaixam em volta do terreno do assentamento. 3 está
 
 ## Terreno do mapa-múndi (15)
 
-Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, com a base embaixo).
+Ladrilhos: losango isométrico 2:1 PLANO visto de cima, SEM bloco de terra embaixo e sem linhas de borda; se repete sem emenda. Colina, montanha, floresta e bosque podem subir acima do losango. Sem sombra.
 
 1. **Mar** — `terreno-mar.png` · 128 × 64 px · isométrico  
    Mar. Casa do mapa-múndi.
@@ -666,7 +710,7 @@ Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, 
 
 ## Depósitos de recursos no mapa (12)
 
-Ícones de 128 × 128 px vistos levemente de cima, com versão esgotada.
+Ícones de 128 × 128 px vistos levemente de cima, sem chão em volta e sem sombra, com versão esgotada.
 
 1. **Ferro** — `deposito-iron.png` · 128 × 128 px · isométrico  
    Depósito de ferro no mapa.
@@ -695,7 +739,7 @@ Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, 
 
 ## Assentamentos e acampamentos no mapa (12)
 
-Ícones de 128 × 128 px. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.
+Ícones de 128 × 128 px, sem chão em volta e sem sombra. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.
 
 1. **Capital** — `mapa-capital.png` · 128 × 128 px · isométrico  
    Capital visto no mapa-múndi.
@@ -724,7 +768,7 @@ Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, 
 
 ## Unidades em viagem no mapa (6)
 
-Sprites de 64 × 64 px (carroças, mensageiros, navios...).
+Sprites de 64 × 64 px (carroças, mensageiros, navios...), sem chão e sem sombra.
 
 1. **Carroça de recursos** — `viajante-wagon.png` · 64 × 64 px · isométrico  
    Carroça de recursos se movendo pelo mapa.
@@ -741,7 +785,7 @@ Sprites de 64 × 64 px (carroças, mensageiros, navios...).
 
 ## Soldados (retrato e boneco de batalha) (42)
 
-Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas.
+Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas. Sem chão e sem sombra.
 
 1. **Lanceiro (retrato)** — `retrato-spearman.png` · 256 × 256 px · plano  
    Infantaria barata com lança longa. Segura a cavalaria. Retrato de corpo inteiro.

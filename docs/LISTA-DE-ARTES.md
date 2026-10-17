@@ -1,6 +1,6 @@
 # Coroa de Pedra — lista de imagens
 
-Total: **402 imagens** em 18 grupos. Esta lista é gerada pelo próprio jogo (`npm run artes`), então nunca fica desatualizada.
+Total: **420 imagens** em 19 grupos. Esta lista é gerada pelo próprio jogo (`npm run artes`), então nunca fica desatualizada.
 
 ## Como entregar as imagens
 
@@ -28,12 +28,13 @@ Total: **402 imagens** em 18 grupos. Esta lista é gerada pelo próprio jogo (`n
 | Terreno do mapa-múndi | 15 |
 | Depósitos de recursos no mapa | 12 |
 | Assentamentos e acampamentos no mapa | 12 |
+| Cidadãos andando na cidade | 18 |
 | Unidades em viagem no mapa | 6 |
 | Soldados (retrato e boneco de batalha) | 42 |
 | Heróis | 8 |
 | Efeitos | 8 |
 | Ilustrações | 5 |
-| **Total** | **402** |
+| **Total** | **420** |
 
 ## Interface (botões, barras e painéis) (12)
 
@@ -765,6 +766,47 @@ Ladrilhos: losango isométrico 2:1 PLANO visto de cima, SEM bloco de terra embai
    Confederação tribal (nível 4) visto no mapa-múndi.
 12. **Batalha em andamento** — `mapa-batalha.png` · 128 × 128 px · plano  
    Marca de batalha (espadas cruzadas, poeira) sobre o local do combate.
+
+## Cidadãos andando na cidade (18)
+
+Bonecos pequenos de 64 × 64 px vistos em isométrico suave, virados para a DIREITA, de corpo inteiro com os pés encostando embaixo. 3 quadros de cada: 1 = parado, 2 = passo com a perna esquerda à frente, 3 = passo com a perna direita à frente. Sem chão e sem sombra.
+
+1. **Camponês — quadro 1** — `cidadao-campones-1.png` · 64 × 64 px · isométrico  
+   Homem simples com túnica marrom e chapéu de palha, parado, virado para a direita.
+2. **Camponês — quadro 2** — `cidadao-campones-2.png` · 64 × 64 px · isométrico  
+   Homem simples com túnica marrom e chapéu de palha, passo com a perna esquerda à frente, virado para a direita.
+3. **Camponês — quadro 3** — `cidadao-campones-3.png` · 64 × 64 px · isométrico  
+   Homem simples com túnica marrom e chapéu de palha, passo com a perna direita à frente, virado para a direita.
+4. **Camponesa — quadro 1** — `cidadao-camponesa-1.png` · 64 × 64 px · isométrico  
+   Mulher com vestido azul, avental e lenço na cabeça, parado, virado para a direita.
+5. **Camponesa — quadro 2** — `cidadao-camponesa-2.png` · 64 × 64 px · isométrico  
+   Mulher com vestido azul, avental e lenço na cabeça, passo com a perna esquerda à frente, virado para a direita.
+6. **Camponesa — quadro 3** — `cidadao-camponesa-3.png` · 64 × 64 px · isométrico  
+   Mulher com vestido azul, avental e lenço na cabeça, passo com a perna direita à frente, virado para a direita.
+7. **Carregador com saco — quadro 1** — `cidadao-carregador-saco-1.png` · 64 × 64 px · isométrico  
+   Homem carregando um saco de grãos nas costas, parado, virado para a direita.
+8. **Carregador com saco — quadro 2** — `cidadao-carregador-saco-2.png` · 64 × 64 px · isométrico  
+   Homem carregando um saco de grãos nas costas, passo com a perna esquerda à frente, virado para a direita.
+9. **Carregador com saco — quadro 3** — `cidadao-carregador-saco-3.png` · 64 × 64 px · isométrico  
+   Homem carregando um saco de grãos nas costas, passo com a perna direita à frente, virado para a direita.
+10. **Lenhador com tora — quadro 1** — `cidadao-carregador-tora-1.png` · 64 × 64 px · isométrico  
+   Homem carregando uma tora de madeira no ombro, parado, virado para a direita.
+11. **Lenhador com tora — quadro 2** — `cidadao-carregador-tora-2.png` · 64 × 64 px · isométrico  
+   Homem carregando uma tora de madeira no ombro, passo com a perna esquerda à frente, virado para a direita.
+12. **Lenhador com tora — quadro 3** — `cidadao-carregador-tora-3.png` · 64 × 64 px · isométrico  
+   Homem carregando uma tora de madeira no ombro, passo com a perna direita à frente, virado para a direita.
+13. **Guarda — quadro 1** — `cidadao-guarda-1.png` · 64 × 64 px · isométrico  
+   Soldado com elmo, cota de malha, escudo e lança, parado, virado para a direita.
+14. **Guarda — quadro 2** — `cidadao-guarda-2.png` · 64 × 64 px · isométrico  
+   Soldado com elmo, cota de malha, escudo e lança, passo com a perna esquerda à frente, virado para a direita.
+15. **Guarda — quadro 3** — `cidadao-guarda-3.png` · 64 × 64 px · isométrico  
+   Soldado com elmo, cota de malha, escudo e lança, passo com a perna direita à frente, virado para a direita.
+16. **Criança — quadro 1** — `cidadao-crianca-1.png` · 64 × 64 px · isométrico  
+   Criança pequena correndo, roupa simples e colorida, parado, virado para a direita.
+17. **Criança — quadro 2** — `cidadao-crianca-2.png` · 64 × 64 px · isométrico  
+   Criança pequena correndo, roupa simples e colorida, passo com a perna esquerda à frente, virado para a direita.
+18. **Criança — quadro 3** — `cidadao-crianca-3.png` · 64 × 64 px · isométrico  
+   Criança pequena correndo, roupa simples e colorida, passo com a perna direita à frente, virado para a direita.
 
 ## Unidades em viagem no mapa (6)
 

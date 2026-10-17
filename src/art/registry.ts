@@ -53,6 +53,7 @@ export const GROUPS: { id: string; title: string; intro: string }[] = [
   { id: 'terreno', title: 'Terreno do mapa-múndi', intro: 'Ladrilhos: losango isométrico 2:1 PLANO visto de cima, SEM bloco de terra embaixo e sem linhas de borda; se repete sem emenda. Colina, montanha, floresta e bosque podem subir acima do losango. Sem sombra.' },
   { id: 'depositos', title: 'Depósitos de recursos no mapa', intro: 'Ícones de 128 × 128 px vistos levemente de cima, sem chão em volta e sem sombra, com versão esgotada.' },
   { id: 'mapa', title: 'Assentamentos e acampamentos no mapa', intro: 'Ícones de 128 × 128 px, sem chão em volta e sem sombra. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.' },
+  { id: 'cidadaos', title: 'Cidadãos andando na cidade', intro: 'Bonecos pequenos de 64 × 64 px vistos em isométrico suave, virados para a DIREITA, de corpo inteiro com os pés encostando embaixo. 3 quadros de cada: 1 = parado, 2 = passo com a perna esquerda à frente, 3 = passo com a perna direita à frente. Sem chão e sem sombra.' },
   { id: 'viajantes', title: 'Unidades em viagem no mapa', intro: 'Sprites de 64 × 64 px (carroças, mensageiros, navios...), sem chão e sem sombra.' },
   { id: 'soldados', title: 'Soldados (retrato e boneco de batalha)', intro: 'Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas. Sem chão e sem sombra.' },
   { id: 'herois', title: 'Heróis', intro: 'Retratos de 256 × 256 px do peito para cima.' },
@@ -244,6 +245,68 @@ for (const id of BUILDING_IDS) {
 }
 for (const n of [1, 2, 3]) {
   add({ key: `andaime-${n}`, group: 'obras', name: `Andaime ${n}×${n}`, description: `Andaime de madeira com blocos de pedra empilhados, para construções de ${n}×${n} casas em obra. Sem chão e sem sombra.`, w: n * TILE_W, h: n * TILE_H + 110, iso: true, draw: (c, w, h) => { void w; drawScaffold(c, n, h); } });
+}
+
+// Cidadãos ---------------------------------------------------------------------------
+
+export const CITIZEN_KINDS: Record<string, [string, string, string]> = {
+  campones: ['Camponês', 'Homem simples com túnica marrom e chapéu de palha', '#8a5a2b'],
+  camponesa: ['Camponesa', 'Mulher com vestido azul, avental e lenço na cabeça', '#3c6aa8'],
+  'carregador-saco': ['Carregador com saco', 'Homem carregando um saco de grãos nas costas', '#7a6a3a'],
+  'carregador-tora': ['Lenhador com tora', 'Homem carregando uma tora de madeira no ombro', '#5a7a3a'],
+  guarda: ['Guarda', 'Soldado com elmo, cota de malha, escudo e lança', '#9aa3ad'],
+  crianca: ['Criança', 'Criança pequena correndo, roupa simples e colorida', '#c0573a'],
+};
+
+function drawCitizen(c: Ctx, kind: string, frame: number, s: number): void {
+  const col = CITIZEN_KINDS[kind][2];
+  const k = s / 64;
+  const small = kind === 'crianca' ? 0.75 : 1;
+  const cx = s / 2;
+  const foot = s * 0.94;
+  const h = 40 * k * small;
+  const step = frame === 1 ? 0 : frame === 2 ? 1 : -1;
+  c.lineCap = 'round';
+  c.strokeStyle = '#3b2a1a';
+  c.lineWidth = 3.4 * k * small;
+  c.beginPath();
+  c.moveTo(cx - 2 * k, foot - h * 0.42);
+  c.lineTo(cx - 2 * k + step * 5 * k, foot);
+  c.moveTo(cx + 2 * k, foot - h * 0.42);
+  c.lineTo(cx + 2 * k - step * 5 * k, foot);
+  c.stroke();
+  poly(c, [{ x: cx - 7 * k * small, y: foot - h * 0.4 }, { x: cx + 7 * k * small, y: foot - h * 0.4 }, { x: cx + 5 * k * small, y: foot - h * 0.85 }, { x: cx - 5 * k * small, y: foot - h * 0.85 }], col, 'rgba(30,20,10,0.7)', 1.2);
+  c.fillStyle = '#e8c39e';
+  c.beginPath();
+  c.arc(cx, foot - h * 0.95, 5 * k * small, 0, Math.PI * 2);
+  c.fill();
+  c.stroke();
+  if (kind === 'campones') poly(c, [{ x: cx - 8 * k, y: foot - h }, { x: cx + 8 * k, y: foot - h }, { x: cx, y: foot - h - 6 * k }], '#d8b45a', 'rgba(30,20,10,0.6)', 1);
+  if (kind === 'camponesa') poly(c, [{ x: cx - 6 * k, y: foot - h * 0.98 }, { x: cx + 6 * k, y: foot - h * 0.98 }, { x: cx, y: foot - h - 5 * k }], '#f0e6d0', 'rgba(30,20,10,0.6)', 1);
+  if (kind === 'guarda') {
+    poly(c, [{ x: cx - 6 * k, y: foot - h * 0.95 }, { x: cx + 6 * k, y: foot - h * 0.95 }, { x: cx, y: foot - h - 7 * k }], '#b8c0c8', 'rgba(30,20,10,0.7)', 1);
+    c.strokeStyle = '#6a4a2a';
+    c.lineWidth = 2 * k;
+    c.beginPath();
+    c.moveTo(cx + 9 * k, foot - 2 * k);
+    c.lineTo(cx + 9 * k, foot - h - 10 * k);
+    c.stroke();
+  }
+  if (kind === 'carregador-saco') {
+    c.fillStyle = '#c9a874';
+    c.beginPath();
+    c.ellipse(cx - 6 * k, foot - h * 0.8, 7 * k, 9 * k, -0.3, 0, Math.PI * 2);
+    c.fill();
+    c.stroke();
+  }
+  if (kind === 'carregador-tora') poly(c, [{ x: cx - 14 * k, y: foot - h * 0.86 }, { x: cx + 12 * k, y: foot - h * 1.0 }, { x: cx + 12 * k, y: foot - h * 0.9 }, { x: cx - 14 * k, y: foot - h * 0.76 }], '#8a5a2b', 'rgba(30,20,10,0.7)', 1.2);
+}
+
+for (const [k, [name, desc]] of Object.entries(CITIZEN_KINDS)) {
+  for (const f of [1, 2, 3]) {
+    const pose = f === 1 ? 'parado' : f === 2 ? 'passo com a perna esquerda à frente' : 'passo com a perna direita à frente';
+    add({ key: `cidadao-${k}-${f}`, group: 'cidadaos', name: `${name} — quadro ${f}`, description: `${desc}, ${pose}, virado para a direita.`, w: 64, h: 64, iso: true, draw: (c, w) => drawCitizen(c, k, f, w) });
+  }
 }
 
 // Sombras e chão dos terrenos --------------------------------------------------------

@@ -5,6 +5,7 @@ import { FRAME, buildingAt, canPlace, districtsUnlocked, quadrantOf, usableBound
 import type { GameState, PlacedBuilding, Settlement } from '../sim/types';
 import { art, groundCenterY, isProvided } from '../art/loader';
 import { buildingSpriteSize, stageForLevel } from '../art/registry';
+import { CityLife, type SpriteBox } from './cityLife';
 
 const TW = 64;
 const TH = 32;
@@ -27,6 +28,8 @@ export class CityView {
   ghostValid = false;
   ghostReason = '';
   dirty = true;
+  readonly life = new CityLife();
+  private boxes = new Map<number, SpriteBox>();
   private ctx: CanvasRenderingContext2D;
   private dpr = 1;
   private draggingGhost = false;
@@ -328,6 +331,8 @@ export class CityView {
       const n = BUILDINGS[b.type].size;
       items.push({ depth: b.x + b.y + 2 * n - 1, draw: () => this.drawBuilding(c, b, now) });
     }
+    this.life.update(st, s, now, this.boxes, this.cw(), this.ch());
+    for (const it of this.life.people((x, y) => this.toScreen(x, y), tw)) items.push({ depth: it.depth, draw: () => it.draw(c) });
     if (this.ghost) {
       const gh = this.ghost;
       const n = BUILDINGS[gh.type].size;
@@ -346,22 +351,25 @@ export class CityView {
     }
     items.sort((a, b) => a.depth - b.depth);
     for (const it of items) it.draw();
+    this.life.drawSmoke(c);
+    this.life.drawSky(c, st, s, this.boxes, this.cw(), this.ch());
     this.dirty = false;
   }
 
-  private drawSprite(c: CanvasRenderingContext2D, type: BuildingId, level: number, x: number, y: number): void {
+  private drawSprite(c: CanvasRenderingContext2D, type: BuildingId, level: number, x: number, y: number, id = -1): void {
     const n = BUILDINGS[type].size;
     const base = this.toScreen(x + n, y + n);
     const { w } = buildingSpriteSize(type);
     const sc = (TW * this.zoom) / 128;
     const key = `construcao-${type}-${stageForLevel(Math.max(1, level))}`;
     if (isProvided(key)) {
-      this.drawOnFootprint(c, key, x, y, n);
+      this.drawOnFootprint(c, key, x, y, n, id);
       return;
     }
     const img = art(key);
     const dw = w * sc;
     const dh = ((img.height as number) * dw) / (img.width as number);
+    if (id >= 0) this.boxes.set(id, { x: base.x - dw / 2, y: base.y - dh + 2 * sc, w: dw, h: dh });
     c.drawImage(img, base.x - dw / 2, base.y - dh + 2 * sc, dw, dh);
   }
 
@@ -398,14 +406,16 @@ export class CityView {
   }
 
   /** Arte fornecida: o centro do chão da imagem fica no centro das casas ocupadas. */
-  private drawOnFootprint(c: CanvasRenderingContext2D, key: string, x: number, y: number, n: number): void {
+  private drawOnFootprint(c: CanvasRenderingContext2D, key: string, x: number, y: number, n: number, id = -1): void {
     const img = art(key);
     const iw = img.width as number;
     const ih = img.height as number;
     // As construções ocupam 80% das casas: sobra um respiro entre vizinhas.
     const k = (n * TW * this.zoom * BUILD_FILL) / iw;
     const center = this.toScreen(x + n / 2, y + n / 2);
-    c.drawImage(img, center.x - (iw / 2) * k, center.y - groundCenterY(img, key) * k, iw * k, ih * k);
+    const box = { x: center.x - (iw / 2) * k, y: center.y - groundCenterY(img, key) * k, w: iw * k, h: ih * k };
+    if (id >= 0) this.boxes.set(id, box);
+    c.drawImage(img, box.x, box.y, box.w, box.h);
   }
 
   private drawScaffold(c: CanvasRenderingContext2D, x: number, y: number, n: number): void {
@@ -424,7 +434,7 @@ export class CityView {
     if (b.level === 0 && b.build) {
       this.drawScaffold(c, b.x, b.y, n);
     } else {
-      this.drawSprite(c, b.type, b.level, b.x, b.y);
+      this.drawSprite(c, b.type, b.level, b.x, b.y, b.id);
       if (b.build) {
         // Melhoria em andamento: andaime por cima, meio transparente.
         c.globalAlpha = 0.55;

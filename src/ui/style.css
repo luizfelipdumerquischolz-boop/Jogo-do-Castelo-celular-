@@ -383,7 +383,9 @@ body:not([data-screen='map']):not([data-screen='city']) #screen {
   bottom: calc(var(--nav-h) + env(safe-area-inset-bottom));
   z-index: 30;
   max-height: 62vh;
-  overflow-y: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   background: var(--parch);
   border-radius: 16px 16px 0 0;
   border-top: 3px solid #8a6a45;
@@ -982,4 +984,11 @@ code {
 
 .prio > span {
   flex: 1;
+}
+
+/* O conteúdo do painel rola por dentro do papel, sem passar por cima da moldura. */
+.sheet-scroll {
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1 1 auto;
 }

@@ -210,7 +210,7 @@ export class App {
     // Telas de lista
     morph($('#screen'), LIST_SCREENS.has(this.screen) ? this.renderListScreen(st) : '');
     // Painel de baixo
-    morph($('#sheet'), this.renderSheet(st));
+    morph($('#sheet'), `<div class="sheet-scroll">${this.renderSheet(st)}</div>`);
     $('#sheet').classList.toggle('open', !!this.sheet && this.sheetVisible());
     // Botões flutuantes do mapa
     morph(

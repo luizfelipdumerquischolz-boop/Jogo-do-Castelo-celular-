@@ -1,4 +1,4 @@
-COROA DE PEDRA — PEDIDOS EM GRADE (402 imagens em 32 pedidos)
+COROA DE PEDRA — PEDIDOS EM GRADE (420 imagens em 33 pedidos)
 
 Como usar: copie um PEDIDO por vez (do texto até o fim da lista dele) e cole na IA. Me mande a grade pronta; eu recorto, limpo e coloco no jogo.
 Se a IA não conseguir fazer tudo numa grade, peça metade da lista e depois a outra metade.
@@ -527,7 +527,31 @@ Lista:
 18. viajante-ship.png — Navio da horda. Navio da horda se movendo pelo mapa.
 
 ============================================
-PEDIDO 30 — Retratos dos soldados (21 imagens)
+PEDIDO 30 — Cidadãos andando na cidade (18 imagens)
+============================================
+Monte uma única imagem em GRADE com 3 colunas × 6 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 900 × 2070 pixels (cada célula com cerca de 300 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Cada linha é um tipo de cidadão em 3 quadros de caminhada: 1 = parado, 2 = perna esquerda à frente, 3 = perna direita à frente. Mesma pessoa, mesmo tamanho e mesma posição nos 3 quadros, virada para a DIREITA, de corpo inteiro, pequena e legível. MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
+Lista:
+1. cidadao-campones-1.png — Camponês — quadro 1. Homem simples com túnica marrom e chapéu de palha, parado, virado para a direita.
+2. cidadao-campones-2.png — Camponês — quadro 2. Homem simples com túnica marrom e chapéu de palha, passo com a perna esquerda à frente, virado para a direita.
+3. cidadao-campones-3.png — Camponês — quadro 3. Homem simples com túnica marrom e chapéu de palha, passo com a perna direita à frente, virado para a direita.
+4. cidadao-camponesa-1.png — Camponesa — quadro 1. Mulher com vestido azul, avental e lenço na cabeça, parado, virado para a direita.
+5. cidadao-camponesa-2.png — Camponesa — quadro 2. Mulher com vestido azul, avental e lenço na cabeça, passo com a perna esquerda à frente, virado para a direita.
+6. cidadao-camponesa-3.png — Camponesa — quadro 3. Mulher com vestido azul, avental e lenço na cabeça, passo com a perna direita à frente, virado para a direita.
+7. cidadao-carregador-saco-1.png — Carregador com saco — quadro 1. Homem carregando um saco de grãos nas costas, parado, virado para a direita.
+8. cidadao-carregador-saco-2.png — Carregador com saco — quadro 2. Homem carregando um saco de grãos nas costas, passo com a perna esquerda à frente, virado para a direita.
+9. cidadao-carregador-saco-3.png — Carregador com saco — quadro 3. Homem carregando um saco de grãos nas costas, passo com a perna direita à frente, virado para a direita.
+10. cidadao-carregador-tora-1.png — Lenhador com tora — quadro 1. Homem carregando uma tora de madeira no ombro, parado, virado para a direita.
+11. cidadao-carregador-tora-2.png — Lenhador com tora — quadro 2. Homem carregando uma tora de madeira no ombro, passo com a perna esquerda à frente, virado para a direita.
+12. cidadao-carregador-tora-3.png — Lenhador com tora — quadro 3. Homem carregando uma tora de madeira no ombro, passo com a perna direita à frente, virado para a direita.
+13. cidadao-guarda-1.png — Guarda — quadro 1. Soldado com elmo, cota de malha, escudo e lança, parado, virado para a direita.
+14. cidadao-guarda-2.png — Guarda — quadro 2. Soldado com elmo, cota de malha, escudo e lança, passo com a perna esquerda à frente, virado para a direita.
+15. cidadao-guarda-3.png — Guarda — quadro 3. Soldado com elmo, cota de malha, escudo e lança, passo com a perna direita à frente, virado para a direita.
+16. cidadao-crianca-1.png — Criança — quadro 1. Criança pequena correndo, roupa simples e colorida, parado, virado para a direita.
+17. cidadao-crianca-2.png — Criança — quadro 2. Criança pequena correndo, roupa simples e colorida, passo com a perna esquerda à frente, virado para a direita.
+18. cidadao-crianca-3.png — Criança — quadro 3. Criança pequena correndo, roupa simples e colorida, passo com a perna direita à frente, virado para a direita.
+
+============================================
+PEDIDO 31 — Retratos dos soldados (21 imagens)
 ============================================
 Monte uma única imagem em GRADE com 5 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 2000 × 2300 pixels (cada célula com cerca de 400 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Retratos de corpo inteiro, de frente e levemente de lado, pose heroica, uma unidade por célula, nada cortado. Cada tipo bem diferente do outro (arma, armadura, roupa e cores). MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
@@ -554,7 +578,7 @@ Lista:
 21. retrato-militia.png — Miliciano (retrato). Cidadão armado às pressas para defender as muralhas. Retrato de corpo inteiro.
 
 ============================================
-PEDIDO 31 — Bonecos de batalha e heróis (29 imagens)
+PEDIDO 32 — Bonecos de batalha e heróis (29 imagens)
 ============================================
 Monte uma única imagem em GRADE com 6 colunas × 5 linhas, fundo cinza escuro liso de uma cor só (sem xadrez, sem degradê, sem textura). Cada desenho fica centralizado na sua célula, inteiro, sem encostar nos vizinhos, com espaço vazio entre as células. Embaixo de cada desenho escreva em letras pequenas o nome do arquivo indicado. A imagem final deve ter pelo menos 1980 × 1897 pixels (cada célula com cerca de 330 pixels de largura). Siga a ordem da lista, da esquerda para a direita e de cima para baixo. Bonecos: a unidade inteira, pequena, vista em isométrico suave, virada para a DIREITA, silhueta forte. Heróis: retrato do peito para cima, rostos bem variados (jovens, velhos, homens e mulheres). MUITO IMPORTANTE: desenhe SÓ o objeto. NÃO desenhe chão, gramado, terra, piso, base, plataforma ou bloco embaixo dele, e NÃO desenhe sombra no chão (sombras e chãos são feitos em imagens separadas). Fora do objeto fica apenas o fundo cinza liso da grade. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 Lista:
@@ -589,7 +613,7 @@ Lista:
 29. heroi-8.png — Herói 8. Retrato de herói (comandante ou cônsul). Faça rostos variados: jovens, velhos, homens e mulheres.
 
 ============================================
-PEDIDO 32 — Ilustrações (5 imagens, uma por vez, sem grade)
+PEDIDO 33 — Ilustrações (5 imagens, uma por vez, sem grade)
 ============================================
 Faça cada uma separada, imagem horizontal 16:9 com pelo menos 1536 × 864 pixels, cena completa sem transparência e sem moldura, sem letras. Estilo de todas: arte digital pintada à mão, jogo de estratégia medieval para celular, cores quentes e saturadas, contornos escuros limpos, bem legível em tamanho pequeno, mesmo estilo e mesma luz (vinda de cima e da esquerda) em todos os desenhos.
 1. ilustracao-titulo.png — Tela de abertura: o castelo ao amanhecer. Tela de abertura: o castelo ao amanhecer.

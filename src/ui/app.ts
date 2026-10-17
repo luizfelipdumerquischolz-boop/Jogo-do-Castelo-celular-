@@ -48,6 +48,7 @@ export class App {
   openReport: number | null = null;
   speed = 1;
   private lastEventId = 0;
+  private lastCityDraw = 0;
   private toasts: { id: number; text: string; kind: string; until: number }[] = [];
   private victorySeen = false;
   private drag: { type: BuildingId; startX: number; startY: number; active: boolean } | null = null;
@@ -160,8 +161,11 @@ export class App {
         if (this.map.dirty || animating) this.map.draw(t);
       } else if (this.screen === 'city') {
         const s = this.currentCity();
-        const animating = !!s && s.buildings.some((b) => b.build || b.efficiency < 0.2);
-        if (this.city.dirty || animating) this.city.draw(t);
+        // A cidade tem vida (gente andando, fumaça): desenha a ~30 quadros por segundo.
+        if (s && (this.city.dirty || t - this.lastCityDraw > 32)) {
+          this.lastCityDraw = t;
+          this.city.draw(t);
+        }
       }
     }
     requestAnimationFrame((tt) => this.frame(tt));

@@ -35,7 +35,7 @@ let anchors: Record<string, number> = {};
 /** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */
 /** Botão com arte: as pontas mantêm o desenho e só o miolo estica. */
 function buttonRule(sel: string, u: string): string {
-  return `${sel}{background:none;border-style:solid;border-color:transparent;border-width:0 18px;border-radius:0;border-image:url(${u}) 0 84 fill / 0 18px stretch;box-shadow:none;padding-left:4px;padding-right:4px;text-shadow:0 1px 2px rgba(0,0,0,.6)}`;
+  return `${sel}{background:none;border-style:solid;border-color:transparent;border-width:0 18px;border-radius:0;border-image:url(${u}) 0 84 fill / 0 18px stretch;box-shadow:none;padding:3px 4px 9px;text-shadow:0 1px 2px rgba(0,0,0,.6)}`;
 }
 
 /** Peças de interface fornecidas viram regras de CSS (botões, barras, painéis, carta). */

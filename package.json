@@ -11,7 +11,7 @@
     "test": "vitest run",
     "test:e2e": "npm run build && playwright test",
     "icons": "node scripts/gen-icons.mjs",
-    "artes": "vite-node scripts/gen-art-list.ts && vite-node scripts/gen-art-prompts.ts"
+    "artes": "vite-node scripts/gen-art-list.ts && vite-node scripts/gen-art-prompts.ts && vite-node scripts/gen-grid-requests.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",

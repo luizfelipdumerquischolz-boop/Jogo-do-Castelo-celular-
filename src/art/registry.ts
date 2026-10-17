@@ -44,15 +44,17 @@ export const GROUPS: { id: string; title: string; intro: string }[] = [
   { id: 'icones-interface', title: 'Ícones dos botões e abas', intro: 'Ícones planos, sem perspectiva, legíveis em 24 px. Fundo transparente.' },
   { id: 'icones-recursos', title: 'Ícones de recursos, alimentos e itens', intro: 'Ícones planos de 128 × 128 px, sem perspectiva, bem legíveis em tamanho pequeno.' },
   { id: 'icones-status', title: 'Ícones de status', intro: 'Ícones planos de 128 × 128 px usados nos painéis (população, felicidade etc.).' },
-  { id: 'construcoes', title: 'Construções (3 estágios cada)', intro: 'Isométricas 2:1, luz de cima e da esquerda. Estágio 1 = níveis 1–2 (madeira, simples), 2 = níveis 3–4 (pedra), 3 = nível 5 (imponente, bandeiras). A base do prédio encosta embaixo da imagem.' },
-  { id: 'obras', title: 'Andaimes de obra', intro: 'Aparecem enquanto uma construção é erguida ou melhorada.' },
-  { id: 'chao', title: 'Chão e decoração do assentamento', intro: 'Ladrilhos isométricos de 128 × 64 px que se repetem sem emenda.' },
-  { id: 'muralhas', title: 'Muralha, portão e fosso', intro: 'Peças isométricas que se encaixam em volta do terreno do assentamento. 3 estágios e versão danificada.' },
-  { id: 'terreno', title: 'Terreno do mapa-múndi', intro: 'Ladrilhos isométricos de 128 × 64 px (relevo e árvores podem ser mais altos, com a base embaixo).' },
-  { id: 'depositos', title: 'Depósitos de recursos no mapa', intro: 'Ícones de 128 × 128 px vistos levemente de cima, com versão esgotada.' },
-  { id: 'mapa', title: 'Assentamentos e acampamentos no mapa', intro: 'Ícones de 128 × 128 px. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.' },
-  { id: 'viajantes', title: 'Unidades em viagem no mapa', intro: 'Sprites de 64 × 64 px (carroças, mensageiros, navios...).' },
-  { id: 'soldados', title: 'Soldados (retrato e boneco de batalha)', intro: 'Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas.' },
+  { id: 'construcoes', title: 'Construções (3 estágios cada)', intro: 'Isométricas 2:1, luz de cima e da esquerda. SÓ a construção e seus objetos: SEM chão, SEM base de terra ou pedra embaixo e SEM sombra (o chão e a sombra são imagens separadas). A ponta da frente das paredes encosta embaixo da imagem, no centro. Estágio 1 = níveis 1–2 (madeira, simples), 2 = níveis 3–4 (pedra), 3 = nível 5 (imponente).' },
+  { id: 'obras', title: 'Andaimes de obra', intro: 'Aparecem enquanto uma construção é erguida ou melhorada. Sem chão e sem sombra.' },
+  { id: 'sombras', title: 'Sombras', intro: 'Sombras separadas, colocadas pelo jogo embaixo de cada objeto. Mancha preta suave e semitransparente (cerca de 40%), vista de cima em isométrico, projetada para baixo e para a direita (luz vinda de cima e da esquerda). Sem nenhum objeto, só a sombra.' },
+  { id: 'lotes', title: 'Chão dos terrenos das construções', intro: 'Losango isométrico 2:1 que fica embaixo de cada construção, no tamanho exato das casas que ela ocupa. Visto de cima, plano, SEM bloco de terra embaixo, sem objetos e sem sombra. As bordas se misturam suavemente com a grama.' },
+  { id: 'chao', title: 'Chão e decoração do assentamento', intro: 'Ladrilhos: losango isométrico 2:1 PLANO (sem bloco de terra embaixo, sem bordas desenhadas, sem linhas), que se repete sem emenda. Decorações: só o objeto, sem chão e sem sombra.' },
+  { id: 'muralhas', title: 'Muralha, portão e fosso', intro: 'Peças isométricas que se encaixam em volta do terreno do assentamento, sem chão e sem sombra. 3 estágios e versão danificada.' },
+  { id: 'terreno', title: 'Terreno do mapa-múndi', intro: 'Ladrilhos: losango isométrico 2:1 PLANO visto de cima, SEM bloco de terra embaixo e sem linhas de borda; se repete sem emenda. Colina, montanha, floresta e bosque podem subir acima do losango. Sem sombra.' },
+  { id: 'depositos', title: 'Depósitos de recursos no mapa', intro: 'Ícones de 128 × 128 px vistos levemente de cima, sem chão em volta e sem sombra, com versão esgotada.' },
+  { id: 'mapa', title: 'Assentamentos e acampamentos no mapa', intro: 'Ícones de 128 × 128 px, sem chão em volta e sem sombra. Deixe uma bandeira cinza clara: o jogo pinta a cor de cada reino por cima.' },
+  { id: 'viajantes', title: 'Unidades em viagem no mapa', intro: 'Sprites de 64 × 64 px (carroças, mensageiros, navios...), sem chão e sem sombra.' },
+  { id: 'soldados', title: 'Soldados (retrato e boneco de batalha)', intro: 'Retrato de corpo inteiro 256 × 256 px e boneco de 64 × 64 px usado no mapa e nas batalhas. Sem chão e sem sombra.' },
   { id: 'herois', title: 'Heróis', intro: 'Retratos de 256 × 256 px do peito para cima.' },
   { id: 'efeitos', title: 'Efeitos', intro: 'Sprites de 64 × 64 px para batalhas e eventos.' },
   { id: 'ilustracoes', title: 'Ilustrações', intro: 'Imagens grandes para telas especiais.' },
@@ -223,7 +225,7 @@ export function buildingSpriteSize(id: BuildingId): { w: number; h: number } {
   return { w: n * TILE_W, h: n * TILE_H + extra };
 }
 
-const STAGE_DESC = ['', 'madeira e palha, simples', 'pedra e telhas, mais alta', 'imponente, com detalhes e bandeiras'];
+const STAGE_DESC = ['', 'madeira e palha, simples', 'pedra e telhas, melhorada', 'refinada e imponente'];
 for (const id of BUILDING_IDS) {
   const def = BUILDINGS[id];
   const { w, h } = buildingSpriteSize(id);
@@ -232,7 +234,7 @@ for (const id of BUILDING_IDS) {
       key: `construcao-${id}-${st}`,
       group: 'construcoes',
       name: `${def.name} — estágio ${st}`,
-      description: `${def.description} Ocupa ${def.size}×${def.size} casas. Estágio ${st}: ${STAGE_DESC[st]}.`,
+      description: `${def.description} Ocupa ${def.size}×${def.size} casas. Estágio ${st}: ${STAGE_DESC[st]}. Sem chão e sem sombra.`,
       w,
       h,
       iso: true,
@@ -241,7 +243,32 @@ for (const id of BUILDING_IDS) {
   }
 }
 for (const n of [1, 2, 3]) {
-  add({ key: `andaime-${n}`, group: 'obras', name: `Andaime ${n}×${n}`, description: `Andaime de madeira com blocos de pedra no chão, para construções de ${n}×${n} casas em obra.`, w: n * TILE_W, h: n * TILE_H + 110, iso: true, draw: (c, w, h) => { void w; drawScaffold(c, n, h); } });
+  add({ key: `andaime-${n}`, group: 'obras', name: `Andaime ${n}×${n}`, description: `Andaime de madeira com blocos de pedra empilhados, para construções de ${n}×${n} casas em obra. Sem chão e sem sombra.`, w: n * TILE_W, h: n * TILE_H + 110, iso: true, draw: (c, w, h) => { void w; drawScaffold(c, n, h); } });
+}
+
+// Sombras e chão dos terrenos --------------------------------------------------------
+
+function drawShadow(c: Ctx, w: number, h: number, rx: number, ry: number): void {
+  c.save();
+  c.fillStyle = 'rgba(0,0,0,0.35)';
+  c.filter = 'blur(6px)';
+  c.beginPath();
+  c.ellipse(w * 0.56, h * 0.6, rx, ry, 0, 0, Math.PI * 2);
+  c.fill();
+  c.restore();
+}
+for (const n of [1, 2, 3]) {
+  add({ key: `sombra-construcao-${n}`, group: 'sombras', name: `Sombra de construção ${n}×${n}`, description: `Sombra para construções de ${n}×${n} casas: o contorno do losango da base esticado para a direita e para baixo.`, w: n * TILE_W, h: n * TILE_H, iso: true, draw: (c, w, h) => drawShadow(c, w, h, w * 0.42, h * 0.38) });
+}
+add({ key: 'sombra-alta', group: 'sombras', name: 'Sombra de construção alta', description: 'Sombra comprida para torres e construções altas (Torre de Menagem, torre de vigia, capela), projetada bem para a direita.', w: 256, h: 128, iso: true, draw: (c, w, h) => drawShadow(c, w, h, w * 0.45, h * 0.3) });
+add({ key: 'sombra-muralha', group: 'sombras', name: 'Sombra de trecho de muralha', description: 'Faixa de sombra de um trecho de muralha (uma casa).', w: 128, h: 64, iso: true, draw: (c, w, h) => drawShadow(c, w, h, w * 0.4, h * 0.25) });
+add({ key: 'sombra-unidade', group: 'sombras', name: 'Sombra de soldado ou viajante', description: 'Oval pequena de sombra sob soldados, carroças e viajantes.', w: 64, h: 32, iso: true, draw: (c, w, h) => drawShadow(c, w, h, w * 0.35, h * 0.3) });
+add({ key: 'sombra-arvore', group: 'sombras', name: 'Sombra de árvore', description: 'Sombra arredondada e irregular de copa de árvore.', w: 128, h: 64, iso: true, draw: (c, w, h) => drawShadow(c, w, h, w * 0.38, h * 0.32) });
+const LOTS: Record<string, [string, string]> = { terra: ['Terra batida', '#a8835a'], pavimento: ['Pavimento de pedra', '#a9a294'], grama: ['Grama aparada', '#7d9a4a'] };
+for (const [k, [d, col]] of Object.entries(LOTS)) {
+  for (const n of [1, 2, 3]) {
+    add({ key: `lote-${k}-${n}`, group: 'lotes', name: `${d} ${n}×${n}`, description: `${d} sob construções de ${n}×${n} casas.`, w: n * TILE_W, h: n * TILE_H, iso: true, draw: (c, w, h) => poly(c, [{ x: w / 2, y: 0 }, { x: w, y: h / 2 }, { x: w / 2, y: h }, { x: 0, y: h / 2 }], col, 'rgba(40,30,10,0.2)', 1) });
+  }
 }
 
 // Chão, muralhas ------------------------------------------------------------------------

@@ -44,7 +44,7 @@ const UI_RULES: [string, (url: string) => string][] = [
   ['ui-botao-perigo', (u) => buttonRule('.btn.danger', u)],
   ['ui-botao-neutro', (u) => buttonRule('.btn.neutral', u)],
   ['ui-botao-desativado', (u) => buttonRule('.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled', u) + '.btn.primary:disabled,.btn.danger:disabled,.btn.neutral:disabled{opacity:.8;color:#e8e8e8}'],
-  ['ui-barra-topo', (u) => `#top{background:url(${u}) left center/auto 100% repeat-x}`],
+  ['ui-barra-topo', (u) => `#top{background:url(${u}) left center/auto 100% repeat-x;padding:calc(12px + env(safe-area-inset-top)) 10px 12px}`],
   ['ui-barra-inferior', (u) => `#nav{background:url(${u}) left center/auto 100% repeat-x}`],
   ['ui-painel', (u) => `#sheet{background:var(--parch);border:solid transparent;border-width:24px;border-radius:0;border-image:url(${u}) 56 fill / 24px stretch;padding:4px 6px}#sheet .sheet-scroll{padding:6px 4px 10px;-webkit-mask-image:linear-gradient(transparent,#000 10px,#000 calc(100% - 10px),transparent);mask-image:linear-gradient(transparent,#000 10px,#000 calc(100% - 10px),transparent)}`],
   ['ui-fundo', (u) => `#screen{background:url(${u}) center/512px repeat}`],

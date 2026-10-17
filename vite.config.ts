@@ -27,7 +27,7 @@ function offlineServiceWorker(): Plugin {
       outDir = config.build.outDir;
     },
     closeBundle() {
-      const files = listFiles(outDir).filter((f) => f !== 'sw.js');
+      const files = listFiles(outDir).filter((f) => f !== 'sw.js' && !f.endsWith('.apk'));
       const hash = createHash('sha256');
       for (const f of files) hash.update(f).update(readFileSync(join(outDir, f)));
       const version = hash.digest('hex').slice(0, 12);

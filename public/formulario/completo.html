@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e6b3a" />
+  <title>Minha escola: um jardim de possibilidades</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body data-versao="completo">
+  <div class="faixa"></div>
+  <main class="pagina">
+    <header class="topo">
+      <img src="img/univille.png" alt="Curso de Direito UNIVILLE" class="logo logo-univille" />
+      <img src="img/clinicadh.png" alt="Clínica DH" class="logo logo-dh" />
+    </header>
+    <h1 id="titulo"></h1>
+    <p id="subtitulo" class="subtitulo"></p>
+    <p id="intro" class="intro"></p>
+    <p id="pendentes" class="pendentes" hidden></p>
+
+    <form id="formulario" novalidate>
+      <div id="perguntas"></div>
+      <p id="aviso" class="aviso" role="alert" hidden></p>
+      <button id="enviar" type="submit" class="botao">Enviar respostas</button>
+    </form>
+
+    <section id="pronto" class="pronto" hidden>
+      <div class="selo" aria-hidden="true">🌱</div>
+      <h2 id="agradecimento"></h2>
+      <p>Sua resposta foi registrada.</p>
+      <p id="obs-envio" class="obs"></p>
+      <button id="de-novo" type="button" class="botao secundario">Responder de novo (outra pessoa)</button>
+    </section>
+
+    <footer class="rodape">Clínica Jurídica III · Curso de Direito UNIVILLE</footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="perguntas.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,13 +1,16 @@
 /**
  * Banco de dados do formulário "Minha escola: um jardim de possibilidades".
  *
- * Cole este código em Extensões > Apps Script de uma planilha do Google
- * e publique como "App da Web" (passo a passo em LEIA-ME.md).
+ * Cole este código em https://script.new e publique como "App da Web"
+ * (passo a passo em LEIA-ME.md). As respostas vão para a planilha abaixo.
  *
  * Cada resposta vira uma linha. A versão completa e a versão com carinhas
  * ficam em abas separadas. Respostas repetidas (mesmo ID) são ignoradas,
  * então um reenvio depois de uma queda de internet não duplica nada.
  */
+
+// Planilha "Respostas – Minha escola: um jardim de possibilidades" no Google Drive.
+var ID_PLANILHA = '1XYREX8VbYhJFDUv93jLbveAzc7nKN0jmxi9tutEh2Dk';
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
@@ -17,7 +20,7 @@ function doPost(e) {
     if (!dados || !dados.id || !dados.respostas) return resposta({ ok: false, erro: 'dados-invalidos' });
 
     var abaNome = String(dados.aba || dados.versao || 'Respostas').slice(0, 60);
-    var planilha = SpreadsheetApp.getActiveSpreadsheet();
+    var planilha = SpreadsheetApp.openById(ID_PLANILHA);
     var aba = planilha.getSheetByName(abaNome) || planilha.insertSheet(abaNome);
 
     var chaves = Object.keys(dados.respostas);

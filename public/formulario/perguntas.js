@@ -1,5 +1,5 @@
 // Perguntas do formulário "Minha escola: um jardim de possibilidades".
-// Cada pergunta tem um "id", que vira o nome da coluna na planilha.
+// "coluna" é o nome da coluna na planilha: se mudar, a planilha cria uma coluna nova.
 // tipo: 'uma' (só uma bolinha), 'varias' (vários quadradinhos), 'texto', 'carinha'.
 window.FORMULARIOS = {
   completo: {
@@ -16,6 +16,7 @@ window.FORMULARIOS = {
         perguntas: [
           {
             id: 'p01_encontros',
+            coluna: '1. De quais encontros participou',
             texto: 'De quais encontros você participou?',
             tipo: 'varias',
             opcoes: [
@@ -26,6 +27,7 @@ window.FORMULARIOS = {
           },
           {
             id: 'p02_como_participou',
+            coluna: '2. Como participou',
             texto: 'Como você participou?',
             tipo: 'varias',
             opcoes: [
@@ -44,24 +46,28 @@ window.FORMULARIOS = {
         perguntas: [
           {
             id: 'p03_como_se_sentiu',
+            coluna: '3. Como se sentiu nos encontros',
             texto: 'Como você se sentiu durante os encontros?',
             tipo: 'uma',
             opcoes: ['Muito bem', 'Bem', 'Mais ou menos', 'Não me senti bem'],
           },
           {
             id: 'p04_a_vontade',
+            coluna: '4. À vontade para se expressar',
             texto: 'Você se sentiu à vontade para se expressar do seu jeito?',
             tipo: 'uma',
             opcoes: ['Sim', 'Mais ou menos', 'Não'],
           },
           {
             id: 'p05_ideias_ouvidas',
+            coluna: '5. Ideias e opiniões ouvidas',
             texto: 'Você sentiu que as suas ideias e opiniões foram ouvidas?',
             tipo: 'uma',
             opcoes: ['Sim', 'Mais ou menos', 'Não'],
           },
           {
             id: 'p06_outra_turma',
+            coluna: '6. Atividade com outra turma',
             texto: 'Como foi fazer a atividade junto com alunos de outra turma?',
             tipo: 'uma',
             opcoes: ['Gostei muito', 'Gostei', 'Tanto faz', 'Não gostei'],
@@ -73,6 +79,7 @@ window.FORMULARIOS = {
         perguntas: [
           {
             id: 'p07_jeitos_diferentes',
+            coluna: '7. Entende jeitos diferentes',
             texto:
               'Depois do projeto, você entende melhor que cada pessoa tem um jeito diferente de aprender, de sentir e de se comunicar?',
             tipo: 'uma',
@@ -80,6 +87,7 @@ window.FORMULARIOS = {
           },
           {
             id: 'p08_direitos',
+            coluna: '8. Direitos que lembra',
             texto: 'Quais destes direitos você lembra de ter visto no projeto?',
             tipo: 'varias',
             opcoes: [
@@ -93,12 +101,14 @@ window.FORMULARIOS = {
           },
           {
             id: 'p09_parte_da_escola',
+            coluna: '9. Sente-se parte da escola',
             texto: 'Depois do projeto, você se sente mais parte da sua escola?',
             tipo: 'uma',
             opcoes: ['Sim, mais do que antes', 'Igual a antes', 'Menos do que antes'],
           },
           {
             id: 'p10_colega_de_fora',
+            coluna: '10. Se visse colega de fora',
             texto: 'Se você visse um colega ficando de fora, o que faria hoje?',
             tipo: 'uma',
             opcoes: [
@@ -115,12 +125,14 @@ window.FORMULARIOS = {
         perguntas: [
           {
             id: 'p11_trabalho_na_arvore',
+            coluna: '11. Reconhece trabalho na árvore',
             texto: 'Você reconhece o seu trabalho na árvore que ficou na entrada da escola?',
             tipo: 'uma',
             opcoes: ['Sim, e tenho orgulho dele', 'Sim', 'Não encontrei', 'Não fiz um trabalho para a árvore'],
           },
           {
             id: 'p12_mais_projetos',
+            coluna: '12. Quer mais projetos',
             texto: 'Você gostaria que a escola tivesse mais projetos como este?',
             tipo: 'uma',
             opcoes: ['Sim', 'Talvez', 'Não'],
@@ -131,10 +143,13 @@ window.FORMULARIOS = {
         titulo: '13. Conte para a gente, do seu jeito',
         nota: 'Não é obrigatório. Escreva só se quiser, sem colocar nomes.',
         perguntas: [
-          { id: 'p13a_mais_gostou', texto: 'O que você mais gostou?', tipo: 'texto', opcional: true },
-          { id: 'p13b_poderia_melhorar', texto: 'O que poderia ser diferente ou melhor?', tipo: 'texto', opcional: true },
+          { id: 'p13a_mais_gostou',
+            coluna: '13. O que mais gostou', texto: 'O que você mais gostou?', tipo: 'texto', opcional: true },
+          { id: 'p13b_poderia_melhorar',
+            coluna: '13. O que poderia ser melhor', texto: 'O que poderia ser diferente ou melhor?', tipo: 'texto', opcional: true },
           {
             id: 'p13c_aprendi',
+            coluna: '13. O que aprendeu e quer levar',
             texto: 'Uma coisa que eu aprendi e quero levar comigo:',
             tipo: 'texto',
             opcional: true,
@@ -156,23 +171,29 @@ window.FORMULARIOS = {
     partes: [
       {
         perguntas: [
-          { id: 'c1_gostou', texto: 'Você gostou dos encontros?', tipo: 'carinha', opcoes: ['Gostei', 'Mais ou menos', 'Não gostei'] },
-          { id: 'c2_do_seu_jeito', texto: 'Você pôde fazer do seu jeito?', tipo: 'carinha', opcoes: ['Sim', 'Mais ou menos', 'Não'] },
+          { id: 'c1_gostou',
+            coluna: '1. Gostou dos encontros', texto: 'Você gostou dos encontros?', tipo: 'carinha', opcoes: ['Gostei', 'Mais ou menos', 'Não gostei'] },
+          { id: 'c2_do_seu_jeito',
+            coluna: '2. Pôde fazer do seu jeito', texto: 'Você pôde fazer do seu jeito?', tipo: 'carinha', opcoes: ['Sim', 'Mais ou menos', 'Não'] },
           {
             id: 'c3_outra_turma',
+            coluna: '3. Bom fazer com outra turma',
             texto: 'Foi bom fazer junto com a outra turma?',
             tipo: 'carinha',
             opcoes: ['Sim', 'Mais ou menos', 'Não'],
           },
-          { id: 'c4_arvore', texto: 'Você achou o seu trabalho na árvore?', tipo: 'carinha', opcoes: ['Sim', 'Não sei', 'Não'] },
+          { id: 'c4_arvore',
+            coluna: '4. Achou o trabalho na árvore', texto: 'Você achou o seu trabalho na árvore?', tipo: 'carinha', opcoes: ['Sim', 'Não sei', 'Não'] },
           {
             id: 'c5_mais_atividades',
+            coluna: '5. Quer mais atividades',
             texto: 'Você quer mais atividades assim?',
             tipo: 'carinha',
             opcoes: ['Sim', 'Talvez', 'Não'],
           },
           {
             id: 'c6_palavra',
+            coluna: 'Palavra sobre o projeto',
             texto: 'Se quiser, diga uma palavra sobre o projeto:',
             tipo: 'texto',
             opcional: true,

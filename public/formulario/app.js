@@ -183,14 +183,15 @@
     const dados = new FormData(raiz);
     const respostas = {};
     for (const p of todasPerguntas()) {
-      if (p.tipo === 'varias') respostas[p.id] = dados.getAll(p.id).join('; ');
-      else respostas[p.id] = String(dados.get(p.id) || '').trim();
+      const coluna = p.coluna || p.id;
+      if (p.tipo === 'varias') respostas[coluna] = dados.getAll(p.id).join('; ');
+      else respostas[coluna] = String(dados.get(p.id) || '').trim();
     }
     return respostas;
   }
 
   function semResposta(respostas) {
-    return todasPerguntas().filter((p) => !p.opcional && !respostas[p.id]);
+    return todasPerguntas().filter((p) => !p.opcional && !respostas[p.coluna || p.id]);
   }
 
   // ---------- envio ----------
